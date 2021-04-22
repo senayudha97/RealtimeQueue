@@ -1,732 +1,430 @@
- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Fusion - Bootstrap 4 Template</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
-    <!-- Icon -->
-    <link rel="stylesheet" href="assets/fonts/line-icons.css">
-    <!-- Owl carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
-    
-    <!-- Animate -->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-  </head>
-  <body>
-
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>       
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="lni-menu"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">
-                  Services
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#team">
-                  Team
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#pricing">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonial">
-                  Testimonial
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
+<?php require "header.php" ?>
+<!-- Services Section Start -->
+<section id="pelayanan" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Pilihan Pelayanan</h2>
+      <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+    </div>
+    <div class="row">
+      <!-- Services item -->
+      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#add_ktp">
+        <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
+          <div class="icon">
+            <i class="lni-user"></i>
           </div>
-        </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Hero Area Start -->
-      <div id="hero-area" class="hero-area-bg">
-        <div class="container">      
-          <div class="row">
-            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-              <div class="contents">
-                <h2 class="head-title">App, Business & SaaS<br>Landing Page Template</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat!</p>
-                <div class="header-button">
-                  <a href="#" class="btn btn-common">Download Now</i></a>
-                  <a href="#" class="btn btn-border video-popup">Learn More</i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-              <div class="intro-img">
-                <img class="img-fluid" src="assets/img/intro-mobile.png" alt="">
-              </div>            
-            </div>
-          </div> 
-        </div> 
-      </div>
-      <!-- Hero Area End -->
-
-    </header>
-    <!-- Header Area wrapper End -->
-
-    <!-- Services Section Start -->
-    <section id="services" class="section-padding">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Our Services</h2>
-          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-        </div>
-        <div class="row">
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon">
-                <i class="lni-cog"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Easy To Used</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="lni-stats-up"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Awesome Design</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-              <div class="icon">
-                <i class="lni-users"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Easy To Customize</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="lni-layers"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">UI/UX Design</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="1.5s">
-              <div class="icon">
-                <i class="lni-mobile"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">App Development</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
-              <div class="icon">
-                <i class="lni-rocket"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">User Friendly interface</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
+          <div class="services-content">
+            <h3><a>KTP Baru</a></h3>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Services Section End -->
-
-    <!-- About Section start -->
-    <div class="about-area section-padding bg-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-xs-12 info">
-            <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
-              <div>
-                <div class="site-heading">
-                  <p class="mb-3">Manage Statistics</p>
-                  <h2 class="section-title">Detailed Statistics of your Company</h2>
-                </div>
-                <div class="content">
-                  <p>
-                    Praesent imperdiet, tellus et euismod euismod, risus lorem euismod erat, at finibus neque odio quis metus. Donec vulputate arcu quam. Morbi quis tincidunt ligula. Sed rutrum tincidunt pretium. Mauris auctor, purus a pulvinar fermentum, odio dui vehicula lorem, nec pharetra justo risus quis mi. Ut ac ex sagittis, viverra nisl vel, rhoncus odio. 
-                  </p>
-                  <a href="#" class="btn btn-common mt-3">Read More</a>
-                </div>
-              </div>
-            </div>
+      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#edit_ktp">
+        <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
+          <div class="icon">
+            <i class="lni-users"></i>
           </div>
-          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-            <img class="img-fluid" src="assets/img/about/img-1.png" alt="" >
+          <div class="services-content">
+            <h3><a>Perubahan KTP</a></h3>
+          </div>
+        </div>
+      </div>
+      <!-- Services item -->
+      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#add_kk">
+        <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+          <div class="icon">
+            <i class="lni-home"></i>
+          </div>
+          <div class="services-content">
+            <h3><a>KK Baru</a></h3>
+          </div>
+        </div>
+      </div>
+      <!-- Services item -->
+      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#edit_kk">
+        <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
+          <div class="icon">
+            <i class="lni-apartment"></i>
+          </div>
+          <div class="services-content">
+            <h3><a>Perubahan KK</a></h3>
           </div>
         </div>
       </div>
     </div>
-    <!-- About Section End -->
+  </div>
+</section>
+<!-- Services Section End -->
 
-    <!-- Features Section Start -->
-    <section id="features" class="section-padding">
-      <div class="container">
-        <div class="section-header text-center">          
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Awesome Features</h2>
-          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="content-left">
-              <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
-                <span class="icon">
-                  <i class="lni-rocket"></i>
-                </span>
-                <div class="text">
-                  <h4>Bootstrap 4 Based</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-              </div>
-              <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
-                <span class="icon">
-                  <i class="lni-laptop-phone"></i>
-                </span>
-                <div class="text">
-                  <h4>Fully Responsive</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-              </div>
-              <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
-                <span class="icon">
-                  <i class="lni-cog"></i>
-                </span>
-                <div class="text">
-                  <h4>HTML5, CSS3 & SASS</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
-              <img src="assets/img/feature/intro-mobile.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-            <div class="content-right">
-              <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
-                <span class="icon">
-                  <i class="lni-leaf"></i>
-                </span>
-                <div class="text">
-                  <h4>Modern Design</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                </div>
-              </div>
-              <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
-                <span class="icon">
-                  <i class="lni-layers"></i>
-                </span>
-                <div class="text">
-                  <h4>Multi-purpose Template</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-              </div>
-              <div class="box-item wow fadeInRight" data-wow-delay="0.9s">
-                <span class="icon">
-                  <i class="lni-leaf"></i>
-                </span>
-                <div class="text">
-                  <h4>Working Contact Form</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Features Section End -->   
-
-    <!-- Team Section Start -->
-    <section id="team" class="section-padding bg-gray">
-      <div class="container">
-        <div class="section-header text-center">          
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Meet our team</h2>
-          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInRight" data-wow-delay="0.2s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-01.png" alt="">
-              </div>
-              <div class="contetn">
-                <div class="info-text">
-                  <h3><a href="#">David Smith</a></h3>
-                  <p>Front-end Developer</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-lg-6 col-md-12 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInRight" data-wow-delay="0.4s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-02.png" alt="">
-              </div>
-              <div class="contetn">
-                <div class="info-text">
-                  <h3><a href="#">ERIC PETERSON</a></h3>
-                  <p>Product Designer</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-lg-6 col-md-12 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInRight" data-wow-delay="0.6s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-03.png" alt="">
-              </div>
-              <div class="contetn">
-                <div class="info-text">
-                  <h3><a href="#">DURWIN BABB</a></h3>
-                  <p>Lead Designer</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-lg-6 col-md-12 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInRight" data-wow-delay="0.8s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-04.png" alt="">
-              </div>
-              <div class="contetn">
-                <div class="info-text">
-                  <h3><a href="#">MARIJN OTTE</a></h3>
-                  <p>Lead Designer</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Pricing section Start --> 
-    <section id="pricing" class="section-padding">
-      <div class="container">
-        <div class="section-header text-center">          
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Pricing</h2>
-          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="table wow fadeInLeft" data-wow-delay="1.2s">
-              <div class="icon-box">
-                <i class="lni-package"></i>
-              </div>
-              <div class="pricing-header">
-                <p class="price-value">$10<span> /mo</span></p>
-              </div>
-              <div class="title">
-                <h3>Pro</h3>
-              </div>
-              <ul class="description">
-                <li>1 user</li>
-                <li>10 GB storage</li>
-                <li>Email support</li>
-                <li>Lifetime updates</li>
-              </ul>
-              <button class="btn btn-common">Buy Now</button>
-            </div> 
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 active">
-            <div class="table wow fadeInUp" id="active-tb" data-wow-delay="1.2s">
-              <div class="icon-box">
-                <i class="lni-drop"></i>
-              </div>
-              <div class="pricing-header">
-                <p class="price-value">$35<span> /mo</span></p>
-              </div>
-              <div class="title">
-                <h3>Plus</h3>
-              </div>
-              <ul class="description">
-                <li>10 user</li>
-                <li>30 GB storage</li>
-                <li>Priority email support</li>
-                <li>Lifetime updates</li>
-              </ul>
-              <button class="btn btn-common">Buy Now</button>
-           </div> 
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="table wow fadeInRight" data-wow-delay="1.2s">
-              <div class="icon-box">
-                <i class="lni-star"></i>
-              </div>
-              <div class="pricing-header">
-                <p class="price-value">$150<span> /mo</span></p>
-              </div>
-              <div class="title">
-                <h3>Premium</h3>
-              </div>
-              <ul class="description">
-                <li>Unlimited users</li>
-                <li>Unlimited storage</li>
-                <li>24/7 support</li>
-                <li>Lifetime updates</li>
-              </ul>
-              <button class="btn btn-common">Buy Now</button>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Pricing Table Section End -->
-  
-    <!-- Testimonial Section Start -->
-    <section id="testimonial" class="testimonial section-padding">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div id="testimonials" class="owl-carousel wow fadeInUp" data-wow-delay="1.2s">
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="img-thumb">
-                    <img src="assets/img/testimonial/img1.jpg" alt="">
-                  </div>
-                  <div class="info">
-                    <h2><a href="#">David Smith</a></h2>
-                    <h3><a href="#">Creative Head</a></h3>
-                  </div>
-                  <div class="content">
-                    <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
-                    <div class="star-icon mt-3">
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-half"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="img-thumb">
-                    <img src="assets/img/testimonial/img2.jpg" alt="">
-                  </div>
-                  <div class="info">
-                    <h2><a href="#">Domeni GEsson</a></h2>
-                    <h3><a href="#">Awesome Technology co.</a></h3>
-                  </div>
-                  <div class="content">
-                    <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
-                    <div class="star-icon mt-3">
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-half"></i></span>
-                      <span><i class="lni-star-half"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="img-thumb">
-                    <img src="assets/img/testimonial/img3.jpg" alt="">
-                  </div>
-                  <div class="info">
-                    <h2><a href="#">Dommini Albert</a></h2>
-                    <h3><a href="#">Nesnal Design co.</a></h3>
-                  </div>
-                  <div class="content">
-                    <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
-                    <div class="star-icon mt-3">
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-half"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="img-thumb">
-                    <img src="assets/img/testimonial/img4.jpg" alt="">
-                  </div>
-                  <div class="info">
-                    <h2><a href="#">Fernanda Anaya</a></h2>
-                    <h3><a href="#">Developer</a></h3>
-                  </div>
-                  <div class="content">
-                    <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
-                    <div class="star-icon mt-3">
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-filled"></i></span>
-                      <span><i class="lni-star-half"></i></span>
-                      <span><i class="lni-star-half"></i></span>
-                      <span><i class="lni-star-half"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonial Section End -->
-
-    <!-- Call To Action Section Start -->
-    <section id="cta" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">           
-            <div class="cta-text">
-              <h4>Get 30 days free trial</h4>
-              <p>Praesent imperdiet, tellus et euismod euismod, risus lorem euismod erat, at finibus neque odio quis metus. Donec vulputate arcu quam. </p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-xs-12 text-right wow fadeInRight" data-wow-delay="0.3s">
-            </br><a href="#" class="btn btn-common">Register Now</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Call To Action Section Start -->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="section-padding bg-gray">    
-      <div class="container">
-        <div class="section-header text-center">          
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Countact Us</h2>
-          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-        </div>
-        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
-          <div class="col-lg-7 col-md-12 col-sm-12">
-            <div class="contact-block">
-              <form id="contactForm">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                      <div class="help-block with-errors"></div>
-                    </div>                                 
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                      <div class="help-block with-errors"></div>
-                    </div> 
-                  </div>
-                   <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group"> 
-                      <textarea class="form-control" id="message" placeholder="Your Message" rows="7" data-error="Write your message" required></textarea>
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <div class="submit-button text-left">
-                      <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
-                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                      <div class="clearfix"></div> 
-                    </div>
-                  </div>
-                </div>            
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-12 col-xs-12">
-            <div class="map">
-              <object style="border:0; height: 280px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Section Start -->
-    <footer id="footer" class="footer-area section-padding">
-      <div class="container">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="footer-logo"><img src="assets/img/logo.png" alt=""></h3>
-                <div class="textwidget">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis.</p>
-                </div>
-                <div class="social-icon">
-                  <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
-                  <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
-                  <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
-                  <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">Products</h3>
-              <ul class="footer-link">
-                <li><a href="#">Tracking</a></li>
-                <li><a href="#">Application</a></li>
-                <li><a href="#">Resource Planning</a></li>
-                <li><a href="#">Enterprise</a></li>           
-                <li><a href="#">Employee Management</a></li>           
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">Resources</h3>
-              <ul class="footer-link">
-                <li><a href="#">Payment Options</a></li>
-                <li><a href="#">Fee Schedule</a></li>
-                <li><a href="#">Getting Started</a></li>
-                <li><a href="#">Identity Verification</a></li>
-                <li><a href="#">Card Verification</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">Contact</h3>
-              <ul class="address">
-                <li>
-                  <a href="#"><i class="lni-map-marker"></i> 105 Madison Avenue - <br> Third Floor New York, NY 10016</a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni-phone-handset"></i> P: +84 846 250 592</a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni-envelope"></i> E: contact@uideck.com</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>  
-      </div> 
-      <div id="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="copyright-content">
-                <p>Copyright © 2020 <a rel="nofollow" href="https://uideck.com">UIdeck</a> All Right Reserved</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>   
-    </footer> 
-    <!-- Footer Section End -->
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-    	<i class="lni-arrow-up"></i>
-    </a>
-    
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="loader" id="loader-1"></div>
+<!-- Features Section Start -->
+<section id="features" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Panduan</h2>
+      <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
     </div>
-    <!-- End Preloader -->
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
-      
-  </body>
-</html>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <div class="content-left">
+          <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
+            <span class="icon">
+              <i class="lni-rocket"></i>
+            </span>
+            <div class="text">
+              <h4>Bootstrap 4 Based</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
+            <span class="icon">
+              <i class="lni-laptop-phone"></i>
+            </span>
+            <div class="text">
+              <h4>Fully Responsive</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
+            <span class="icon">
+              <i class="lni-cog"></i>
+            </span>
+            <div class="text">
+              <h4>HTML5, CSS3 & SASS</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
+          <img src="assets/img/feature/intro-mobile.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <div class="content-right">
+          <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+            <span class="icon">
+              <i class="lni-leaf"></i>
+            </span>
+            <div class="text">
+              <h4>Modern Design</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+          <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
+            <span class="icon">
+              <i class="lni-layers"></i>
+            </span>
+            <div class="text">
+              <h4>Multi-purpose Template</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div class="box-item wow fadeInRight" data-wow-delay="0.9s">
+            <span class="icon">
+              <i class="lni-leaf"></i>
+            </span>
+            <div class="text">
+              <h4>Working Contact Form</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Modal Section Start -->
+<div class="modal fade" id="add_ktp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Pengurusan KTP Baru</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form id="ktpbaruform">
+        <div class="modal-body">
+          <input type="text" class="form-control" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="text" class="form-control" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+          <label for="kartu_keluarga1">File KK</label>
+          <input type="file" id="kartu_keluarga1" name="kartu_keluarga" class="form-control">
+          <label for="akta_kelahiran1">File Akta Kelahiran</label>
+          <input type="file" id="akta_kelahiran1" name="akta_kelahiran" class="form-control">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" id="ktpbaru" class="btn btn-common">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="edit_ktp" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Pengurusan Perubahan KTP</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="name2" name="name" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control" id="phone2" name="phone" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="email" class="form-control" id="email2" name="email" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+          <label for="kartu_keluarga2">KK</label>
+          <input type="file" id="kartu_keluarga2" name="kartu_keluarga" class="form-control">
+          <label for="ktp_lama2">KTP Lama</label>
+          <input type="file" id="ktp_lama2" name="ktp_lama" class="form-control">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-common">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--  -->
+<div class="modal fade" id="add_kk" tabindex="-3" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Pengurusan KK Baru</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="name3" name="name" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control" id="phone3" name="phone" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="email" class="form-control" id="email3" name="email" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+          <select name="jenis_pengajuan_kk" id="jenis_pengajuan_kk3" class="form-control" style="font-size: 11px;">
+            <option value="0">- Pilih Jenis Pengajuan -</option>
+            <option value="1">Penerbitan KK Bagi Pasangan Baru</option>
+            <option value="2">KK Rusak/Hilang</option>
+          </select>
+
+          <div id="tmp_surat_pengantar3" class="d-none">
+            <label for="surat_pengantar3">Surat Pengantar</label>
+            <input type="file" id="surat_pengantar3" name="surat_pengantar" class="form-control">
+          </div>
+          <div id="tmp_buku_nikah3" class="d-none">
+            <label for="buku_nikah3">Buku Nikah/Akta Perkawinan</label>
+            <input type="file" id="buku_nikah3" name="buku_nikah" class="form-control">
+          </div>
+          <div id="tmp_keterangan_pindah3" class="d-none">
+            <label for="keterangan_pindah3">Surat Keterangan Pindah</label>
+            <input type="file" id="keterangan_pindah3" name="keterangan_pindah" class="form-control">
+          </div>
+          <div id="tmp_keterangan_kehilangan3" class="d-none">
+            <label for="keterangan_kehilangan3">Surat Keterangan Kehilangan</label>
+            <input type="file" id="keterangan_kehilangan3" name="keterangan_kehilangan" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-common">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="edit_kk" tabindex="-4" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Pengurusan Perubahan KK</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="name4" name="name" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control" id="phone4" name="phone" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="email" class="form-control" id="email4" name="email" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+          <select name="jenus_perubahan_kk" id="jenus_perubahan_kk4" class="form-control" style="font-size: 11px;">
+            <option value="0">- Pilih Jenis Pengajuan -</option>
+            <option value="1">Penambahan Anggota Karena Kelahiran</option>
+            <option value="2">Penambahan Anggota Karena Menumpang</option>
+            <option value="3">Pengurangan Anggota Keluarga</option>
+          </select>
+
+          <div id="tmp_surat_pengantar4" class="d-none">
+            <label for="surat_pengantar4">Surat Pengantar</label>
+            <input type="file" id="surat_pengantar4" name="surat_pengantar" class="form-control">
+          </div>
+          <div id="tmp_keterangan_pindah4" class="d-none">
+            <label for="keterangan_pindah4">Surat Keterangan Pindah</label>
+            <input type="file" id="keterangan_pindah4" name="keterangan_pindah" class="form-control">
+          </div>
+          <div id="tmp_kk_lama4" class="d-none">
+            <label for="kk_lama4">Kartu Keluarga yang Lama</label>
+            <input type="file" id="kk_lama4" name="kk_lama" class="form-control">
+          </div>
+          <div id="tmp_keterangan_lahir4" class="d-none">
+            <label for="keterangan_lahir4">Surat Keterangan Kelahiran</label>
+            <input type="file" id="keterangan_lahir4" name="keterangan_lahir" class="form-control">
+          </div>
+          <div id="tmp_ket_luar_negeri4" class="d-none">
+            <label for="ket_luar_negeri4">Surat Keterangan Datang Dari Luar Negeri</label>
+            <input type="file" id="ket_luar_negeri4" name="ket_luar_negeri" class="form-control">
+          </div>
+          <div id="tmp_paspor4" class="d-none">
+            <label for="paspor4">Paspor/Izin Tinggal Tetap</label>
+            <input type="file" id="paspor4" name="paspor" class="form-control">
+          </div>
+          <div id="tmp_keterangan_kematian4" class="d-none">
+            <label for="keterangan_kematian4">Surat Keterangan Kematian</label>
+            <input type="file" id="keterangan_kematian4" name="keterangan_kematian" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-common">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Modal Section End -->
+
+<?php require "footer.php" ?>
+
+<!-- <section id="contact" class="section-padding bg-gray">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Kontak Kami</h2>
+      <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+    </div>
+    <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-lg-7 col-md-12 col-sm-12">
+        <div class="contact-block">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Your Message" rows="7" data-error="Write your message" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button text-left">
+                  <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12 col-xs-12">
+        <div class="map">
+          <object style="border:0; height: 280px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- <section id="pricing" class="section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Antrian</h2>
+      <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="table wow fadeInLeft" data-wow-delay="1.2s">
+          <div class="icon-box">
+            <i class="lni-package"></i>
+          </div>
+          <div class="pricing-header">
+            <p class="price-value">$10<span> /mo</span></p>
+          </div>
+          <div class="title">
+            <h3>Pro</h3>
+          </div>
+          <ul class="description">
+            <li>1 user</li>
+            <li>10 GB storage</li>
+            <li>Email support</li>
+            <li>Lifetime updates</li>
+          </ul>
+          <button class="btn btn-common">Buy Now</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-xs-12 active">
+        <div class="table wow fadeInUp" id="active-tb" data-wow-delay="1.2s">
+          <div class="icon-box">
+            <i class="lni-drop"></i>
+          </div>
+          <div class="pricing-header">
+            <p class="price-value">$35<span> /mo</span></p>
+          </div>
+          <div class="title">
+            <h3>Plus</h3>
+          </div>
+          <ul class="description">
+            <li>10 user</li>
+            <li>30 GB storage</li>
+            <li>Priority email support</li>
+            <li>Lifetime updates</li>
+          </ul>
+          <button class="btn btn-common">Buy Now</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="table wow fadeInRight" data-wow-delay="1.2s">
+          <div class="icon-box">
+            <i class="lni-star"></i>
+          </div>
+          <div class="pricing-header">
+            <p class="price-value">$150<span> /mo</span></p>
+          </div>
+          <div class="title">
+            <h3>Premium</h3>
+          </div>
+          <ul class="description">
+            <li>Unlimited users</li>
+            <li>Unlimited storage</li>
+            <li>24/7 support</li>
+            <li>Lifetime updates</li>
+          </ul>
+          <button class="btn btn-common">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
