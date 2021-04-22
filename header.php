@@ -1,4 +1,5 @@
 <?php include 'global_var.php'; ?>
+<?php include 'connect.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">

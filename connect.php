@@ -2,10 +2,10 @@
 <?php
 $dbh = new PDO('mysql:host=localhost:3307;dbname=app_antrian', 'root', '');
 
-$data = $dbh->query('SELECT * from antrian_kk')->fetchAll();
+$data = $dbh->query("SELECT * from core_status WHERE token = '2a734c44a3a1cd46dd54450a0dab6ecc'")->fetch();
 
-foreach ($data as $row) {
-    echo $row['nama'] . "<br />\n";
+if ($data['status'] == 0) {
+    include 'blank.php';
+    exit;
 }
-exit;
 ?>
