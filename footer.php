@@ -87,6 +87,7 @@
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
     <script type="text/javascript">
+      $('.haiden').hide();
       $(document).ready(function() {
         $("#jenis_pengajuan_kk3").on("change", function() {
           jenis = $("#jenis_pengajuan_kk3").val();
