@@ -96,7 +96,7 @@
       </div>
       <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
         <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
-          <img src="assets/img/feature/intro-mobile.png" alt="">
+          <img src="assets/img/feature/intro-mobile2.png" alt="">
         </div>
       </div>
       <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
@@ -219,7 +219,7 @@
           <input type="tel" class="form-control resetable" id="phone3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
-          <select name="input[pengurusan]" id="jenis_pengajuan_kk3" class="form-control resetableoptions" style="font-size: 11px;">
+          <select name="input[pengurusan]" id="opsikkbaru" class="form-control resetableoptions" style="font-size: 11px;">
             <option value="#" selected>- Pilih Jenis Pengajuan -</option>
             <option value="1">Penerbitan KK Bagi Pasangan Baru</option>
             <option value="2">KK Rusak/Hilang</option>
@@ -244,7 +244,9 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-common">Kirim</button>
+          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
+
         </div>
       </form>
     </div>
@@ -260,16 +262,16 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form>
+      <form action="admin/kk_handler/kk_perubahan" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="2">
         </div>
         <div class="modal-body">
-          <input type="text" class="form-control resetable" id="name4" name="name" placeholder="Nama" required data-error="Isikan Nama anda">
-          <input type="tel" class="form-control resetable" id="phone4" name="phone" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
-          <input type="email" class="form-control resetable" id="email4" name="email" placeholder="Email" required data-error="Isikan Alamat Email anda">
+          <input type="text" class="form-control resetable" id="name4" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone4" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="email" class="form-control resetable" id="email4" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
-          <select name="jenus_perubahan_kk" id="jenus_perubahan_kk4" class="form-control resetableoptions" style="font-size: 11px;">
+          <select name="input[pengurusan]" id="opsikkubah" class="form-control resetableoptions" style="font-size: 11px;">
             <option value="#">- Pilih Jenis Pengajuan -</option>
             <option value="1">Penambahan Anggota Karena Kelahiran</option>
             <option value="2">Penambahan Anggota Karena Menumpang</option>
@@ -278,36 +280,37 @@
 
           <div id="tmp_surat_pengantar4" class="d-none">
             <label for="surat_pengantar4">Surat Pengantar</label>
-            <input type="file" id="surat_pengantar4" name="surat_pengantar" class="form-control resetable">
+            <input type="file" id="surat_pengantar4" name="file_surat_pengantar" class="form-control resetable">
           </div>
           <div id="tmp_keterangan_pindah4" class="d-none">
             <label for="keterangan_pindah4">Surat Keterangan Pindah</label>
-            <input type="file" id="keterangan_pindah4" name="keterangan_pindah" class="form-control resetable">
+            <input type="file" id="keterangan_pindah4" name="file_surat_keterangan_pindah" class="form-control resetable">
           </div>
           <div id="tmp_kk_lama4" class="d-none">
             <label for="kk_lama4">Kartu Keluarga yang Lama</label>
-            <input type="file" id="kk_lama4" name="kk_lama" class="form-control resetable">
+            <input type="file" id="kk_lama4" name="file_kk_lama" class="form-control resetable">
           </div>
           <div id="tmp_keterangan_lahir4" class="d-none">
             <label for="keterangan_lahir4">Surat Keterangan Kelahiran</label>
-            <input type="file" id="keterangan_lahir4" name="keterangan_lahir" class="form-control resetable">
+            <input type="file" id="keterangan_lahir4" name="file_keterangan_kelahiran" class="form-control resetable">
           </div>
           <div id="tmp_ket_luar_negeri4" class="d-none">
             <label for="ket_luar_negeri4">Surat Keterangan Datang Dari Luar Negeri</label>
-            <input type="file" id="ket_luar_negeri4" name="ket_luar_negeri" class="form-control resetable">
+            <input type="file" id="ket_luar_negeri4" name="file_surat_keterangan_datang_dari_luar_negri" class="form-control resetable">
           </div>
           <div id="tmp_paspor4" class="d-none">
             <label for="paspor4">Paspor/Izin Tinggal Tetap</label>
-            <input type="file" id="paspor4" name="paspor" class="form-control resetable">
+            <input type="file" id="paspor" name="file_paspor_tinggal_tetap" class="form-control resetable">
           </div>
           <div id="tmp_keterangan_kematian4" class="d-none">
             <label for="keterangan_kematian4">Surat Keterangan Kematian</label>
-            <input type="file" id="keterangan_kematian4" name="keterangan_kematian" class="form-control resetable">
+            <input type="file" id="keterangan_kematian4" name="file_surat_keterangan_kematian" class="form-control resetable">
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-common">Kirim</button>
+          <button type="submit" id="btn_kkubah" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsubah" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
@@ -319,6 +322,29 @@
   // $('.resetable').val('');
 
   $(".resetableoptions").val("#");
+  $('#btn_kkubah').hide();
+  $('#btn_kkbaru').hide();
+
+
+  $('#opsikkubah').change(function() {
+    if ($('#opsikkubah').val() != '#') {
+      $('#palsubah').hide();
+      $('#btn_kkubah').show();
+    } else {
+      $('#palsubah').show();
+      $('#btn_kkubah').hide();
+    }
+  });
+
+  $('#opsikkbaru').change(function() {
+    if ($('#opsikkbaru').val() != '#') {
+      $('#palsubaru').hide();
+      $('#btn_kkbaru').show();
+    } else {
+      $('#palsubaru').show();
+      $('#btn_kkbaru').hide();
+    }
+  });
 </script>
 
 <?php require "footer.php" ?>

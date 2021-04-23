@@ -89,8 +89,8 @@
     <script type="text/javascript">
       $('.haiden').hide();
       $(document).ready(function() {
-        $("#jenis_pengajuan_kk3").on("change", function() {
-          jenis = $("#jenis_pengajuan_kk3").val();
+        $("#opsikkbaru").on("change", function() {
+          jenis = $("#opsikkbaru").val();
           $('#tmp_surat_pengantar3').addClass('d-none');
           $('#tmp_buku_nikah3').addClass('d-none');
           $('#tmp_keterangan_pindah3').addClass('d-none');
@@ -106,8 +106,8 @@
           }
         });
 
-        $("#jenus_perubahan_kk4").on("change", function() {
-          jenis = $("#jenus_perubahan_kk4").val();
+        $("#opsikkubah").on("change", function() {
+          jenis = $("#opsikkubah").val();
           $('#tmp_surat_pengantar4').addClass('d-none');
           $('#tmp_keterangan_pindah4').addClass('d-none');
           $('#tmp_kk_lama4').addClass('d-none');
