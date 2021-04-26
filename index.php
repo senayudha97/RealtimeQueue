@@ -153,9 +153,9 @@
           <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
           <label for="kartu_keluarga1">File KK</label>
-          <input type="file" id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
+          <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
           <label for="akta_kelahiran1">File Akta Kelahiran</label>
-          <input type="file" id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
+          <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -187,9 +187,9 @@
           <input type="email" class="form-control resetable" id="email2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
           <label for="kartu_keluarga2">KK</label>
-          <input type="file" id="kartu_keluarga2" name="kartu_keluarga1" class="form-control resetable">
+          <input type="file" require id="kartu_keluarga2" name="kartu_keluarga1" class="form-control resetable">
           <label for="ktp_lama2">KTP Lama</label>
-          <input type="file" id="ktp_lama2" name="ktp_lama" class="form-control resetable">
+          <input type="file" require id="ktp_lama2" name="ktp_lama" class="form-control resetable">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -227,19 +227,19 @@
 
           <div id="tmp_surat_pengantar3" class="d-none">
             <label for="surat_pengantar3">Surat Pengantar</label>
-            <input type="file" id="surat_pengantar3" name="file_surat_pengantar" class="form-control resetable">
+            <input type="file" require id="surat_pengantar3" name="file_surat_pengantar" class="form-control resetable">
           </div>
           <div id="tmp_buku_nikah3" class="d-none">
             <label for="buku_nikah3">Buku Nikah/Akta Perkawinan</label>
-            <input type="file" id="buku_nikah3" name="file_buku_nikah" class="form-control resetable">
+            <input type="file" require id="buku_nikah3" name="file_buku_nikah" class="form-control resetable">
           </div>
           <div id="tmp_keterangan_pindah3" class="d-none">
             <label for="keterangan_pindah3">Surat Keterangan Pindah</label>
-            <input type="file" id="keterangan_pindah3" name="file_surat_pindah" class="form-control resetable">
+            <input type="file" require id="keterangan_pindah3" name="file_surat_pindah" class="form-control resetable">
           </div>
           <div id="tmp_keterangan_kehilangan3" class="d-none">
             <label for="keterangan_kehilangan3">Surat Keterangan Kehilangan</label>
-            <input type="file" id="keterangan_kehilangan3" name="file_surat_keterangan_hilang" class="form-control resetable">
+            <input type="file" require id="keterangan_kehilangan3" name="file_surat_keterangan_hilang" class="form-control resetable">
           </div>
         </div>
         <div class="modal-footer">
@@ -280,19 +280,19 @@
 
           <div id="tmp_surat_pengantar4" class="d-none">
             <label for="surat_pengantar4">Surat Pengantar</label>
-            <input type="file" id="surat_pengantar4" name="file_surat_pengantar" class="form-control resetable">
+            <input type="file" require id="surat_pengantar4" name="file_surat_pengantar" class="form-control resetable">
           </div>
           <div id="tmp_keterangan_pindah4" class="d-none">
             <label for="keterangan_pindah4">Surat Keterangan Pindah</label>
-            <input type="file" id="keterangan_pindah4" name="file_surat_keterangan_pindah" class="form-control resetable">
+            <input type="file" require id="keterangan_pindah4" name="file_surat_keterangan_pindah" class="form-control resetable">
           </div>
           <div id="tmp_kk_lama4" class="d-none">
             <label for="kk_lama4">Kartu Keluarga yang Lama</label>
-            <input type="file" id="kk_lama4" name="file_kk_lama" class="form-control resetable">
+            <input type="file" require id="kk_lama4" name="file_kk_lama" class="form-control resetable">
           </div>
           <div id="tmp_keterangan_lahir4" class="d-none">
             <label for="keterangan_lahir4">Surat Keterangan Kelahiran</label>
-            <input type="file" id="keterangan_lahir4" name="file_keterangan_kelahiran" class="form-control resetable">
+            <input type="file" require id="keterangan_lahir4" name="file_keterangan_kelahiran" class="form-control resetable">
           </div>
           <div id="tmp_ket_luar_negeri4" class="d-none">
             <label for="ket_luar_negeri4">Surat Keterangan Datang Dari Luar Negeri</label>
@@ -304,7 +304,7 @@
           </div>
           <div id="tmp_keterangan_kematian4" class="d-none">
             <label for="keterangan_kematian4">Surat Keterangan Kematian</label>
-            <input type="file" id="keterangan_kematian4" name="file_surat_keterangan_kematian" class="form-control resetable">
+            <input type="file" require id="keterangan_kematian4" name="file_surat_keterangan_kematian" class="form-control resetable">
           </div>
         </div>
         <div class="modal-footer">
@@ -319,7 +319,7 @@
 <!-- Modal Section End -->
 
 <script>
-  // $('.resetable').val('');
+  $('.resetable').val('');
 
   $(".resetableoptions").val("#");
   $('#btn_kkubah').hide();

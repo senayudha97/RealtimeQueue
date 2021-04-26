@@ -77,8 +77,18 @@ class KK_handler extends Guide
     public function kk_perubahan()
     {
         $datapost = $this->input->post('input');
+        // print_r($_FILES['file_surat_pengantar']);
+        // echo '<br>';
+        // print_r($_FILES['file_surat_keterangan_pindah']);
+        // echo '<br>';
+        // print_r($_FILES['file_surat_keterangan_datang_dari_luar_negri']);
+        // echo '<br>';
+        // print_r($_FILES['file_paspor_tinggal_tetap']);
+        // echo '<br>';
+        // exit;
 
-        if ($datapost['pengurusan'] == 1) { // KK Pasangan baru
+
+        if ($datapost['pengurusan'] == 1) { // KK Menambah anggota kelahiran
             // do Upload Surat Pengantar
             $namaSementara = $_FILES['file_surat_pengantar']['tmp_name'];
             $temp = explode(".", $_FILES["file_surat_pengantar"]["name"]);
@@ -128,18 +138,26 @@ class KK_handler extends Guide
             $this->do_upload($namaSementara, $newfilenamekklama, $file_type);
 
             // do Upload Keterangan Datang dari Luar Negeri
-            $namaSementara = $_FILES['file_surat_keterangan_datang_dari_luar_negri']['tmp_name'];
-            $temp = explode(".", $_FILES["file_surat_keterangan_datang_dari_luar_negri"]["name"]);
-            $newfilenameketluneg = $datapost['nama'] . '_keterangan_dari_luar_negeri_' . round(microtime(true)) . '.' . end($temp);
-            $file_type = $_FILES['file_surat_keterangan_datang_dari_luar_negri']['type'];
-            $this->do_upload($namaSementara, $newfilenameketluneg, $file_type);
+            if ($_FILES['file_surat_keterangan_datang_dari_luar_negri']['size'] == 0) {
+                echo 'berhasil skip';
+            } else {
+                $namaSementara = $_FILES['file_surat_keterangan_datang_dari_luar_negri']['tmp_name'];
+                $temp = explode(".", $_FILES["file_surat_keterangan_datang_dari_luar_negri"]["name"]);
+                $newfilenameketluneg = $datapost['nama'] . '_keterangan_dari_luar_negeri_' . round(microtime(true)) . '.' . end($temp);
+                $file_type = $_FILES['file_surat_keterangan_datang_dari_luar_negri']['type'];
+                $this->do_upload($namaSementara, $newfilenameketluneg, $file_type);
+            }
 
             // do Upload Paspor
-            $namaSementara = $_FILES['file_paspor_tinggal_tetap']['tmp_name'];
-            $temp = explode(".", $_FILES["file_paspor_tinggal_tetap"]["name"]);
-            $newfilenamepaspor = $datapost['nama'] . '_paspor_' . round(microtime(true)) . '.' . end($temp);
-            $file_type = $_FILES['file_paspor_tinggal_tetap']['type'];
-            $this->do_upload($namaSementara, $newfilenamepaspor, $file_type);
+            if ($_FILES['file_paspor_tinggal_tetap']['size'] == 0) {
+                echo 'berhasil skip';
+            } else {
+                $namaSementara = $_FILES['file_paspor_tinggal_tetap']['tmp_name'];
+                $temp = explode(".", $_FILES["file_paspor_tinggal_tetap"]["name"]);
+                $newfilenamepaspor = $datapost['nama'] . '_paspor_' . round(microtime(true)) . '.' . end($temp);
+                $file_type = $_FILES['file_paspor_tinggal_tetap']['type'];
+                $this->do_upload($namaSementara, $newfilenamepaspor, $file_type);
+            }
 
             // Input Nama Baru File ke List $datapost
             $datapost['tanggal_antrian'] = date('Y-m-d');
@@ -196,7 +214,7 @@ class KK_handler extends Guide
 
     function do_upload($namaSementara, $newfilename, $file_type)
     {
-        $allowed = array("image/jpeg", "image/gif");
+        $allowed = array("image/jpeg", "image/gif", "image/png");
         if (!in_array($file_type, $allowed)) {
             $error_message = 'Format File yg Anda Upload Salah';
             echo $error_message;

@@ -112,7 +112,7 @@
           </div>
           <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
             <div class="intro-img">
-              <img class="img-fluid" src="assets/img/headerfoto.png" alt="">
+              <img id="headerimg" class="img-fluid" src="assets/img/headerfoto.png" alt="">
             </div>
           </div>
         </div>
