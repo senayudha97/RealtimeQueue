@@ -76,7 +76,7 @@
 
     <!-- Hero Area Start -->
     <div id="hero-area" class="hero-area-bg">
-      <div class="container">
+      <div class="container wow fadeInDown" data-wow-delay="0.3s">
         <div class="row">
           <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
             <div class="contents">
@@ -112,7 +112,7 @@
           </div>
           <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
             <div class="intro-img">
-              <img id="headerimg" class="img-fluid" src="assets/img/headerfoto.png" alt="">
+              <img id="headerimg" class="img-fluid wow fadeInDown" data-wow-delay="0.3s" src="assets/img/headerfoto.png" alt="">
             </div>
           </div>
         </div>
@@ -124,13 +124,15 @@
 
   <script>
     var i = 0;
-    setInterval(() => {
-      if (i <= 150) {
-        $('#rtktp').text(i += Math.floor(Math.random() * 10));
-        $('#rtkk').text(i += Math.floor(Math.random() * 10));
-      } else {
-        $('#rtktp').text(150);
-        $('#rtkk').text(150);
-      }
-    }, 100);
+    setTimeout(() => {
+      setInterval(() => {
+        if (i <= 150) {
+          $('#rtktp').text(i += Math.floor(Math.random() * 10));
+          $('#rtkk').text(i += Math.floor(Math.random() * 10));
+        } else {
+          $('#rtktp').text(150);
+          $('#rtkk').text(150);
+        }
+      }, 100);
+    }, 2000);
   </script>
