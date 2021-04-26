@@ -3,7 +3,6 @@ include_once "Gg_model.php";
 
 class Tbl_verifikasi_ktp extends Gg_model
 {
-
     public function insert_antrian_bulanan($arr_data = NULL, $table = "antrian_bulanan")
     {
         foreach ($arr_data as $row) {

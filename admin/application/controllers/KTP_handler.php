@@ -31,7 +31,7 @@ class KTP_handler extends Guide
         $this->upload_akta1($namaSementara, $newfilenameakta, $file_type);
 
         // Input Nama Baru File ke List $datapost
-        $datapost['tanngal_antrian'] = date('Y-m-d');
+        $datapost['tanggal_antrian'] = date('Y-m-d');
         $datapost['file_kk'] = $newfilenamekk;
         $datapost['file_akta_kelahiran'] = $newfilenameakta;
 
@@ -44,6 +44,7 @@ class KTP_handler extends Guide
         }
         exit;
     }
+
 
     function upload_kk1($namaSementara, $newfilename, $file_type)
     {
@@ -105,7 +106,7 @@ class KTP_handler extends Guide
         $this->upload_ktp_lama($namaSementara, $newfilenamektplama, $file_type);
 
         // Input Nama Baru File ke List $datapost
-        $datapost['tanngal_antrian'] = date('Y-m-d');
+        $datapost['tanggal_antrian'] = date('Y-m-d');
         $datapost['file_kk'] = $newfilenamekk;
         $datapost['file_ktp_lama'] = $newfilenamektplama;
 
