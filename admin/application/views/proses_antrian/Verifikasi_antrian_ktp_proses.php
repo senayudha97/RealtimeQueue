@@ -116,8 +116,8 @@
             <?php endif; ?>
 
             <div class="modal-footer">
-                <a href="<?= base_url('Verifikasi_antrian_ktp/tolak/' . $data['id']); ?>" type="submit" class="text-light btn btn-danger"><span class="fas fa-fw fa-times"></span> Tolak</a>
-                <a href="<?= base_url('Verifikasi_antrian_ktp/verif/' . $data['id']); ?>" type="submit" class="text-light btn btn-success"><span class="fas fa-fw fa-check"></span> Verifikasi</a>
+                <button class="text-light btn btn-danger" onclick="tolak()"><span class="fas fa-fw fa-times"></span> Tolak</button>
+                <button class="text-light btn btn-success" onclick="verif()"><span class="fas fa-fw fa-check"></span> Verifikai</button>
             </div>
         </div>
     </di>
@@ -126,4 +126,39 @@
 </div>
 <script>
     $(".form-control").prop("disabled", true);
+
+    function verif() {
+
+        Swal.fire({
+            title: 'Apakah anda yakin?',
+            text: "Proses verifikasi user ini!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya',
+            cancelButtonText: 'Tidak'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "<?= base_url('Verifikasi_antrian_ktp/verif/' . $data['id']); ?>";
+            }
+        })
+    }
+
+    function tolak() {
+        Swal.fire({
+            title: 'Apakah anda yakin?',
+            text: "Proses tolak user ini!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya',
+            cancelButtonText: 'Tidak'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "<?= base_url('Verifikasi_antrian_ktp/tolak/' . $data['id']); ?>";
+            }
+        })
+    }
 </script>
