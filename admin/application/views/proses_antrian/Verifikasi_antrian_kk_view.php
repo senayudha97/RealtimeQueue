@@ -45,6 +45,7 @@
                         <th class="tg-0lax">Nama</th>
                         <th class="tg-0lax">Nomor HP</th>
                         <th class="tg-0lax">Email</th>
+                        <th class="tg-0lax">Jenis Antrian</th>
                         <th class="tg-0lax" width="10%"><span class="fas fa-fw fa-edit"></span></th>
                     </tr>
                 </thead>
@@ -57,6 +58,7 @@
                             <td><?= $value['nama']; ?></td>
                             <td><?= $value['nohp']; ?></td>
                             <td><?= $value['email']; ?></td>
+                            <td><?= $value['jenis'] == 1 ?  'Baru' : 'Perubahan'; ?></td>
                             <td>
                                 <a href="<?= base_url("verifikasi_antrian_kk/proses/" . $value['id']); ?>" class="btn btn-success rounded-left"><span class="fas fa-fw fa-check"></span>Proses Antrian</a>
                             </td>

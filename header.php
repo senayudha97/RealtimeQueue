@@ -53,11 +53,6 @@
                 Pelayanan
               </a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#pricing">
-                Antrian
-              </a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#features">
                 Panduan
@@ -118,9 +113,7 @@
         </div>
       </div>
     </div>
-    <!-- Hero Area End -->
   </header>
-  <!-- Header Area wrapper End -->
 
   <script>
     var i = 0;

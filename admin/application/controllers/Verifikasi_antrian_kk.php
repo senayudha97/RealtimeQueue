@@ -18,6 +18,7 @@ class Verifikasi_antrian_kk extends Guide
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->db->order_by('tanggal_antrian', 'ASC');
         $this->db->where('is_delete', $this->is_delete);
+        $this->db->where('status ', 0);
         $data['data'] = $this->db->get('antrian_kk')->result_array();
 
         $this->load->view('templates/header', $data);
@@ -34,12 +35,31 @@ class Verifikasi_antrian_kk extends Guide
         $this->db->order_by('tanggal_antrian', 'ASC');
         $this->db->where('is_delete', $this->is_delete);
         $this->db->where('id', $param);
-        $data['data'] = $this->db->get('antrian_ktp')->row_array();
+        $data['data'] = $this->db->get('antrian_kk')->row_array();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
         $this->load->view('proses_antrian/Verifikasi_antrian_kk_proses', $data);
         $this->load->view('templates/footer');
+    }
+
+    public function verif($id = "")
+    {
+        $this->db->where('id', $id);
+        $this->db->set('status', 2);
+        if ($this->db->update('antrian_kk')) {
+            $this->flash_success("Proses Verifikasi KK Berhasil");
+            redirect('verifikasi_antrian_kk');
+        }
+    }
+    public function tolak($id = "")
+    {
+        $this->db->where('id', $id);
+        $this->db->set('status', 1);
+        if ($this->db->update('antrian_kk')) {
+            $this->flash_success("Proses Tolak KK Berhasil");
+            redirect('verifikasi_antrian_kk');
+        }
     }
 }

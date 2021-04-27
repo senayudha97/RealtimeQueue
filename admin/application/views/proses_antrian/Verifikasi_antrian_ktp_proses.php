@@ -59,7 +59,7 @@
 
                     </div>
                     <div class="col-sm-3">
-                        <button class="btn btn-warning" data-toggle="modal" data-target="#aktakelahiran">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
+                        <button class="btn btn-warning" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
                         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="aktakelahiran" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
@@ -116,8 +116,8 @@
             <?php endif; ?>
 
             <div class="modal-footer">
-                <a href="<?= base_url('Verifikasi_antrian_ktp/verif/' . $data['id']); ?>" type="submit" class="text-light btn btn-danger"><span class="fas fa-fw fa-times"></span> Tolak</a>
-                <a href="<?= base_url('Verifikasi_antrian_ktp/tolak/' . $data['id']); ?>" type="submit" class="text-light btn btn-success"><span class="fas fa-fw fa-check"></span> Proses</a>
+                <a href="<?= base_url('Verifikasi_antrian_ktp/tolak/' . $data['id']); ?>" type="submit" class="text-light btn btn-danger"><span class="fas fa-fw fa-times"></span> Tolak</a>
+                <a href="<?= base_url('Verifikasi_antrian_ktp/verif/' . $data['id']); ?>" type="submit" class="text-light btn btn-success"><span class="fas fa-fw fa-check"></span> Verifikasi</a>
             </div>
         </div>
     </di>
