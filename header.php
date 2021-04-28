@@ -114,18 +114,3 @@
       </div>
     </div>
   </header>
-
-  <script>
-    setInterval(() => {
-      $.ajax({
-        url: 'admin/Realtime_counter/counter',
-        method: 'GET',
-        datatype: 'json',
-        success: function(param) {
-          const data = JSON.parse(param);
-          $('#rtktp').text(data.ktp.nilai);
-          $('#rtkk').text(data.kk.nilai);
-        }
-      });
-    }, 1000);
-  </script>

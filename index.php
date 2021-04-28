@@ -148,6 +148,7 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
+          <h5 class="text-dark">Antrian Tersedia : <button onclick="event.preventDefault()" class="rounded-circle bg-danger text-light" id="ktpready1"></button></h5>
           <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -182,6 +183,7 @@
           <input type="text" name="input[jenis]" value="2">
         </div>
         <div class="modal-body">
+          <h5 class="text-dark">Antrian Tersedia : <button onclick="event.preventDefault()" class="rounded-circle bg-danger text-light" id="ktpready2"></button></h5>
           <input type="text" class="form-control resetable" id="name2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -215,6 +217,7 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
+          <h5 class="text-dark">Antrian Tersedia : <button onclick="event.preventDefault()" class="rounded-circle bg-danger text-light" id="kkready1"></button></h5>
           <input type="text" class="form-control resetable" id="name3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -267,6 +270,7 @@
           <input type="text" name="input[jenis]" value="2">
         </div>
         <div class="modal-body">
+          <h5 class="text-dark">Antrian Tersedia : <button onclick="event.preventDefault()" class="rounded-circle bg-danger text-light" id="kkready2"></button></h5>
           <input type="text" class="form-control resetable" id="name4" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone4" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email4" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -317,7 +321,6 @@
   </div>
 </div>
 <!-- Modal Section End -->
-
 <script>
   $('.resetable').val('');
 
@@ -345,6 +348,24 @@
       $('#btn_kkbaru').hide();
     }
   });
+
+  setInterval(() => {
+    $.ajax({
+      url: 'admin/Realtime_counter/counter',
+      method: 'GET',
+      datatype: 'json',
+      success: function(param) {
+        const data = JSON.parse(param);
+        $('#rtktp').text(data.ktp.nilai);
+        $('#rtkk').text(data.kk.nilai);
+        $('#ktpready1').text(data.maxAntrian.nilai - data.ktp.nilai);
+        $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);
+        $('#kkready1').text(data.maxAntrian.nilai - data.kk.nilai);
+        $('#kkready2').text(data.maxAntrian.nilai - data.kk.nilai);
+      }
+    });
+  }, 1000);
 </script>
+
 
 <?php require "footer.php" ?>
