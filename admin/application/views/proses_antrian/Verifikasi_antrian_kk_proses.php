@@ -1,5 +1,10 @@
-<div class="container-fluid">
+<style>
+    .fixbutton {
+        width: 300px;
+    }
+</style>
 
+<div class="container-fluid">
     <?php if (validation_errors()) : ?>
         <div class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -17,7 +22,7 @@
         <?= $this->session->flashdata('message'); ?>
         <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
         <di class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="modal-body">
                     <div class="form-group row">
                         <label for="title" class="col-sm-2 col-form-label">Nama</label>
@@ -49,7 +54,7 @@
                     <?php if ($data['pengurusan'] == 1) : ?>
                         <div class="row mb-3 pl-3">
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="supeng" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -65,7 +70,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#bunik">Buku Nikah <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#bunik">Buku Nikah <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="bunik" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -81,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#supin">Surat Pindah <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#supin">Surat Pindah <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="supin" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -100,7 +105,7 @@
                     <?php elseif ($data['pengurusan'] == 2) : ?>
                         <div class="row mb-3 pl-3">
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="supeng" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -118,7 +123,7 @@
                         </div>
                         <div class="row mb-3 pl-3">
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#suhil">Surat Keterangan Hilang <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suhil">Surat Keterangan Hilang <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="suhil" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -141,7 +146,7 @@
                     <?php if ($data['pengurusan'] == 1) : ?>
                         <div class="row mb-3 pl-3">
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="supeng" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -157,7 +162,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#kkalma">KK Lama <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kkalma">KK Lama <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kkalma" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -173,7 +178,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#kkalma">KK Lama <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kkalma">KK Lama <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kkalma" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -192,7 +197,7 @@
                     <?php elseif ($data['pengurusan'] == 2) : ?>
                         <div class="row mb-3 pl-3">
                             <div class="col-sm-4">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="supeng" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -209,7 +214,7 @@
                             </div>
 
                             <div class="col-sm-4">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#ketpin">Keterangan Pindah <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ketpin">Keterangan Pindah <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ketpin" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -225,7 +230,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#kkalma">KK Lama <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kkalma">KK Lama <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kkalma" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -244,7 +249,7 @@
                         <div class="row mb-3 pl-3 mt-3">
                             <?php if (!empty($data['file_surat_keterangan_datang_dari_luar_negri'])) : ?>
                                 <div class="col-sm">
-                                    <button class="btn btn-warning" data-toggle="modal" data-target="#sutlur">Surat Keterangan Datang Dari Luar Negeri <span class="fas fa-fw fa-file"></span></button>
+                                    <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#sutlur">Surat Keterangan Datang Dari Luar Negeri <span class="fas fa-fw fa-file"></span></button>
                                     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="sutlur" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
@@ -263,7 +268,7 @@
 
                             <?php if (!empty($data['file_paspor_tinggal_tetap'])) : ?>
                                 <div class="col-sm">
-                                    <button class="btn btn-warning" data-toggle="modal" data-target="#paspor">Surat Paspor/Izin Tinggal Tetap <span class="fas fa-fw fa-file"></span></button>
+                                    <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#paspor">Surat Paspor/Izin Tinggal Tetap <span class="fas fa-fw fa-file"></span></button>
                                     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="paspor" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
@@ -283,7 +288,7 @@
                     <?php elseif ($data['pengurusan'] == 3) : ?>
                         <div class="row mb-3 pl-3">
                             <div class="col-sm-4">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#supeng">Surat Pengantar <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="supeng" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -299,7 +304,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#ketpin">Keterangan Pindah <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ketpin">Keterangan Pindah <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ketpin" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -315,7 +320,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#kkalma">KK Lama <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kkalma">KK Lama <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kkalma" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -334,7 +339,7 @@
                         </div>
                         <div class="row mb-3 mt-3 pl-3">
                             <div class="col-sm-3">
-                                <button class="btn btn-warning" data-toggle="modal" data-target="#surkemat">Surat Keterangan Kematian <span class="fas fa-fw fa-file"></span></button>
+                                <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surkemat">Surat Keterangan Kematian <span class="fas fa-fw fa-file"></span></button>
                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="surkemat" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">

@@ -1,3 +1,9 @@
+<style>
+    .fixbutton {
+        width: 300px;
+    }
+</style>
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <!-- Page Heading -->
@@ -20,7 +26,7 @@
         <?= $this->session->flashdata('message'); ?>
         <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
         <di class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="modal-body">
                     <div class="form-group row">
                         <label for="title" class="col-sm-2 col-form-label">Nama</label>
@@ -49,7 +55,7 @@
                 <?php if ($data['jenis'] == 1) : ?>
                     <div class="row mb-3 pl-3">
                         <div class="col-sm-3">
-                            <button class="btn btn-warning" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
@@ -66,7 +72,7 @@
 
                         </div>
                         <div class="col-sm-3">
-                            <button class="btn btn-warning" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="aktakelahiran" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
@@ -86,7 +92,7 @@
                 <?php else : ?>
                     <div class="row mb-3 pl-3">
                         <div class="col-sm-3">
-                            <button class="btn btn-warning" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
@@ -103,7 +109,7 @@
 
                         </div>
                         <div class="col-sm-3">
-                            <button class="btn btn-warning" data-toggle="modal" data-target="#ktplama">KTP Lama <span class="fas fa-fw fa-file"></span></button>
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktplama">KTP Lama <span class="fas fa-fw fa-file"></span></button>
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktplama" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">

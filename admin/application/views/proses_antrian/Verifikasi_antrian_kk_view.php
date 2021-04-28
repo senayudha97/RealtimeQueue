@@ -1,13 +1,15 @@
 <div class="container-fluid">
     <h2 class="mb-5"><?= $title; ?></h2>
-
     <?php if (validation_errors()) : ?>
         <div class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <?= validation_errors(); ?>
         </div>
     <?php endif; ?>
-
+    <?php $pengurusan = array(); ?>
+    <?php $pengurusan[1] = 'Penambahan Anggota Karena Kelahiran'; ?>
+    <?php $pengurusan[2] = 'Penambahan Anggota Karena Menumpang'; ?>
+    <?php $pengurusan[3] = 'Pengurangan Anggota Keluaraga'; ?>
     <?= $this->session->flashdata('message'); ?>
     <form action="<?= base_url('antrian_bulanan/report'); ?>" method="POST" target="_blank">
         <div class="row">
@@ -46,6 +48,7 @@
                         <th class="tg-0lax">Nomor HP</th>
                         <th class="tg-0lax">Email</th>
                         <th class="tg-0lax">Jenis Antrian</th>
+                        <th class="tg-0lax">Pengurusan</th>
                         <th class="tg-0lax" width="10%"><span class="fas fa-fw fa-edit"></span></th>
                     </tr>
                 </thead>
@@ -59,6 +62,7 @@
                             <td><?= $value['nohp']; ?></td>
                             <td><?= $value['email']; ?></td>
                             <td><?= $value['jenis'] == 1 ?  'Baru' : 'Perubahan'; ?></td>
+                            <td><?= $pengurusan[$value['pengurusan']]; ?></td>
                             <td>
                                 <a href="<?= base_url("verifikasi_antrian_kk/proses/" . $value['id']); ?>" class="btn btn-success rounded-left"><span class="fas fa-fw fa-check"></span>Proses Antrian</a>
                             </td>
