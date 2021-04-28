@@ -116,16 +116,16 @@
   </header>
 
   <script>
-    var i = 0;
-    setTimeout(() => {
-      setInterval(() => {
-        if (i <= 150) {
-          $('#rtktp').text(i += Math.floor(Math.random() * 10));
-          $('#rtkk').text(i += Math.floor(Math.random() * 10));
-        } else {
-          $('#rtktp').text(150);
-          $('#rtkk').text(150);
+    setInterval(() => {
+      $.ajax({
+        url: 'admin/Realtime_counter/counter',
+        method: 'GET',
+        datatype: 'json',
+        success: function(param) {
+          const data = JSON.parse(param);
+          $('#rtktp').text(data.ktp.nilai);
+          $('#rtkk').text(data.kk.nilai);
         }
-      }, 100);
-    }, 2000);
+      });
+    }, 1000);
   </script>
