@@ -378,7 +378,8 @@
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Ya',
-            cancelButtonText: 'Tidak'
+            cancelButtonText: 'Tidak',
+            reverseButtons: true
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.href = "<?= base_url('Verifikasi_antrian_kk/verif/' . $data['id']); ?>";
@@ -395,7 +396,8 @@
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Ya',
-            cancelButtonText: 'Tidak'
+            cancelButtonText: 'Tidak',
+            reverseButtons: true
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.href = "<?= base_url('Verifikasi_antrian_kk/tolak/' . $data['id']); ?>";
