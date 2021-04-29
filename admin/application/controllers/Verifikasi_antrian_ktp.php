@@ -52,10 +52,12 @@ class Verifikasi_antrian_ktp extends Guide
             redirect('verifikasi_antrian_ktp');
         }
     }
-    public function tolak($id = "")
+    public function tolak($id = "", $catatan = "tidak ada catatan dari petugas dispenduk.")
     {
+        // $catatan = str_replace('%', ' ', $catatan);
         $this->db->where('id', $id);
         $this->db->set('status', 1);
+        $this->db->set('catatan_penolakan', $catatan);
         if ($this->db->update('antrian_ktp')) {
             $this->flash_success("Proses Tolak KTP Berhasil");
             redirect('verifikasi_antrian_ktp');

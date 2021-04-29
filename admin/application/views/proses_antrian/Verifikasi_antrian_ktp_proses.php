@@ -131,6 +131,7 @@
                 <div class="modal-footer">
                     <button class="text-light btn btn-danger" onclick="tolak()"><span class="fas fa-fw fa-times"></span> Tolak</button>
                     <button class="text-light btn btn-success" onclick="verif()"><span class="fas fa-fw fa-check"></span> Verifikai</button>
+                    <button class="text-light btn btn-success" onclick="coba()"><span class="fas fa-fw fa-check"></span> coba</button>
                 </div>
             </div>
         </di>
@@ -138,6 +139,17 @@
 </div>
 </div>
 <script>
+    function coba() {
+        Swal.fire({
+            title: 'Input something',
+            input: 'textarea'
+        }).then(function(result) {
+            if (result.value) {
+                Swal.fire(result.value)
+            }
+        })
+    }
+
     $(".form-control").prop("disabled", true);
 
     function verif() {
@@ -169,10 +181,15 @@
             cancelButtonColor: '#d33',
             confirmButtonText: 'Ya',
             cancelButtonText: 'Tidak',
-            reverseButtons: true
+            reverseButtons: true,
+            input: 'textarea'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = "<?= base_url('Verifikasi_antrian_ktp/tolak/' . $data['id']); ?>";
+                if (result.value) {
+                    window.location.href = "<?= base_url('Verifikasi_antrian_ktp/tolak/' . $data['id'] . '/'); ?>" + result.value;
+                } else {
+                    window.location.href = "<?= base_url('Verifikasi_antrian_ktp/tolak/' . $data['id']); ?>";
+                }
             }
         })
     }

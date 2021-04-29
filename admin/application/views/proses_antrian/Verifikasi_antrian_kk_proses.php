@@ -397,10 +397,15 @@
             cancelButtonColor: '#d33',
             confirmButtonText: 'Ya',
             cancelButtonText: 'Tidak',
-            reverseButtons: true
+            reverseButtons: true,
+            input: 'textarea'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = "<?= base_url('Verifikasi_antrian_kk/tolak/' . $data['id']); ?>";
+                if (result.value) {
+                    window.location.href = "<?= base_url('Verifikasi_antrian_kk/tolak/' . $data['id'] . '/'); ?>" + result.value;
+                } else {
+                    window.location.href = "<?= base_url('Verifikasi_antrian_kk/tolak/' . $data['id']); ?>";
+                }
             }
         })
     }
