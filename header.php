@@ -1,6 +1,4 @@
 <?php include 'global_var.php'; ?>
-<?php include 'connect.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -83,7 +81,8 @@
                       <center>
                         <h5 class="card-title mb-3">KTP</h5>
                         <h3 class="card-subtitle mb-2 text-muted mb-5" id="rtktp">0</h3>
-                        <p>Maksimal Pelayanan Hari Ini = 150</p>
+                        <p>Maksimal Pelayanan Hari Ini = <?= getAntrianMAx(); ?>
+                        </p>
                       </center>
                     </div>
                   </div>
@@ -94,7 +93,8 @@
                       <center>
                         <h5 class="card-title mb-3">KK</h5>
                         <h3 class="card-subtitle mb-2 text-muted mb-5" id="rtkk">0</h3>
-                        <p>Maksimal Pelayanan Hari Ini = 150</p>
+                        <p>Maksimal Pelayanan Hari Ini = <?= getAntrianMAx(); ?>
+                        </p>
                       </center>
                     </div>
                   </div>
