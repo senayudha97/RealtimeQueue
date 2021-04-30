@@ -81,7 +81,7 @@ class Guide extends CI_Controller
         return floor($offset / 60 / 60 / 24);
     }
 
-    public function generateqr($filename = "qrcodedefaultname.png")
+    public function generateqr($filename = "qrcodefaultname.png")
     {
         require_once('./application/third_party/phpqrcode/qrlib.php');
 
@@ -91,7 +91,7 @@ class Guide extends CI_Controller
         return $dir;
     }
 
-    function send($email_receiver = "senayudha97@outlook.com", $message = "";)
+    function sendEmail($env = array())
     {
         $email_sender = "chickchipsgame@gmail.com";
         $pasword_email_sender = "kmzwa88saa";
@@ -112,12 +112,12 @@ class Guide extends CI_Controller
         $mail->Password = $pasword_email_sender;
         $mail->SMTPSecure = 'ssl';
         $mail->Port     = 465;
-        $mail->AddEmbeddedImage($this->generateqr("coba.png"), 'coba');
+        $mail->AddEmbeddedImage($this->generateqr(), 'coba');
         $mail->setFrom('info@example.com', 'Siantrian');
         $mail->addReplyTo('info@example.com', 'Siantrian');
 
         // Add a recipient
-        $mail->addAddress($email_receiver);
+        $mail->addAddress($env['email']);
 
         // Email subject
         $mail->Subject = 'Siantrian - Pengajuan Online';
@@ -125,11 +125,13 @@ class Guide extends CI_Controller
         // Set email format to HTML
         $mail->isHTML(true);
 
-        // Swab Var 
         $swap_arr = array(
             "{JUDUL}" => "SIANTRIAN",
-            "{PENERIMA}" => $email_receiver,
+            "{PENERIMA}" => $env['email'],
+            "{MESSAGE}" => $env['message'],
         );
+
+
 
         // Email body content
         $template = "./application/template_email/template.php";
@@ -157,10 +159,10 @@ class Guide extends CI_Controller
         if (!$mail->send()) {
             echo 'Message could not be sent.';
             echo 'Mailer Error: ' . $mail->ErrorInfo;
+            exit;
         } else {
             // echo 'Message has been sent';
             echo '<a href="http://localhost/masteritn/index.php/sos/kepegawaian/proses_validasi">Kembali ke Menu</a>';
         }
     }
-
 }

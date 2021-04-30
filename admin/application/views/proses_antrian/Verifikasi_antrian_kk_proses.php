@@ -365,6 +365,14 @@
         </di>
 </div>
 </div>
+<div class="haiden">
+    <form action="<?= base_url('Verifikasi_antrian_kk/tolak'); ?>" method="post">
+        <input type="text" value="<?= $data['id']; ?>" name="id">
+        <input type="text" id="catatan" name="catatan">
+        <button id="tolakform" type="submit">kirim</button>
+    </form>
+</div>
+
 <script>
     $(".form-control").prop("disabled", true);
 
@@ -401,13 +409,11 @@
             input: 'textarea'
         }).then((result) => {
             if (result.isConfirmed) {
-                if (result.value) {
-                    window.location.href = "<?= base_url('Verifikasi_antrian_kk/tolak/' . $data['id'] . '/'); ?>" + result.value;
-                } else {
-                    window.location.href = "<?= base_url('Verifikasi_antrian_kk/tolak/' . $data['id']); ?>";
-                }
+                $('#catatan').val(result.value);
+                $("#tolakform").trigger("click");
             }
         })
     }
+    $('.haiden').hide();
 </script>
 <?php endif; ?>
