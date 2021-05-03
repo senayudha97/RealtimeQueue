@@ -1,4 +1,5 @@
 <?php include 'global_var.php'; ?>
+<?php gatewayApp(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
