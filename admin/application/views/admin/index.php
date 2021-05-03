@@ -15,7 +15,7 @@
 
             <script>
                 setInterval(() => {
-                    $.ajax({              
+                    $.ajax({
                         url: '<?= base_url('Rest_api/statusAntrian/2a734c44a3a1cd46dd54450a0dab6ecc'); ?>',
                         method: 'GET',
                         datatype: 'json',
@@ -80,7 +80,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">App Scan Barcode</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"> <a href="#" class="font-weight-bold text-gray-800">Klik Disini</a></div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"> <a href="http://localhost/siantrian/appscanner/" target="_blank" class="font-weight-bold text-gray-800">Klik Disini</a></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-qrcode fa-2x text-gray-300"></i>
