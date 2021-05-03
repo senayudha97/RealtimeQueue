@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Fusion - Bootstrap 4 Template</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../assets/fonts/line-icons.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.css">
+    
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <script src="instascan.js"></script>
+
+    <style>
+      #hero-area {
+        min-height: 700px;
+        position: relative;
+        overflow: hidden;
+        padding: 180px 0 80px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header id="header-wrap">
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <a href="index.html" class="navbar-brand"><img src="../assets/img/logo.png" alt=""></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="#hero-area">
+                  APP SCANNER
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="hero-area" class="hero-area-bg">
+        <div class="container">      
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+              <div class="contents">
+                <h3>DATA HASIL SCAN :</h3>
+                <input type="text" class="form-control" readonly name="nama" placeholder="Nama Lengkap" id="nama">
+                <input type="text" class="form-control" readonly name="email" placeholder="Email" id="email">
+                <input type="text" class="form-control" readonly name="nohp" placeholder="Nomor HP" id="nohp">
+
+                <button class="btn btn-common">Proses Antrian</button>
+                
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+              <div class="intro-img">
+                <video class="img-fluid card-img" id="getQR"></video>
+              </div>            
+            </div>
+          </div> 
+        </div> 
+      </div>
+
+    </header>
+    <footer id="footer" class="footer-area section-padding">
+       
+    </footer> 
+
+    <a href="#" class="back-to-top">
+    	<i class="lni-arrow-up"></i>
+    </a>
+    
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    
+    <script src="../assets/js/jquery-min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/wow.js"></script>
+    <script src="../assets/js/jquery.nav.js"></script>
+    <script src="../assets/js/scrolling-nav.js"></script>
+    <script src="../assets/js/jquery.easing.min.js"></script>  
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/form-validator.min.js"></script>
+    <script src="../assets/js/contact-form-script.min.js"></script>
+    <script src="../admin/vendor/sweetalert/sweetalert2.all.min.js"></script>
+  </body>
+</html>
+
+<script type="text/javascript">    
+  $('.form-control').val('');
+
+  let scanner = new Instascan.Scanner({ video: document.getElementById('getQR') });
+  scanner.addListener('scan', function (content) {
+    let convertion = content.split(",");
+    if (convertion[3] == 'sa7d4c44a3ajads6ddd445ca0d1b65ca') {
+      $('#nama').val(convertion[0]);
+      $('#email').val(convertion[1]);
+      $('#nohp').val(convertion[2]);
+
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+
+
+      Toast.fire({
+        icon: 'success',
+        title: 'Berhasil Memindai QR Code Anda!'
+      })
+      
+      var audio = new Audio('success.wav');
+      audio.play();
+    }else{
+      var audio = new Audio('failed.wav');
+      audio.play();
+      let timerInterval
+      Swal.fire({
+        title: 'QR Code Anda Salah!',
+        timer: 2000,
+        timerProgressBar: false,
+        didOpen: () => {
+          Swal.showLoading()
+          timerInterval = setInterval(() => {
+            const content = Swal.getContent()
+            if (content) {
+              const b = content.querySelector('b')
+              if (b) {
+                b.textContent = Swal.getTimerLeft()
+              }
+            }
+          }, 100)
+        },
+        willClose: () => {
+          clearInterval(timerInterval)
+        }
+      }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+          console.log('I was closed by the timer')
+        }
+      })
+    }
+  });
+  Instascan.Camera.getCameras().then(function (cameras) {
+    if (cameras.length > 0) {
+      scanner.start(cameras[0]);
+    } else {
+      console.error('No cameras found.');
+    }
+  }).catch(function (e) {
+    console.error(e);
+  });
+</script>
