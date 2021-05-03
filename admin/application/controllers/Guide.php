@@ -81,12 +81,12 @@ class Guide extends CI_Controller
         return floor($offset / 60 / 60 / 24);
     }
 
-    public function generateqr($filename = "qrcodefaultname.png")
+    public function generateqr($filename = "qrcodefaultname.png", $value)
     {
         require_once('./application/third_party/phpqrcode/qrlib.php');
 
         $dir = './application/template_email/qrcodeholder/' . $filename;
-        QRcode::png('PHP QR Code :)', $dir, 'XL', 8, 8);
+        QRcode::png($value, $dir, 'XL', 8, 8);
 
         return $dir;
     }
@@ -112,7 +112,13 @@ class Guide extends CI_Controller
         $mail->Password = $pasword_email_sender;
         $mail->SMTPSecure = 'ssl';
         $mail->Port     = 465;
-        $mail->AddEmbeddedImage($this->generateqr(), 'coba');
+
+        if ($env['istolak'] == false) {
+            $filename = explode($env['email'], '@');
+            $mail->AddEmbeddedImage($this->generateqr($filename[0] . date('dmy') . 'png', $env['qrval']), 'coba');
+        }
+
+
         $mail->setFrom('info@example.com', 'Siantrian');
         $mail->addReplyTo('info@example.com', 'Siantrian');
 
