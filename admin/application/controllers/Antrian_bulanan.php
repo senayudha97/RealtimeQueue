@@ -44,7 +44,7 @@ class Antrian_bulanan extends Guide
         } else {
             $arr_data = $this->input->post('input');
             $this->Tbl_antrian_bulanan->insert_antrian_bulanan($arr_data);
-            $this->flash_success('Menambah Shift Meeting');
+            $this->flash_success('Menambah Setup Antrian Bulanan');
             redirect('antrian_bulanan');
         }
     }
@@ -97,9 +97,9 @@ class Antrian_bulanan extends Guide
     public function runApp_antrian()
     {
         $thisMonth = date('Y-m');
-        $thisMonth = $this->db->query("SELECT tanggal_antrian FROM antrian_bulanan WHERE tanggal_antrian LIKE '%$thisMonth%'")->num_rows() + 1;
+        $thisMonth = $this->db->query("SELECT tanggal_antrian FROM antrian_bulanan WHERE tanggal_antrian LIKE '%$thisMonth%'")->num_rows();
 
-        $countDayinmonth = cal_days_in_month(CAL_GREGORIAN, 3, 2021);
+        $countDayinmonth = cal_days_in_month(CAL_GREGORIAN, date('m'), 2021);
 
         $isSetup = $thisMonth == $countDayinmonth ? 1 : 0;
 
@@ -118,9 +118,9 @@ class Antrian_bulanan extends Guide
     {
         $thisMonth = date('Y-m');
 
-        $thisMonth = $this->db->query("SELECT tanggal_antrian FROM antrian_bulanan WHERE tanggal_antrian LIKE '%$thisMonth%'")->num_rows() + 1;
+        $thisMonth = $this->db->query("SELECT tanggal_antrian FROM antrian_bulanan WHERE tanggal_antrian LIKE '%$thisMonth%'")->num_rows();
 
-        $countDayinmonth = cal_days_in_month(CAL_GREGORIAN, 3, 2021);
+        $countDayinmonth = cal_days_in_month(CAL_GREGORIAN, date('m'), 2021);
 
         $isSetup = $thisMonth == $countDayinmonth ? 1 : 0;
 
