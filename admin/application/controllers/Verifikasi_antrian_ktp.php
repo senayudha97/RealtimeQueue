@@ -50,7 +50,8 @@ class Verifikasi_antrian_ktp extends Guide
         if ($this->db->update('antrian_ktp')) {
             $this->db->where('id', $id);
             $user = $this->db->get('antrian_ktp')->row_array();
-            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda."]);
+            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca';
+            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
             $this->flash_success("Proses Verifikasi KTP Berhasil");
             redirect('verifikasi_antrian_ktp');
         }
@@ -66,7 +67,7 @@ class Verifikasi_antrian_ktp extends Guide
         $this->db->set('catatan_penolakan', $catatan);
         if ($this->db->update('antrian_ktp')) {
             $user = $this->db->get('antrian_ktp')->row_array();
-            $this->sendEmail(['email' => $user['email'], 'message' => $catatan]);
+            $this->sendEmail(['email' => $user['email'], 'message' => $catatan, 'istolak' => true]);
             $this->flash_success("Proses Tolak KTP Berhasil");
             redirect('verifikasi_antrian_ktp');
         }
