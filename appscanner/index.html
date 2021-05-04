@@ -51,7 +51,7 @@
           <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
               <div class="contents">
-                <h3>DATA HASIL SCAN :</h3>
+                <h3>DATA HASIL SCAN : <span id="jenisantrian"></span></h3>
                 <input type="text" class="form-control" readonly name="nama" placeholder="Nama Lengkap" id="nama">
                 <input type="text" class="form-control" readonly name="email" placeholder="Email" id="email">
                 <input type="text" class="form-control" readonly name="nohp" placeholder="Nomor HP" id="nohp">
@@ -107,6 +107,8 @@
       $('#nama').val(convertion[0]);
       $('#email').val(convertion[1]);
       $('#nohp').val(convertion[2]);
+      $('#jenisantrian').text(convertion[4].toUpperCase());
+
 
       const Toast = Swal.mixin({
         toast: true,
