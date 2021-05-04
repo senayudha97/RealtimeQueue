@@ -95,7 +95,6 @@ class Guide extends CI_Controller
     {
         $email_sender = "chickchipsgame@gmail.com";
         $pasword_email_sender = "kmzwa88saa";
-        // $email_receiver = "senayudha97@outlook.com";
 
         define("DEMO", false);
         // Load PHPMailer library
@@ -137,13 +136,10 @@ class Guide extends CI_Controller
             "{MESSAGE}" => $env['message'],
         );
 
-
-
         // Email body content
         $template = "./application/template_email/template.php";
         if (file_exists($template)) {
             $mailContent = file_get_contents($template);
-            // $mailContent = "test<br>";
         } else {
             die("File template tidak ditemukan!");
         }
@@ -154,7 +150,7 @@ class Guide extends CI_Controller
             }
         }
 
-        echo $mailContent;
+        // echo $mailContent;
         if (DEMO) {
             die("No email was sent on purpose");
         }
@@ -166,9 +162,6 @@ class Guide extends CI_Controller
             echo 'Message could not be sent.';
             echo 'Mailer Error: ' . $mail->ErrorInfo;
             exit;
-        } else {
-            // echo 'Message has been sent';
-            echo '<a href="http://localhost/masteritn/index.php/sos/kepegawaian/proses_validasi">Kembali ke Menu</a>';
         }
     }
 }
