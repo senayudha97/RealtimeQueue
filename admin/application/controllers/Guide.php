@@ -164,4 +164,75 @@ class Guide extends CI_Controller
             exit;
         }
     }
+
+    function sendEmailNomorAntrian($env = array())
+    {
+        $email_sender = "chickchipsgame@gmail.com";
+        $pasword_email_sender = "kmzwa88saa";
+
+        define("DEMO2", false);
+        // Load PHPMailer library
+        $this->load->library('phpmailer_lib');
+
+        // PHPMailer object
+        $mail = $this->phpmailer_lib->load();
+
+        // SMTP configuration
+        $mail->isSMTP();
+        $mail->Host     = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = $email_sender;
+        $mail->Password = $pasword_email_sender;
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port     = 465;
+
+
+        $mail->setFrom('info@example.com', 'Siantrian');
+        $mail->addReplyTo('info@example.com', 'Siantrian');
+
+        // Add a recipient
+        $mail->addAddress($env['email']);
+
+        // Email subject
+        $mail->Subject = 'Siantrian - Antrian Online';
+
+        // Set email format to HTML
+        $mail->isHTML(true);
+
+        $swap_arr = array(
+            "{JUDUL}" => "SIANTRIAN",
+            "{NAMA}" => $env['nama'],
+            "{KEPENGURUSAN}" => $env['kepengurusan'],
+            "{NOMOR_URUT}" => $env['nomor_urut'],
+
+        );
+
+        // Email body content
+        $template = "./application/template_email/template_antrian.php";
+        if (file_exists($template)) {
+            $mailContent = file_get_contents($template);
+        } else {
+            die("File template tidak ditemukan!");
+        }
+
+        foreach (array_keys($swap_arr) as $key) {
+            if (strlen($key) > 2 && trim($key) != "") {
+                $mailContent = str_replace($key, $swap_arr[$key], $mailContent);
+            }
+        }
+
+        // echo $mailContent;
+        if (DEMO2) {
+            die("No email was sent on purpose");
+        }
+
+        $mail->Body = $mailContent;
+
+        // Send email
+        if (!$mail->send()) {
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+            exit;
+        }
+    }
 }
