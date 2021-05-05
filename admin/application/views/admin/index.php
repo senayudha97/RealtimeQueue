@@ -117,11 +117,11 @@
             <h6 class="m-0 font-weight-bold text-primary">Progress Bar</h6>
         </div>
         <div class="card-body">
-            <h4 class="small font-weight-bold">Server Migration <span class="float-right">0%</span></h4>
+            <h4 class="small font-weight-bold">Antrian KK <span class="float-right">0%</span></h4>
             <div class="progress mb-4">
                 <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">0%</span></h4>
+            <h4 class="small font-weight-bold">Antrian KTP <span class="float-right">0%</span></h4>
             <div class="progress mb-4">
                 <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
