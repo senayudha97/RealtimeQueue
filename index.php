@@ -59,7 +59,7 @@
 <section id="features" class="section-padding">
   <div class="container">
     <div class="section-header text-center">
-      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Panduan</h2>
+      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Alur Pengajuan</h2>
       <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
     </div>
     <div class="row">
@@ -70,8 +70,7 @@
               <i class="lni-rocket"></i>
             </span>
             <div class="text">
-              <h4>Bootstrap 4 Based</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h5>Pilih menu pelayanan.</h5>
             </div>
           </div>
           <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
@@ -79,8 +78,7 @@
               <i class="lni-laptop-phone"></i>
             </span>
             <div class="text">
-              <h4>Fully Responsive</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h5>Masukan data diri anda.</h5>
             </div>
           </div>
           <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
@@ -88,8 +86,7 @@
               <i class="lni-cog"></i>
             </span>
             <div class="text">
-              <h4>HTML5, CSS3 & SASS</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <h5>Upload berkas yang diperlukan sesuai jenis pengajuan.</h5>
             </div>
           </div>
         </div>
@@ -106,8 +103,7 @@
               <i class="lni-leaf"></i>
             </span>
             <div class="text">
-              <h4>Modern Design</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <h5>Pengajuan di proses oleh petugas.</h5>
             </div>
           </div>
           <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
@@ -115,8 +111,7 @@
               <i class="lni-layers"></i>
             </span>
             <div class="text">
-              <h4>Multi-purpose Template</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h5>Anda mendapat QR Code dari Email.</h5>
             </div>
           </div>
           <div class="box-item wow fadeInRight" data-wow-delay="0.9s">
@@ -124,8 +119,7 @@
               <i class="lni-leaf"></i>
             </span>
             <div class="text">
-              <h4>Working Contact Form</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h5>Scan QR Code di kantor dispenduk untuk mendapat antrian.</h5>
             </div>
           </div>
         </div>
@@ -148,7 +142,7 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
-          <h5 class="text-dark">Antrian Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready1"></button></h5>
+          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready1"></button></h5>
           <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -183,7 +177,7 @@
           <input type="text" name="input[jenis]" value="2">
         </div>
         <div class="modal-body">
-          <h5 class="text-dark">Antrian Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready2"></button></h5>
+          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready2"></button></h5>
           <input type="text" class="form-control resetable" id="name2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -217,7 +211,7 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
-          <h5 class="text-dark">Antrian Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="kkready1"></button></h5>
+          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="kkready1"></button></h5>
           <input type="text" class="form-control resetable" id="name3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -270,7 +264,7 @@
           <input type="text" name="input[jenis]" value="2">
         </div>
         <div class="modal-body">
-          <h5 class="text-dark">Antrian Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="kkready2"></button></h5>
+          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="kkready2"></button></h5>
           <input type="text" class="form-control resetable" id="name4" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone4" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email4" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
