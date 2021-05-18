@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Panggil Antrian</title>
+
+    <style>
+        div#log{
+            width: 800px;
+            height: 300px;
+            margin: 0 auto;
+            border: 5px solid black;
+            border-radius: 7px;
+        }
+        div#sendCtrls{
+            width: 235px;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="log"></div>
+    <div id="sendCtrls">        
+        <input type="text" placeholder="Your message here" id="text">
+        <button>Send Data</button>
+    </div>
+
+
+
+    <script>
+        var sock = new WebSocket("ws://localhost:5001");
+        var log = document.getElementById('log');
+        sock.onmessage = function (event) {
+            console.log(event.data);
+            log.innerHTML += event.data+'<br>';
+        }
+        document.querySelector('button').onclick = function () {
+            var text = document.getElementById('text').value;
+            sock.send(text);
+            log.innerHTML +='You:'+ text+'<br>';
+        };
+    </script>
+</body>
+</html>
