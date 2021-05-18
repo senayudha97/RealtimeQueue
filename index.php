@@ -326,8 +326,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" id="btn_kkbaru" class="asli btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="palsu btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
 
         </div>
       </form>
@@ -419,8 +419,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" id="btn_kkubah" class="asli btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubah" class="palsu btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkubah" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsubah" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
