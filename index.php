@@ -161,6 +161,7 @@
             $('#ktpbarureservasi').hide();
             $('.ktpbarureservasi').click(function() {
               if ($(this).is(':checked')) {
+                $("input[type=date]").val("")
                 $('#ktpbarureservasi').show();
               } else {
                 let today = new Date();
