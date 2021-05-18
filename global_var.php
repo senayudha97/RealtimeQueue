@@ -28,7 +28,4 @@ function gatewayApp()
         include 'blank.php';
         exit;
     }
-    // else {
-    //     echo 0;
-    // }
 }
