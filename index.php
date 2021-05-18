@@ -153,10 +153,6 @@
             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
             <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi1" class="form-control resetable">
           </div>
-          <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
-          <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
-          <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-
           <script>
             $('#ktpbarureservasi').hide();
             $('.ktpbarureservasi').click(function() {
@@ -175,6 +171,10 @@
               }
             });
           </script>
+          <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
 
 
           <label for="kartu_keluarga1">File KK</label>
@@ -208,9 +208,33 @@
         </div>
         <div class="modal-body">
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready2"></button></h5>
-          <label for="tanggal_reservasi2">Tanggal Reservasi</label>
-          <input type="date" value="coba" require id="tanggal_reservasi2" name="tanggal_reservasi2" class="form-control resetable">
-          <input type="text" class="form-control resetable" id="name2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="ktpperubahanreservasi custom-control-input" id="customSwitch2">
+            <label class="ktpperubahanreservasi custom-control-label" for="customSwitch2">Aktifkan Mode Reservasi</label>
+          </div>
+
+          <div id="ktpperubahanreservasi">
+            <label for="tanggal_reservasi2">Tanggal Reservasi</label>
+            <input type="date" value="coba" require id="tanggal_reservasi2" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi2" class="form-control resetable">
+          </div>
+          <script>
+            $('#ktpperubahanreservasi').hide();
+            $('.ktpperubahanreservasi').click(function() {
+              if ($(this).is(':checked')) {
+                $("input[type=date]").val("")
+                $('#ktpperubahanreservasi').show();
+              } else {
+                let today = new Date();
+                let dd = String(today.getDate()).padStart(2, '0');
+                let mm = String(today.getMonth() + 1).padStart(2, '0');
+                let yyyy = today.getFullYear();
+                today = yyyy + '-' + mm + '-' + dd;
+
+                prosesTanggal(today);
+                $('#ktpperubahanreservasi').hide();
+              }
+            });
+          </script> <input type="text" class="form-control resetable" id="name2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
@@ -244,9 +268,33 @@
         </div>
         <div class="modal-body">
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="kkready1"></button></h5>
-          <label for="tanggal_reservasi3">Tanggal Reservasi</label>
-          <input type="date" value="coba" require id="tanggal_reservasi3" name="tanggal_reservasi3" class="form-control resetable">
-          <input type="text" class="form-control resetable" id="name3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="kkbarureservasi custom-control-input" id="customSwitch3">
+            <label class="kkbarureservasi custom-control-label" for="customSwitch3">Aktifkan Mode Reservasi</label>
+          </div>
+
+          <div id="kkbarureservasi">
+            <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+            <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi1" class="form-control resetable">
+          </div>
+          <script>
+            $('#kkbarureservasi').hide();
+            $('.kkbarureservasi').click(function() {
+              if ($(this).is(':checked')) {
+                $("input[type=date]").val("")
+                $('#kkbarureservasi').show();
+              } else {
+                let today = new Date();
+                let dd = String(today.getDate()).padStart(2, '0');
+                let mm = String(today.getMonth() + 1).padStart(2, '0');
+                let yyyy = today.getFullYear();
+                today = yyyy + '-' + mm + '-' + dd;
+
+                prosesTanggal(today);
+                $('#kkbarureservasi').hide();
+              }
+            });
+          </script> <input type="text" class="form-control resetable" id="name3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
@@ -300,9 +348,33 @@
         <div class="modal-body">
 
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="kkready2"></button></h5>
-          <label for="tanggal_reservasi4">Tanggal Reservasi</label>
-          <input type="date" value="coba" require id="tanggal_reservasi4" name="tanggal_reservasi4" class="form-control resetable">
-          <input type="text" class="form-control resetable" id="name4" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="kkperubahanreservasi custom-control-input" id="customSwitch4">
+            <label class="kkperubahanreservasi custom-control-label" for="customSwitch4">Aktifkan Mode Reservasi</label>
+          </div>
+
+          <div id="kkperubahanreservasi">
+            <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+            <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi1" class="form-control resetable">
+          </div>
+          <script>
+            $('#kkperubahanreservasi').hide();
+            $('.kkperubahanreservasi').click(function() {
+              if ($(this).is(':checked')) {
+                $("input[type=date]").val("")
+                $('#kkperubahanreservasi').show();
+              } else {
+                let today = new Date();
+                let dd = String(today.getDate()).padStart(2, '0');
+                let mm = String(today.getMonth() + 1).padStart(2, '0');
+                let yyyy = today.getFullYear();
+                today = yyyy + '-' + mm + '-' + dd;
+
+                prosesTanggal(today);
+                $('#kkperubahanreservasi').hide();
+              }
+            });
+          </script> <input type="text" class="form-control resetable" id="name4" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone4" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email4" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
@@ -413,10 +485,10 @@
           $('#rtkk').text(data.kk.nilai);
 
           if (data.maxAntrian == 0) {
-            $('#ktpready1').text('RESERVASI TANGGAL INI TIDAK TERSEDIA');
-            $('#ktpready2').text('RESERVASI TANGGAL INI TIDAK TERSEDIA');
-            $('#kkready1').text('RESERVASI TANGGAL INI TIDAK TERSEDIA');
-            $('#kkready2').text('RESERVASI TANGGAL INI TIDAK TERSEDIA');
+            $('#ktpready1').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
+            $('#ktpready2').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
+            $('#kkready1').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
+            $('#kkready2').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
           } else {
             $('#ktpready1').text(data.maxAntrian.nilai - data.ktp.nilai);
             $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);

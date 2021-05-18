@@ -18,13 +18,11 @@
               </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">Products</h3>
+              <h3 class="footer-titel">FITUR</h3>
               <ul class="footer-link">
-                <li><a href="#">Produk 1</a></li>
-                <li><a href="#">Produk 2</a></li>
-                <li><a href="#">Produk 3</a></li>
-                <li><a href="#">Produk 4</a></li>
-                <li><a href="#">Produk 5</a></li>
+                <li><a href="#">1. Realtime Queue</a></li>
+                <li><a href="#">2. Email Notification</a></li>
+                <li><a href="#">3. QR Code Scanner</a></li>
               </ul>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
@@ -33,7 +31,7 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">Contact</h3>
+              <h3 class="footer-titel">Kontak</h3>
               <ul class="address">
                 <li>
                   <a href="#"><i class="lni-map-marker"></i> Jl. R.A Basuni No.23, Mergelo, Sooko, Kec. Sooko, Mojokerto</a>
