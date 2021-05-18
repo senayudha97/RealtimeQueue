@@ -151,7 +151,7 @@
 
           <div id="ktpbarureservasi">
             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
-            <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi1" class="form-control resetable">
+            <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
           </div>
           <script>
             $('#ktpbarureservasi').hide();
@@ -184,7 +184,9 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" id="ktpbaru" class="btn btn-common">Kirim</button>
+          <button type="submit" id="ktpbaru" class="btn btn-common asli">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+
         </div>
       </form>
     </div>
@@ -245,7 +247,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-common">Kirim</button>
+          <button type="submit" class="btn btn-common asli">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
       </form>
     </div>
@@ -323,8 +326,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkbaru" class="asli btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="palsu btn btn-default">Kirim</button>
 
         </div>
       </form>
@@ -416,8 +419,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" id="btn_kkubah" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubah" class="btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkubah" class="asli btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsubah" class="palsu btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
@@ -485,11 +488,17 @@
           $('#rtkk').text(data.kk.nilai);
 
           if (data.maxAntrian == 0) {
+            $('.asli').hide();
+            $('.palsu').show();
+
             $('#ktpready1').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
             $('#ktpready2').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
             $('#kkready1').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
             $('#kkready2').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
           } else {
+            $('.palsu').hide();
+            $('.asli').show();
+
             $('#ktpready1').text(data.maxAntrian.nilai - data.ktp.nilai);
             $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);
             $('#kkready1').text(data.maxAntrian.nilai - data.kk.nilai);

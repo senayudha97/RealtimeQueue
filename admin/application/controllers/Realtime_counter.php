@@ -13,9 +13,9 @@ class Realtime_counter extends Guide
     {
         $date = $_GET['tanggal_antrian'];
 
-        $data['kk'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_kk  WHERE tanggal_antrian = '$date' ")->row_array();
-        $data['ktp'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_ktp  WHERE tanggal_antrian = '$date' ")->row_array();
-        $data['maxAntrian'] = $this->db->query("SELECT maksimal_antrian AS 'nilai' FROM antrian_bulanan WHERE tanggal_antrian = '$date'")->row_array();
+        $data['kk'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_kk JOIN antrian_bulanan ON antrian_kk.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND antrian_kk.tanggal_antrian = '$date' ")->row_array();
+        $data['ktp'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_ktp JOIN antrian_bulanan ON antrian_ktp.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND antrian_ktp.tanggal_antrian = '$date' ")->row_array();
+        $data['maxAntrian'] = $this->db->query("SELECT maksimal_antrian AS 'nilai' FROM antrian_bulanan WHERE tanggal_antrian = '$date' AND islibur = 0")->row_array();
 
         if ($data['maxAntrian'] == NULL) {
             $data['maxAntrian'] = 0;

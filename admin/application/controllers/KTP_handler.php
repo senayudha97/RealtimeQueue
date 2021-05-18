@@ -15,6 +15,10 @@ class KTP_handler extends Guide
     {
         $datapost = $this->input->post('input');
 
+        if (empty($datapost['tanggal_antrian'])) {
+            $datapost['tanggal_antrian'] = date('Y-d-m');
+        }
+
         // do Upload KK
         $namaSementara = $_FILES['kartu_keluarga1']['tmp_name'];
         $temp = explode(".", $_FILES["kartu_keluarga1"]["name"]);
