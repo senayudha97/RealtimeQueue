@@ -11,10 +11,16 @@ class Realtime_counter extends Guide
 
     public function counter()
     {
-        $date = date('Y-m-d');
+        $date = $_GET['tanggal_antrian'];
+
         $data['kk'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_kk  WHERE tanggal_antrian = '$date' ")->row_array();
         $data['ktp'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_ktp  WHERE tanggal_antrian = '$date' ")->row_array();
         $data['maxAntrian'] = $this->db->query("SELECT maksimal_antrian AS 'nilai' FROM antrian_bulanan WHERE tanggal_antrian = '$date'")->row_array();
+
+        if ($data['maxAntrian'] == NULL) {
+            $data['maxAntrian'] = 0;
+        }
+
         echo json_encode($data);
     }
     public function getMaxantrian()

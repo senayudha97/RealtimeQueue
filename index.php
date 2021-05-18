@@ -142,10 +142,39 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
-          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready1"></button></h5>
+
+          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="ktpready1"></button></h5>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="ktpbarureservasi custom-control-input" id="customSwitch1">
+            <label class="ktpbarureservasi custom-control-label" for="customSwitch1">Aktifkan Mode Reservasi</label>
+          </div>
+
+          <div id="ktpbarureservasi">
+            <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+            <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi1" class="form-control resetable">
+          </div>
           <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+          <script>
+            $('#ktpbarureservasi').hide();
+            $('.ktpbarureservasi').click(function() {
+              if ($(this).is(':checked')) {
+                $('#ktpbarureservasi').show();
+              } else {
+                let today = new Date();
+                let dd = String(today.getDate()).padStart(2, '0');
+                let mm = String(today.getMonth() + 1).padStart(2, '0');
+                let yyyy = today.getFullYear();
+                today = yyyy + '-' + mm + '-' + dd;
+
+                prosesTanggal(today);
+                $('#ktpbarureservasi').hide();
+              }
+            });
+          </script>
+
 
           <label for="kartu_keluarga1">File KK</label>
           <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
@@ -178,6 +207,8 @@
         </div>
         <div class="modal-body">
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready2"></button></h5>
+          <label for="tanggal_reservasi2">Tanggal Reservasi</label>
+          <input type="date" value="coba" require id="tanggal_reservasi2" name="tanggal_reservasi2" class="form-control resetable">
           <input type="text" class="form-control resetable" id="name2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -212,6 +243,8 @@
         </div>
         <div class="modal-body">
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="kkready1"></button></h5>
+          <label for="tanggal_reservasi3">Tanggal Reservasi</label>
+          <input type="date" value="coba" require id="tanggal_reservasi3" name="tanggal_reservasi3" class="form-control resetable">
           <input type="text" class="form-control resetable" id="name3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -264,7 +297,10 @@
           <input type="text" name="input[jenis]" value="2">
         </div>
         <div class="modal-body">
+
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="kkready2"></button></h5>
+          <label for="tanggal_reservasi4">Tanggal Reservasi</label>
+          <input type="date" value="coba" require id="tanggal_reservasi4" name="tanggal_reservasi4" class="form-control resetable">
           <input type="text" class="form-control resetable" id="name4" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone4" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email4" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -317,6 +353,7 @@
 <!-- Modal Section End -->
 <script>
   $('.resetable').val('');
+  $("input[type=checkbox]").prop('checked', false);
 
   $(".resetableoptions").val("#");
   $('#btn_kkubah').hide();
@@ -343,22 +380,54 @@
     }
   });
 
-  setInterval(() => {
-    $.ajax({
-      url: 'admin/Realtime_counter/counter',
-      method: 'GET',
-      datatype: 'json',
-      success: function(param) {
-        const data = JSON.parse(param);
-        $('#rtktp').text(data.ktp.nilai);
-        $('#rtkk').text(data.kk.nilai);
-        $('#ktpready1').text(data.maxAntrian.nilai - data.ktp.nilai);
-        $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);
-        $('#kkready1').text(data.maxAntrian.nilai - data.kk.nilai);
-        $('#kkready2').text(data.maxAntrian.nilai - data.kk.nilai);
-      }
-    });
-  }, 1000);
+  let tanggal_antrian = 0;
+
+  function prosesTanggal(param) {
+    tanggal_antrian = param;
+  }
+
+  function RealtimeCounter() {
+
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0');
+    let yyyy = today.getFullYear();
+    today = yyyy + '-' + mm + '-' + dd;
+
+    if (tanggal_antrian == 0) {
+      tanggal_antrian = today;
+    }
+
+    setInterval(() => {
+      $.ajax({
+        url: 'admin/Realtime_counter/counter',
+        method: 'GET',
+        data: {
+          tanggal_antrian: tanggal_antrian
+        },
+        datatype: 'json',
+        success: function(param) {
+          const data = JSON.parse(param);
+          $('#rtktp').text(data.ktp.nilai);
+          $('#rtkk').text(data.kk.nilai);
+
+          if (data.maxAntrian == 0) {
+            $('#ktpready1').text('RESERVASI TANGGAL INI TIDAK TERSEDIA');
+            $('#ktpready2').text('RESERVASI TANGGAL INI TIDAK TERSEDIA');
+            $('#kkready1').text('RESERVASI TANGGAL INI TIDAK TERSEDIA');
+            $('#kkready2').text('RESERVASI TANGGAL INI TIDAK TERSEDIA');
+          } else {
+            $('#ktpready1').text(data.maxAntrian.nilai - data.ktp.nilai);
+            $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);
+            $('#kkready1').text(data.maxAntrian.nilai - data.kk.nilai);
+            $('#kkready2').text(data.maxAntrian.nilai - data.kk.nilai);
+          }
+        }
+      });
+    }, 1000);
+  }
+
+  RealtimeCounter();
 </script>
 
 
