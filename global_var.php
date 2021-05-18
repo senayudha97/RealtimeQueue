@@ -27,7 +27,8 @@ function gatewayApp()
         $GLOBALS['dbh']->query("UPDATE core_status SET status = 0 WHERE token = '2a734c44a3a1cd46dd54450a0dab6ecc'");
         include 'blank.php';
         exit;
-    } else {
-        echo 0;
     }
+    // else {
+    //     echo 0;
+    // }
 }
