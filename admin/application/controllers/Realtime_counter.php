@@ -9,6 +9,80 @@ class Realtime_counter extends Guide
         parent::__construct();
     }
 
+    public function jam($param = 61)
+    {
+        $data = array();
+        $date = date('Y-m-d');
+        $antrianMax = $this->db->query("SELECT maksimal_antrian AS 'nilai' FROM antrian_bulanan WHERE tanggal_antrian = '$date' AND islibur = 0")->row_array()['nilai'];
+        $arr_jam = [
+            '08.00-09.00',
+            '09.00-10.00',
+            '10.00-11.00',
+            '11.00-12.00',
+            '13.00-14.00',
+        ];
+        $divider = count($arr_jam);
+        $modular = $antrianMax % $divider;
+        $message = '| ';
+        $cluster = array();
+
+        if ($modular > 0) { // jika terdapat sisa dari pembagian antrian
+            $antrianPerjam = ($antrianMax - $modular) / $divider;
+            $tempSisa = array();
+
+            for ($i = 1; $i <= $modular; $i++) { // memilah sisa
+                array_push($tempSisa, 1);
+            }
+
+            for ($i = 0; $i < $divider; $i++) {
+                if (array_key_exists($i, $tempSisa)) {
+                    $antrian = $antrianPerjam + $tempSisa[$i];
+                } else {
+                    $antrian = $antrianPerjam;
+                }
+                $message .= "Jam $arr_jam[$i] memiliki maksimal kuota maksimal <b>" . $antrian . "</b> | ";
+                // echo "Jam $arr_jam[$i] memiliki maksimal kuota maksimal " . $antrian;
+                // echo '<br>';
+            }
+        } else {
+            $clusterVal = 0;
+            for ($i = 0; $i < $divider; $i++) {
+                $antrianPerjam = $antrianMax / $divider;
+                $clusterVal += $antrianPerjam;
+                $cluster[$i + 1]['nilai'] = $clusterVal;
+                $cluster[$i + 1]['jam'] =  $arr_jam[$i];
+
+                $message .= "Jam $arr_jam[$i] memiliki kuota maksimal <b> $antrianPerjam </b> | ";
+                // echo "Jam $arr_jam[$i] memiliki kuota maksimal " . $antrianPerjam;
+                // echo '<br>';
+            }
+        }
+        // echo '<br>';
+        // print_r($cluster);
+        // echo '<br>';
+        // echo '<br>';
+
+        $cluster[0]['nilai'] = 0;
+        $i = 0;
+        $max = $cluster[count($cluster) - 1]['nilai'];
+        foreach ($cluster as $row) {
+            if ($param >= $max) { //jika antrian sudah max
+                $data['jadwal'] = $cluster[count($cluster) - 1]['jam'];
+                break;
+            }
+
+            if ($param >= $cluster[$i]['nilai'] && $param < $cluster[$i + 1]['nilai']) {
+                $data['jadwal'] = $cluster[$i + 1]['jam'];
+            } else if ($param >= $cluster[count($cluster) - 1]['nilai']) {
+                $data['jadwal'] = $cluster[count($cluster) - 1]['jam'];
+            }
+            $i++;
+        }
+
+        $data['message'] = $message;
+        echo json_encode($data);
+    }
+
     public function counter()
     {
         $date = $_GET['tanggal_antrian'];
@@ -24,6 +98,7 @@ class Realtime_counter extends Guide
 
         echo json_encode($data);
     }
+
     public function getMaxantrian()
     {
         $data = $this->db->query("SELECT maksimal_antrian AS 'nilai' FROM antrian_bulanan")->row_array();

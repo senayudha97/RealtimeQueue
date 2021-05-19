@@ -34,7 +34,14 @@
         </div>
         <div class="col-9 bg-info" style="border-radius: 5px;">
             <div class="text-light mt-1" id="blink">
-                <marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maxime mollitia, quo, facilis iusto similique amet placeat in nihil, rerum inventore ea laudantium et debitis odit ipsum esse reprehenderit sint?</marquee>
+                <script>
+                    $.get("<?= base_url('realtime_counter/jam'); ?>", function(param) {
+                        let data = JSON.parse(param);
+                        console.log(data);
+                        $('#runningText').html(data.message);
+                    });
+                </script>
+                <marquee behavior="" id="runningText" direction=""></marquee>
             </div>
         </div>
     </div>
