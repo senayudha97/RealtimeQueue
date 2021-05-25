@@ -4,6 +4,8 @@ include_once APPPATH . "/controllers/Guide.php";
 
 class Verifikasi_antrian_ktp extends Guide
 {
+    var $controller_dir = 'Verifikasi_antrian_ktp';
+
     public function __construct()
     {
         parent::__construct();
