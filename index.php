@@ -144,6 +144,8 @@
         <div class="modal-body">
 
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="ktpready1"></button></h5>
+          <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKTP" id="jamKehadiranKTPbaru"></button></h6>
+          <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="ktpbarureservasi custom-control-input" id="customSwitch1">
             <label class="ktpbarureservasi custom-control-label" for="customSwitch1">Aktifkan Mode Reservasi</label>
@@ -151,7 +153,7 @@
 
           <div id="ktpbarureservasi">
             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
-            <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
           </div>
           <script>
             $('#ktpbarureservasi').hide();
@@ -183,7 +185,7 @@
           <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
           <button type="submit" id="ktpbaru" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
 
@@ -210,6 +212,8 @@
         </div>
         <div class="modal-body">
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready2"></button></h5>
+          <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKTP" id="jamKehadiranKTPbaru"></button></h6>
+          <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="ktpperubahanreservasi custom-control-input" id="customSwitch2">
             <label class="ktpperubahanreservasi custom-control-label" for="customSwitch2">Aktifkan Mode Reservasi</label>
@@ -217,7 +221,7 @@
 
           <div id="ktpperubahanreservasi">
             <label for="tanggal_reservasi2">Tanggal Reservasi</label>
-            <input type="date" value="coba" require id="tanggal_reservasi2" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi2" class="form-control resetable">
+            <input type="date" require id="tanggal_reservasi2" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
           </div>
           <script>
             $('#ktpperubahanreservasi').hide();
@@ -246,7 +250,7 @@
           <input type="file" require id="ktp_lama2" name="ktp_lama" class="form-control resetable">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
           <button type="submit" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -271,6 +275,8 @@
         </div>
         <div class="modal-body">
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="kkready1"></button></h5>
+          <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKKbaru"></button></h6>
+          <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="kkbarureservasi custom-control-input" id="customSwitch3">
             <label class="kkbarureservasi custom-control-label" for="customSwitch3">Aktifkan Mode Reservasi</label>
@@ -278,7 +284,7 @@
 
           <div id="kkbarureservasi">
             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
-            <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi1" class="form-control resetable">
+            <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
           </div>
           <script>
             $('#kkbarureservasi').hide();
@@ -325,7 +331,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
           <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
 
@@ -351,6 +357,8 @@
         <div class="modal-body">
 
           <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="kkready2"></button></h5>
+          <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKKbaru"></button></h6>
+          <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="kkperubahanreservasi custom-control-input" id="customSwitch4">
             <label class="kkperubahanreservasi custom-control-label" for="customSwitch4">Aktifkan Mode Reservasi</label>
@@ -358,7 +366,7 @@
 
           <div id="kkperubahanreservasi">
             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
-            <input type="date" value="coba" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="tanggal_reservasi1" class="form-control resetable">
+            <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
           </div>
           <script>
             $('#kkperubahanreservasi').hide();
@@ -418,7 +426,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
           <button type="submit" id="btn_kkubah" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsubah" class="btn btn-default">Kirim</button>
         </div>
@@ -503,6 +511,10 @@
             $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);
             $('#kkready1').text(data.maxAntrian.nilai - data.kk.nilai);
             $('#kkready2').text(data.maxAntrian.nilai - data.kk.nilai);
+            $('.jamKehadiranKTP').text(data.jamKTP);
+            $('.jamKehadiranKK').text(data.jamKK);
+            $('.jamKehediranKTPInput').val(data.jamKTP);
+            $('.jamKehediranKKInput').val(data.jamKK);
           }
         }
       });

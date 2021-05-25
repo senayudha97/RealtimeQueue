@@ -37,7 +37,7 @@ $show = $this->db->query("SELECT user_menu.id FROM user_menu JOIN user_sub_menu 
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#<?= str_replace(' ', '', $m['menu']); ?>" aria-expanded="true" aria-controls="collapseTwo">
                 <i class="<?= $m['menu_icon']; ?>"></i>
-                <span><?= $m['menu']; ?></span>
+                <span><?= strtoupper($m['menu']); ?></span>
             </a>
             <!-- collapse show comparison -->
             <?php if ($m['id'] == $show['id']) : ?>

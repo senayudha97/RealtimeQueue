@@ -9,17 +9,17 @@ class Realtime_counter extends Guide
         parent::__construct();
     }
 
-    public function jam($param = 61)
+    public function jam($param = 0, $mode = 0) //jika mode 0 maka kembalikan denganv ariable message dan jika 1 maka hanya mengembalikan nilai waktu saja 
     {
         $data = array();
         $date = date('Y-m-d');
         $antrianMax = $this->db->query("SELECT maksimal_antrian AS 'nilai' FROM antrian_bulanan WHERE tanggal_antrian = '$date' AND islibur = 0")->row_array()['nilai'];
         $arr_jam = [
-            '08.00-09.00',
-            '09.00-10.00',
-            '10.00-11.00',
-            '11.00-12.00',
-            '13.00-14.00',
+            '08:00-09:00',
+            '09:00-10:00',
+            '10:00-11:00',
+            '11:00-12:00',
+            '13:00-14:00',
         ];
         $divider = count($arr_jam);
         $modular = $antrianMax % $divider;
@@ -80,7 +80,11 @@ class Realtime_counter extends Guide
         }
 
         $data['message'] = $message;
-        echo json_encode($data);
+        if ($mode == 0) {
+            echo json_encode($data);
+        } else if ($mode == 1) {
+            return $data['jadwal'];
+        }
     }
 
     public function counter()
@@ -91,9 +95,14 @@ class Realtime_counter extends Guide
         $data['kk'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_kk JOIN antrian_bulanan ON antrian_kk.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND antrian_kk.tanggal_antrian = '$date' ")->row_array();
         $data['ktp'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_ktp JOIN antrian_bulanan ON antrian_ktp.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND antrian_ktp.tanggal_antrian = '$date' ")->row_array();
         $data['maxAntrian'] = $this->db->query("SELECT maksimal_antrian AS 'nilai' FROM antrian_bulanan WHERE tanggal_antrian = '$date' AND islibur = 0")->row_array();
+        $data['jamKK'] = $this->jam($data['kk']['nilai'], 1);
+        $data['jamKTP'] = $this->jam($data['ktp']['nilai'], 1);
+
 
         if ($data['maxAntrian'] == NULL || strtotime($date) < strtotime(date('Y-m-d'))) {
             $data['maxAntrian'] = 0;
+            $data['jamKK'] = 0;
+            $data['jamKTP'] = 0;
         }
 
         echo json_encode($data);

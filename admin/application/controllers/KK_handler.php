@@ -15,6 +15,11 @@ class KK_handler extends Guide
     {
         $datapost = $this->input->post('input');
 
+        if (empty($datapost['tanggal_antrian'])) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+
+
         if ($datapost['pengurusan'] == 1) { // KK Pasangan baru
 
             // do Upload Surat Pengantar
@@ -39,7 +44,7 @@ class KK_handler extends Guide
             $this->do_upload($namaSementara, $newfilenamesupin, $file_type);
 
             // Input Nama Baru File ke List $datapost
-            $datapost['tanggal_antrian'] = date('Y-m-d');
+            // $datapost['tanggal_antrian'] = date('Y-m-d');
             $datapost['file_surat_pengantar'] = $newfilenamesupeng;
             $datapost['file_buku_nikah'] = $newfilenamebunik;
             $datapost['file_surat_pindah'] = $newfilenamesupin;
@@ -59,7 +64,7 @@ class KK_handler extends Guide
             $this->do_upload($namaSementara, $newfilenamesuhil, $file_type);
 
             // Input Nama Baru File ke List $datapost
-            $datapost['tanggal_antrian'] = date('Y-m-d');
+            // $datapost['tanggal_antrian'] = date('Y-m-d');
             $datapost['file_surat_pengantar'] = $newfilenamesupeng;
             $datapost['file_surat_keterangan_hilang'] = $newfilenamesuhil;
         }
@@ -87,6 +92,12 @@ class KK_handler extends Guide
         // echo '<br>';
         // exit;
 
+        if (empty($datapost['tanggal_antrian'])) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+
+
+
 
         if ($datapost['pengurusan'] == 1) { // KK Menambah anggota kelahiran
             // do Upload Surat Pengantar
@@ -111,7 +122,7 @@ class KK_handler extends Guide
             $this->do_upload($namaSementara, $newfilenameketlahir, $file_type);
 
             // Input Nama Baru File ke List $datapost
-            $datapost['tanggal_antrian'] = date('Y-m-d');
+            // $datapost['tanggal_antrian'] = date('Y-m-d');
             $datapost['file_surat_pengantar'] = $newfilenamesupeng;
             $datapost['file_kk_lama'] = $newfilenamekklama;
             $datapost['file_keterangan_kelahiran'] = $newfilenameketlahir;
@@ -160,7 +171,7 @@ class KK_handler extends Guide
             }
 
             // Input Nama Baru File ke List $datapost
-            $datapost['tanggal_antrian'] = date('Y-m-d');
+            // $datapost['tanggal_antrian'] = date('Y-m-d');
             $datapost['file_surat_pengantar'] = $newfilenamesupeng;
             $datapost['file_surat_keterangan_pindah'] = $newfilenameketpin;
             $datapost['file_kk_lama'] = $newfilenamekklama;
@@ -196,12 +207,13 @@ class KK_handler extends Guide
             $this->do_upload($namaSementara, $newfilenameketmat, $file_type);
 
             // Input Nama Baru File ke List $datapost
-            $datapost['tanggal_antrian'] = date('Y-m-d');
+            // $datapost['tanggal_antrian'] = date('Y-m-d');
             $datapost['file_surat_pengantar'] = $newfilenamesupeng;
             $datapost['file_surat_keterangan_pindah'] = $newfilenameketpin;
             $datapost['file_kk_lama'] = $newfilenamekklama;
             $datapost['file_surat_keterangan_kematian'] = $newfilenameketmat;
         }
+
 
         if ($this->Tbl_kk_handler->insert_ktp_baru($datapost) == 1) {
 
