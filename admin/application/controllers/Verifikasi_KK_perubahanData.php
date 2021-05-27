@@ -2,9 +2,9 @@
 include_once APPPATH . "/controllers/Guide.php";
 
 
-class Verifikasi_antrian_ktp extends Guide
+class Verifikasi_KK_perubahanData extends Guide
 {
-    var $controller_dir = 'Verifikasi_antrian_ktp';
+    var $controller_dir = 'verifikasi_KK_perubahanData';
 
     public function __construct()
     {
@@ -26,7 +26,7 @@ class Verifikasi_antrian_ktp extends Guide
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('proses_antrian/Verifikasi_antrian_ktp_view', $data);
+        $this->load->view('proses_antrian/verifikasi_KK_perubahanData_view', $data);
         $this->load->view('templates/footer');
     }
 
@@ -42,7 +42,7 @@ class Verifikasi_antrian_ktp extends Guide
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('proses_antrian/Verifikasi_antrian_ktp_proses', $data);
+        $this->load->view('proses_antrian/verifikasi_KK_perubahanData_proses', $data);
         $this->load->view('templates/footer');
     }
 
@@ -56,7 +56,7 @@ class Verifikasi_antrian_ktp extends Guide
             $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'ktp' . ',' . $id;
             $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
             $this->flash_success("Proses Verifikasi KTP Berhasil");
-            redirect('verifikasi_antrian_ktp');
+            redirect('verifikasi_KK_perubahanData');
         }
     }
     public function tolak()
@@ -72,7 +72,7 @@ class Verifikasi_antrian_ktp extends Guide
             $user = $this->db->get('antrian_ktp')->row_array();
             $this->sendEmail(['email' => $user['email'], 'message' => $catatan, 'istolak' => true]);
             $this->flash_success("Proses Tolak KTP Berhasil");
-            redirect('verifikasi_antrian_ktp');
+            redirect('verifikasi_KK_perubahanData');
         }
     }
 }
