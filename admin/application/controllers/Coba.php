@@ -53,7 +53,7 @@ class Coba extends Guide
 
     public function getpost()
     {
-        print_r($_POST['input'])
+        print_r($_POST['input']);
         exit;
     }
 
