@@ -7,7 +7,6 @@ class Coba extends Guide
     public function __construct()
     {
         parent::__construct();
-        is_logged_in();
     }
 
     public function index()
@@ -50,6 +49,12 @@ class Coba extends Guide
     {
         $arr = ['pesan' => 'Coba Trigger', 'status' => 1, 'user' =>  $this->session->userdata('id')];
         $this->db->insert('notifikasi', $arr);
+    }
+
+    public function getpost()
+    {
+        print_r($_POST['input'])
+        exit;
     }
 
     public function report($parameter)
