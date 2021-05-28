@@ -7,46 +7,47 @@
       <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
     </div>
     <div class="row">
-      <!-- Services item -->
-      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#add_ktp">
+      <!-- item -->
+      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#mod_ktp">
         <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
           <div class="icon">
             <i class="lni-user"></i>
           </div>
           <div class="services-content">
-            <h3><a>KTP Baru</a></h3>
+            <h3><a>KTP</a></h3>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#edit_ktp">
-        <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
+      <!-- item -->
+      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#mod_kk">
+        <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
           <div class="icon">
             <i class="lni-users"></i>
           </div>
           <div class="services-content">
-            <h3><a>Perubahan KTP</a></h3>
+            <h3><a>KK</a></h3>
           </div>
         </div>
       </div>
-      <!-- Services item -->
-      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#add_kk">
-        <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+      <!-- item -->
+      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#mod_akta">
+        <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
           <div class="icon">
             <i class="lni-home"></i>
           </div>
           <div class="services-content">
-            <h3><a>KK Baru</a></h3>
+            <h3><a>Akta</a></h3>
           </div>
         </div>
       </div>
-      <!-- Services item -->
-      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#edit_kk">
-        <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
+      <!-- item -->
+      <div class="col-md-6 col-lg-6 col-xs-12" data-toggle="modal" data-target="#mod_kia">
+        <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
           <div class="icon">
             <i class="lni-apartment"></i>
           </div>
           <div class="services-content">
-            <h3><a>Perubahan KK</a></h3>
+            <h3><a>KIA</a></h3>
           </div>
         </div>
       </div>
@@ -127,12 +128,65 @@
     </div>
   </div>
 </section>
-<!-- Modal KTP BARU -->
-<div class="modal fade" id="add_ktp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<!-- MODAL KTP START -->
+<!-- |FIRST LAYER| -->
+<div class="modal fade" id="mod_ktp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Pengurusan KTP Baru</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">PENGURUSAN KTP</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_pemula">
+              <div class="services-item" >
+                <div class="icon">
+                  <i class="lni-user"></i>
+                </div>
+                <div class="services-content">
+                  <h3><a>PEMULA</a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_kehilangan">
+              <div class="services-item">
+                <div class="icon">
+                  <i class="lni-user"></i>
+                </div>
+                <div class="services-content">
+                  <h3><a>KEHILANGAN</a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_rusak">
+              <div class="services-item">
+                <div class="icon">
+                  <i class="lni-user"></i>
+                </div>
+                <div class="services-content">
+                  <h3><a>RUSAK</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- |SECOND LAYER| -->
+<!-- PEMULA -->
+<div class="modal fade" id="mod_ktp_pemula" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">KTP PEMULA</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -142,116 +196,68 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
-
-          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="ktpready1"></button></h5>
-          <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKTP" id="jamKehadiranKTPbaru"></button></h6>
-          <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
-          <div class="custom-control custom-switch">
-            <input type="checkbox" class="ktpbarureservasi custom-control-input" id="customSwitch1">
-            <label class="ktpbarureservasi custom-control-label" for="customSwitch1">Aktifkan Mode Reservasi</label>
-          </div>
-
-          <div id="ktpbarureservasi">
-            <label for="tanggal_reservasi1">Tanggal Reservasi</label>
-            <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
-          </div>
-          <script>
-            $('#ktpbarureservasi').hide();
-            $('.ktpbarureservasi').click(function() {
-              if ($(this).is(':checked')) {
-                $("input[type=date]").val("")
-                $('#ktpbarureservasi').show();
-              } else {
-                let today = new Date();
-                let dd = String(today.getDate()).padStart(2, '0');
-                let mm = String(today.getMonth() + 1).padStart(2, '0');
-                let yyyy = today.getFullYear();
-                today = yyyy + '-' + mm + '-' + dd;
-
-                prosesTanggal(today);
-                $('#ktpbarureservasi').hide();
-              }
-            });
-          </script>
+          <!-- Data Diri -->
           <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
-
-
-          <label for="kartu_keluarga1">File KK</label>
-          <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
-          <label for="akta_kelahiran1">File Akta Kelahiran</label>
-          <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
+          <!-- Doc -->
+          <div class="row">
+            <label class="col-lg-6" id="">
+              File KK
+              <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
+            </label>
+            <label class="col-lg-6" id="">
+              File Akta Kelahiran
+              <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
+            </label>
+          </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-          <button type="submit" id="ktpbaru" class="btn btn-common asli">Kirim</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Tutup</button>
+          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
-
         </div>
       </form>
     </div>
   </div>
 </div>
 
-
-<!-- Modal KTP PERUBAHAN -->
-<div class="modal fade" id="edit_ktp" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<!-- KEHILANGAN -->
+<div class="modal fade" id="mod_ktp_kehilangan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Pengurusan Perubahan KTP</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">KTP KEHILANGAN</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_perubahan" enctype="multipart/form-data" method="POST">
+      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
         <div class="haiden">
-          <input type="text" name="input[jenis]" value="2">
+          <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
-          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class=" btn btn-sm font-weight-bold bg-danger text-light" id="ktpready2"></button></h5>
-          <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKTP" id="jamKehadiranKTPbaru"></button></h6>
-          <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
-          <div class="custom-control custom-switch">
-            <input type="checkbox" class="ktpperubahanreservasi custom-control-input" id="customSwitch2">
-            <label class="ktpperubahanreservasi custom-control-label" for="customSwitch2">Aktifkan Mode Reservasi</label>
+          <!-- Data Diri -->
+          <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+          
+          <!-- Doc -->
+          <div class="row">
+            <label class="col-lg-6" id="">
+              File KK
+              <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
+            </label>
+            <label class="col-lg-6" id="">
+              File Akta Kelahiran
+              <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
+            </label>
           </div>
-
-          <div id="ktpperubahanreservasi">
-            <label for="tanggal_reservasi2">Tanggal Reservasi</label>
-            <input type="date" require id="tanggal_reservasi2" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
-          </div>
-          <script>
-            $('#ktpperubahanreservasi').hide();
-            $('.ktpperubahanreservasi').click(function() {
-              if ($(this).is(':checked')) {
-                $("input[type=date]").val("")
-                $('#ktpperubahanreservasi').show();
-              } else {
-                let today = new Date();
-                let dd = String(today.getDate()).padStart(2, '0');
-                let mm = String(today.getMonth() + 1).padStart(2, '0');
-                let yyyy = today.getFullYear();
-                today = yyyy + '-' + mm + '-' + dd;
-
-                prosesTanggal(today);
-                $('#ktpperubahanreservasi').hide();
-              }
-            });
-          </script> <input type="text" class="form-control resetable" id="name2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
-          <input type="tel" class="form-control resetable" id="phone2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
-          <input type="email" class="form-control resetable" id="email2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-
-          <label for="kartu_keluarga2">KK</label>
-          <input type="file" require id="kartu_keluarga2" name="kartu_keluarga1" class="form-control resetable">
-          <label for="ktp_lama2">KTP Lama</label>
-          <input type="file" require id="ktp_lama2" name="ktp_lama" class="form-control resetable">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-          <button type="submit" class="btn btn-common asli">Kirim</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Tutup</button>
+          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
       </form>
@@ -259,51 +265,199 @@
   </div>
 </div>
 
-<!-- KK BARU -->
-<div class="modal fade" id="add_kk" tabindex="-3" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- RUSAK -->
+<div class="modal fade" id="mod_ktp_rusak" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">KTP RUSAK</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+        <div class="haiden">
+          <input type="text" name="input[jenis]" value="1">
+        </div>
+        <div class="modal-body">
+          <!-- Data Diri -->
+          <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+          
+          <!-- Doc -->
+          <div class="row">
+            <label class="col-lg-6" id="">
+              File KK
+              <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
+            </label>
+            <label class="col-lg-6" id="">
+              File Akta Kelahiran
+              <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Tutup</button>
+          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL KTP END -->
+
+<!-- MODAL KK START -->
+<!-- |FIRST LAYER| -->
+<div class="modal fade" id="mod_kk" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Pengurusan KK Baru</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">PENGURUSAN KK</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-user"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>BARU</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-user"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>PERUBAHAN</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- |SECOND LAYER| -->
+<!-- BARU -->
+<div class="modal fade" id="mod_kk_baru" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">PENGURUSAN KK BARU</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru_kehilangan">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-user"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>KEHILANGAN</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru_rusak">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-user"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>RUSAK</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PERUBAHAN -->
+<div class="modal fade" id="mod_kk_perubahan" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">PENGURUSAN PERUBAHAN KK</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-user"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>PERUBAHAN DATA</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-user"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>PENGURANGAN ANGGOTA</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-user"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>PENAMBAHAN ANGGOTA</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- |THIRD LAYER| -->
+
+<div class="modal fade" id="mod_kk_baru_kehilangan" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">PENGURUSAN KK BARU</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
-        <div class="haiden">
-          <input type="text" name="input[jenis]" value="1">
-        </div>
         <div class="modal-body">
-          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="kkready1"></button></h5>
-          <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKKbaru"></button></h6>
-          <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
-          <div class="custom-control custom-switch">
-            <input type="checkbox" class="kkbarureservasi custom-control-input" id="customSwitch3">
-            <label class="kkbarureservasi custom-control-label" for="customSwitch3">Aktifkan Mode Reservasi</label>
-          </div>
-
-          <div id="kkbarureservasi">
-            <label for="tanggal_reservasi1">Tanggal Reservasi</label>
-            <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
-          </div>
-          <script>
-            $('#kkbarureservasi').hide();
-            $('.kkbarureservasi').click(function() {
-              if ($(this).is(':checked')) {
-                $("input[type=date]").val("")
-                $('#kkbarureservasi').show();
-              } else {
-                let today = new Date();
-                let dd = String(today.getDate()).padStart(2, '0');
-                let mm = String(today.getMonth() + 1).padStart(2, '0');
-                let yyyy = today.getFullYear();
-                today = yyyy + '-' + mm + '-' + dd;
-
-                prosesTanggal(today);
-                $('#kkbarureservasi').hide();
-              }
-            });
-          </script> <input type="text" class="form-control resetable" id="name3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="text" class="form-control resetable" id="name3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
@@ -314,32 +468,224 @@
           </select>
 
           <div id="tmp_surat_pengantar3" class="d-none">
-            <label for="surat_pengantar3">Surat Pengantar</label>
-            <input type="file" require id="surat_pengantar3" name="file_surat_pengantar" class="form-control resetable">
+            <label>
+              Surat Pengantar
+              <input type="file" require id="surat_pengantar3" name="file_surat_pengantar" class="form-control resetable">
+            </label>
           </div>
           <div id="tmp_buku_nikah3" class="d-none">
-            <label for="buku_nikah3">Buku Nikah/Akta Perkawinan</label>
-            <input type="file" require id="buku_nikah3" name="file_buku_nikah" class="form-control resetable">
+            <label>
+              Buku Nikah/Akta Perkawinan
+              <input type="file" require id="buku_nikah3" name="file_buku_nikah" class="form-control resetable">
+            </label>
           </div>
           <div id="tmp_keterangan_pindah3" class="d-none">
-            <label for="keterangan_pindah3">Surat Keterangan Pindah</label>
-            <input type="file" require id="keterangan_pindah3" name="file_surat_pindah" class="form-control resetable">
+            <label>
+              Surat Keterangan Pindah
+              <input type="file" require id="keterangan_pindah3" name="file_surat_pindah" class="form-control resetable">
+            </label>
           </div>
           <div id="tmp_keterangan_kehilangan3" class="d-none">
-            <label for="keterangan_kehilangan3">Surat Keterangan Kehilangan</label>
-            <input type="file" require id="keterangan_kehilangan3" name="file_surat_keterangan_hilang" class="form-control resetable">
+            <label>
+              Surat Keterangan Kehilangan
+              <input type="file" require id="keterangan_kehilangan3" name="file_surat_keterangan_hilang" class="form-control resetable">
+            </label>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Tutup</button>
           <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
-
         </div>
       </form>
     </div>
   </div>
 </div>
+
+<!-- MODAL KK END -->
+
+
+
+<!-- MODAL KIA START -->
+<!-- |FIRST LAYER| -->
+<div class="modal fade" id="mod_kia" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">PENGURUSAN KIA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_pemula">
+              <div class="services-item" >
+                <div class="icon">
+                  <i class="lni-user"></i>
+                </div>
+                <div class="services-content">
+                  <h3><a>PEMULA</a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_kehilangan">
+              <div class="services-item">
+                <div class="icon">
+                  <i class="lni-user"></i>
+                </div>
+                <div class="services-content">
+                  <h3><a>KEHILANGAN</a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_rusak">
+              <div class="services-item">
+                <div class="icon">
+                  <i class="lni-user"></i>
+                </div>
+                <div class="services-content">
+                  <h3><a>RUSAK</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- |SECOND LAYER| -->
+<!-- PEMULA -->
+<div class="modal fade" id="mod_kia_pemula" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">KIA PEMULA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+        <div class="haiden">
+          <input type="text" name="input[jenis]" value="1">
+        </div>
+        <div class="modal-body">
+          <!-- Data Diri -->
+          <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+          <!-- Doc -->
+          <div class="row">
+            <label class="col-lg-6" id="">
+              File KK
+              <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
+            </label>
+            <label class="col-lg-6" id="">
+              File Akta Kelahiran
+              <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
+          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- KEHILANGAN -->
+<div class="modal fade" id="mod_kia_kehilangan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">KIA KEHILANGAN</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+        <div class="haiden">
+          <input type="text" name="input[jenis]" value="1">
+        </div>
+        <div class="modal-body">
+          <!-- Data Diri -->
+          <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+          
+          <!-- Doc -->
+          <div class="row">
+            <label class="col-lg-6" id="">
+              File KK
+              <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
+            </label>
+            <label class="col-lg-6" id="">
+              File Akta Kelahiran
+              <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
+          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- RUSAK -->
+<div class="modal fade" id="mod_kia_rusak" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">KIA RUSAK</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+        <div class="haiden">
+          <input type="text" name="input[jenis]" value="1">
+        </div>
+        <div class="modal-body">
+          <!-- Data Diri -->
+          <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+          
+          <!-- Doc -->
+          <div class="row">
+            <label class="col-lg-6" id="">
+              File KK
+              <input type="file" require id="kartu_keluarga1" name="kartu_keluarga1" class="form-control resetable">
+            </label>
+            <label class="col-lg-6" id="">
+              File Akta Kelahiran
+              <input type="file" require id="akta_kelahiran1" name="akta_kelahiran1" class="form-control resetable">
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
+          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL KIA END -->
 
 <div class="modal fade" id="edit_kk" tabindex="-4" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
