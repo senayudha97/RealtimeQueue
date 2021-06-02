@@ -727,7 +727,7 @@
           <dilv class="reservasi">
             <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
             <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
-            <input type="text" name="input[ja`mkehadiran]" class="haiden jamKehediranKTPInput">
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="kkperubahandata custom-control-input" id="customSwitch2">
               <label class="kkperubahandata custom-control-label" for="customSwitch2">Aktifkan Mode Reservasi</label>
@@ -795,7 +795,7 @@
           <dilv class="reservasi">
             <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
             <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
-            <input type="text" name="input[ja`mkehadiran]" class="haiden jamKehediranKTPInput">
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="kkpecah1desa custom-control-input" id="customSwitch3">
               <label class="kkpecah1desa custom-control-label" for="customSwitch3">Aktifkan Mode Reservasi</label>
@@ -861,6 +861,40 @@
       </div>
       <form action="admin/kk_handler/kk_pindah_keluar" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
+
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="kkpindahkeluar custom-control-input" id="pindahkeluarkk">
+              <label class="kkpindahkeluar custom-control-label" for="pindahkeluarkk">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="kkpindahkeluar">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#kkpindahkeluar').hide();
+              $('.kkpindahkeluar').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#kkpindahkeluar').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#kkpindahkeluar').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <input type="text" class="form-control resetable" id="name2_5" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_5" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email2_5" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -903,6 +937,40 @@
       </div>
       <form action="admin/kk_handler/kk_pengurangan_kematian" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
+
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="kkpengurangankematian custom-control-input" id="pengurangankematiankk">
+              <label class="kkpengurangankematian custom-control-label" for="pengurangankematiankk">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="kkpengurangankematian">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#kkpengurangankematian').hide();
+              $('.kkpengurangankematian').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#kkpengurangankematian').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#kkpengurangankematian').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <input type="text" class="form-control resetable" id="name2_6" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_6" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email2_6" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -945,6 +1013,40 @@
       </div>
       <form action="admin/kk_handler/kk_penambahan_kedatangan" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
+
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="kkpenambahankedatangan custom-control-input" id="datepenambahankedatangankk">
+              <label class="kkpenambahankedatangan custom-control-label" for="datepenambahankedatangankk">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="kkpenambahankedatangan">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#kkpenambahankedatangan').hide();
+              $('.kkpenambahankedatangan').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#kkpenambahankedatangan').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#kkpenambahankedatangan').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <input type="text" class="form-control resetable" id="name2_7" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_7" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email2_7" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -987,6 +1089,40 @@
       </div>
       <form action="admin/kk_handler/kk_penambahan_kelahiran" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
+
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="kkpenambahankelahiran custom-control-input" id="kelahirankk">
+              <label class="kkpenambahankelahiran custom-control-label" for="kelahirankk">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="kkpenambahankelahiran">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#kkpenambahankelahiran').hide();
+              $('.kkpenambahankelahiran').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#kkpenambahankelahiran').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#kkpenambahankelahiran').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <input type="text" class="form-control resetable" id="name2_8" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_8" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="email" class="form-control resetable" id="email2_8" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
@@ -1085,6 +1221,42 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
+
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light akta_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranAkta" id="jamKehadiranAkta"></button></h6>
+
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
+
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="aktabarureservasi custom-control-input" id="dateaktabaru">
+              <label class="aktabarureservasi custom-control-label" for="dateaktabaru">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="aktabarureservasi">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#aktabarureservasi').hide();
+              $('.aktabarureservasi').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#aktabarureservasi').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#aktabarureservasi').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <!-- Data Diri -->
           <input type="text" class="form-control resetable" id="name3_1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3_1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -1169,6 +1341,41 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light akta_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranAkta" id="jamKehadiranAkta"></button></h6>
+
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
+
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="aktarusakreservasi custom-control-input" id="dateaktarusak">
+              <label class="aktarusakreservasi custom-control-label" for="dateaktarusak">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="aktarusakreservasi">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#aktarusakreservasi').hide();
+              $('.aktarusakreservasi').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#aktarusakreservasi').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#aktarusakreservasi').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <!-- Data Diri -->
           <input type="text" class="form-control resetable" id="name3_3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3_3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">

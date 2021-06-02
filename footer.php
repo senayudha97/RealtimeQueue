@@ -75,16 +75,22 @@
 
             $('#ktp_reservasi').text(data.maxAntrian.nilai - data.ktp.nilai);
             $('.kk_reservasi').text(data.maxAntrian.nilai - data.ktp.nilai);
+            $('.akta_reservasi').text(data.maxAntrian.nilai - data.ktp.nilai);
+
             $('.jamKehadiranKTP').text(data.jamKTP);
             $('.jamKehadiranKK').text(data.jamKTP);
+            $('.jamKehadiranAkta').text(data.jamKTP);
+
+            $('.jamKehediranKKInput').val(data.jamKTP);
+            $('.jamKehediranAktaInput').val(data.jamKTP);
 
 
-            $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);
-            $('#kkready1').text(data.maxAntrian.nilai - data.kk.nilai);
-            $('#kkready2').text(data.maxAntrian.nilai - data.kk.nilai);
-            $('.jamKehadiranKK').text(data.jamKK);
-            $('.jamKehediranKTPInput').val(data.jamKTP);
-            $('.jamKehediranKKInput').val(data.jamKK);
+            // $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);
+            // $('#kkready1').text(data.maxAntrian.nilai - data.kk.nilai);
+            // $('#kkready2').text(data.maxAntrian.nilai - data.kk.nilai);
+            // $('.jamKehadiranKK').text(data.jamKK);
+            // $('.jamKehediranKTPInput').val(data.jamKTP);
+            // $('.jamKehediranKKInput').val(data.jamKK);
           }
         }
       });
