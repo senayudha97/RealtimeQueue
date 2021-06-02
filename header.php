@@ -72,43 +72,75 @@
     <div id="hero-area" class="hero-area-bg">
       <div class="container wow fadeInDown" data-wow-delay="0.3s">
         <div class="row">
-          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="contents">
               <h4 class="mb-3">REALTIME ANTRIAN COUNTER</h4>
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                   <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <center>
                         <h5 class="card-title mb-3">KTP</h5>
-                        <h3 class="card-subtitle mb-2 text-muted mb-5" id="rtktp">0</h3>
-                        <p>Maksimal Pelayanan Hari Ini = <?= getAntrianMAx(); ?>
-                        </p>
+                        <h3 class="card-subtitle mb-2 text-muted" id="rtktp">0</h3>
                       </center>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                   <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <center>
                         <h5 class="card-title mb-3">KK</h5>
-                        <h3 class="card-subtitle mb-2 text-muted mb-5" id="rtkk">0</h3>
+                        <h3 class="card-subtitle mb-2 text-muted" id="rtkk">0</h3>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <center>
+                        <h5 class="card-title mb-3">Akta</h5>
+                        <h3 class="card-subtitle mb-2 text-muted" id="rtkakta">0</h3>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                      <center>
+                        <h5 class="card-title mb-3">KIA</h5>
+                        <h3 class="card-subtitle mb-2 text-muted" id="rtkia">0</h3>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                      <center>
                         <p>Maksimal Pelayanan Hari Ini = <?= getAntrianMAx(); ?>
-                        </p>
                       </center>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="header-button">
-                <a href="#pelayanan" class="btn btn-common">Ambil Antrian</i></a>
-              </div>
             </div>
           </div>
-          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <!-- <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
             <div class="intro-img">
               <img id="headerimg" class="img-fluid wow fadeInDown" data-wow-delay="0.3s" src="assets/img/headerfoto.png" alt="">
+            </div>
+          </div> -->
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <br>
+            <div class="header-button">
+              <center>
+                <a href="#pelayanan" class="btn btn-common">Ambil Antrian</i></a>
+              </center>
             </div>
           </div>
         </div>
