@@ -143,36 +143,39 @@
         </div>
         <div class="modal-body">
 
-          <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="ktpready1"></button></h5>
-          <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKTP" id="jamKehadiranKTPbaru"></button></h6>
-          <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
-          <div class="custom-control custom-switch">
-            <input type="checkbox" class="ktpbarureservasi custom-control-input" id="customSwitch1">
-            <label class="ktpbarureservasi custom-control-label" for="customSwitch1">Aktifkan Mode Reservasi</label>
-          </div>
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light" id="ktpready1"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKTP" id="jamKehadiranKTPbaru"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="ktpbarureservasi custom-control-input" id="customSwitch1">
+              <label class="ktpbarureservasi custom-control-label" for="customSwitch1">Aktifkan Mode Reservasi</label>
+            </div>
 
-          <div id="ktpbarureservasi">
-            <label for="tanggal_reservasi1">Tanggal Reservasi</label>
-            <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
-          </div>
-          <script>
-            $('#ktpbarureservasi').hide();
-            $('.ktpbarureservasi').click(function() {
-              if ($(this).is(':checked')) {
-                $("input[type=date]").val("")
-                $('#ktpbarureservasi').show();
-              } else {
-                let today = new Date();
-                let dd = String(today.getDate()).padStart(2, '0');
-                let mm = String(today.getMonth() + 1).padStart(2, '0');
-                let yyyy = today.getFullYear();
-                today = yyyy + '-' + mm + '-' + dd;
+            <div id="ktpbarureservasi">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#ktpbarureservasi').hide();
+              $('.ktpbarureservasi').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#ktpbarureservasi').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
 
-                prosesTanggal(today);
-                $('#ktpbarureservasi').hide();
-              }
-            });
-          </script>
+                  prosesTanggal(today);
+                  $('#ktpbarureservasi').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <input type="text" class="form-control resetable" id="name1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
