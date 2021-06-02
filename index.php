@@ -962,7 +962,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/akta_handler/akta_baru" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -985,7 +985,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Tutup</button>
-          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="submit" id="akta_baru" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
       </form>
@@ -1002,7 +1002,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/akta_handler/akta_hilang" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -1025,7 +1025,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Tutup</button>
-          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="submit" id="akta_kehilangan" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
       </form>
@@ -1042,7 +1042,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/akta_handler/akta_rusak" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -1065,7 +1065,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Tutup</button>
-          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
       </form>
@@ -1135,7 +1135,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/KIA_handler/kia_pemula" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -1165,7 +1165,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
-          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="submit" id="kia-pemula" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
       </form>
@@ -1182,7 +1182,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/KIA_handler/kia_kehilangan" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -1219,7 +1219,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
-          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="submit" id="kia_kehilangan" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
       </form>
@@ -1236,7 +1236,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/KIA_handler/kia_rusak" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -1273,7 +1273,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
-          <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+          <button type="submit" id="kia_rusak" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
       </form>
