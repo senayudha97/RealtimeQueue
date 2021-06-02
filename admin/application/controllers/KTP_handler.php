@@ -10,6 +10,40 @@ class KTP_handler extends Guide
         $this->load->model("Tbl_ktp_handler");
     }
 
+    // KTP PEMULA
+    public function ktp_pemula()
+    {
+        $datapost = $this->input->post('input');
+        if ($this->Tbl_ktp_handler->insert_ktp_pemula($datapost) == 1) {
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+            exit;
+        }
+    }
+
+    public function ktp_kehilangan()
+    {
+        $datapost = $this->input->post('input');
+        if ($this->Tbl_ktp_handler->insert_ktp_kehilangan($datapost) == 1) {
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+            exit;
+        }
+    }
+
+    public function ktp_rusak()
+    {
+        $datapost = $this->input->post('input');
+        if ($this->Tbl_ktp_handler->insert_ktp_rusak($datapost) == 1) {
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+            exit;
+        }
+    }
+
     //KTP Baru
     public function ktp_baru()
     {
@@ -42,7 +76,6 @@ class KTP_handler extends Guide
 
 
         if ($this->Tbl_ktp_handler->insert_ktp_baru($datapost) == 1) {
-
             header("Location: http://localhost/siantrian");
         } else {
             echo 'fail';

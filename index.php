@@ -140,43 +140,43 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_pemula">
-              <div class="services-item" >
-                <div class="icon">
-                  <i class="lni-add-files"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>PEMULA</a></h3>
-                </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_pemula">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-add-files"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>PEMULA</a></h3>
               </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_kehilangan">
-              <div class="services-item">
-                <div class="icon">
-                  <i class="lni-question-circle"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>KEHILANGAN</a></h3>
-                </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_kehilangan">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-question-circle"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>KEHILANGAN</a></h3>
               </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_rusak">
-              <div class="services-item">
-                <div class="icon">
-                  <i class="lni-cut"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>RUSAK</a></h3>
-                </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp_rusak">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-cut"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>RUSAK</a></h3>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+      </div>
     </div>
   </div>
 </div>
@@ -191,7 +191,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/ktp_handler/ktp_pemula" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -238,7 +238,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/ktp_handler/ktp_kehilangan" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -247,7 +247,7 @@
           <input type="text" class="form-control resetable" id="name1_2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone1_2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email1_2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-          
+
           <!-- Doc -->
           <div class="row">
             <label class="col-lg-6" id="">
@@ -292,7 +292,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/ktp_handler/ktp_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/ktp_handler/ktp_rusak" enctype="multipart/form-data" method="POST">
         <div class="haiden">
           <input type="text" name="input[jenis]" value="1">
         </div>
@@ -301,7 +301,7 @@
           <input type="text" class="form-control resetable" id="name1_3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone1_3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email1_3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-          
+
           <!-- Doc -->
           <div class="row">
             <label class="col-lg-6" id="">
@@ -911,43 +911,43 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_baru">
-              <div class="services-item" >
-                <div class="icon">
-                  <i class="lni-add-files"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>BARU</a></h3>
-                </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_baru">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-add-files"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>BARU</a></h3>
               </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kehilangan">
-              <div class="services-item">
-                <div class="icon">
-                  <i class="lni-question-circle"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>HILANG</a></h3>
-                </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kehilangan">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-question-circle"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>HILANG</a></h3>
               </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_rusak">
-              <div class="services-item">
-                <div class="icon">
-                  <i class="lni-cut"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>RUSAK</a></h3>
-                </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_rusak">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-cut"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>RUSAK</a></h3>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+      </div>
     </div>
   </div>
 </div>
@@ -971,7 +971,7 @@
           <input type="text" class="form-control resetable" id="name3_1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3_1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email3_1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-          
+
           <!-- Doc -->
           <div class="row">
             <label class="col-lg-12" id="">
@@ -1011,7 +1011,7 @@
           <input type="text" class="form-control resetable" id="name3_2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3_2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email3_2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-          
+
           <!-- Doc -->
           <div class="row">
             <label class="col-lg-12" id="">
@@ -1051,7 +1051,7 @@
           <input type="text" class="form-control resetable" id="name3_3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone3_3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email3_3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-          
+
           <!-- Doc -->
           <div class="row">
             <label class="col-lg-12" id="">
@@ -1084,43 +1084,43 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_pemula">
-              <div class="services-item" >
-                <div class="icon">
-                  <i class="lni-add-files"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>PEMULA</a></h3>
-                </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_pemula">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-add-files"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>PEMULA</a></h3>
               </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_kehilangan">
-              <div class="services-item">
-                <div class="icon">
-                  <i class="lni-question-circle"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>KEHILANGAN</a></h3>
-                </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_kehilangan">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-question-circle"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>KEHILANGAN</a></h3>
               </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_rusak">
-              <div class="services-item">
-                <div class="icon">
-                  <i class="lni-cut"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a>RUSAK</a></h3>
-                </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia_rusak">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-cut"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>RUSAK</a></h3>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+      </div>
     </div>
   </div>
 </div>
@@ -1191,7 +1191,7 @@
           <input type="text" class="form-control resetable" id="name4_2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone4_2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email4_2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-          
+
           <!-- Doc -->
           <div class="row">
             <label class="col-lg-6" id="">
@@ -1245,7 +1245,7 @@
           <input type="text" class="form-control resetable" id="name4_3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone4_3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
           <input type="text" class="form-control resetable" id="email4_3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-          
+
           <!-- Doc -->
           <div class="row">
             <label class="col-lg-6" id="">

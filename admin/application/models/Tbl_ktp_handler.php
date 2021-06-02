@@ -4,6 +4,27 @@ include_once "Gg_model.php";
 class Tbl_ktp_handler extends Gg_model
 {
 
+    public function insert_ktp_pemula($arr_data = NULL, $table = "ktp_pemula")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_ktp_kehilangan($arr_data = NULL, $table = "ktp_kehilangan")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_ktp_rusak($arr_data = NULL, $table = "ktp_rusak")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+
+
+
     public function insert_ktp_baru($arr_data = NULL, $table = "antrian_ktp")
     {
         $this->db->insert($table, $arr_data);
