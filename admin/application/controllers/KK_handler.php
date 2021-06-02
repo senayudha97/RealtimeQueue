@@ -10,6 +10,113 @@ class KK_handler extends Guide
         $this->load->model("Tbl_kk_handler");
     }
 
+    public function kk_kehilangan()
+    {
+        $datapost = $this->input->post('input');
+
+        if ($this->Tbl_kk_handler->insert_kk_kehilangan($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+    public function kk_rusak()
+    {
+        $datapost = $this->input->post('input');
+
+        if ($this->Tbl_kk_handler->insert_kk_rusak($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+    public function kk_perubahan_data()
+    {
+        $datapost = $this->input->post('input');
+
+        if ($this->Tbl_kk_handler->insert_kk_perubahan_data($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+    public function kk_pecah_1desa()
+    {
+        $datapost = $this->input->post('input');
+
+        if ($this->Tbl_kk_handler->insert_kk_pecah_1desa($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+    public function kk_pindah_keluar()
+    {
+        $datapost = $this->input->post('input');
+
+        if ($this->Tbl_kk_handler->insert_kk_pindah_keluar($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+    public function kk_pengurangan_kematian()
+    {
+        $datapost = $this->input->post('input');
+
+        if ($this->Tbl_kk_handler->insert_kk_pengurangan_kematian($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+    public function kk_penambahan_kedatangan()
+    {
+        $datapost = $this->input->post('input');
+
+        if ($this->Tbl_kk_handler->insert_kk_penambahan_kedatangan($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+    public function kk_penambahan_kelahiran()
+    {
+        $datapost = $this->input->post('input');
+
+        if ($this->Tbl_kk_handler->insert_kk_penambahan_kelahiran($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+
+
+
     //KK Baru
     public function kk_baru()
     {
@@ -215,7 +322,7 @@ class KK_handler extends Guide
         }
 
 
-        if ($this->Tbl_kk_handler->insert_ktp_baru($datapost) == 1) {
+        if ($this->Tbl_kk_handler->insert_kk_baru($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
         } else {

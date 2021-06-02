@@ -4,7 +4,57 @@ include_once "Gg_model.php";
 class Tbl_kk_handler extends Gg_model
 {
 
-    public function insert_ktp_baru($arr_data = NULL, $table = "antrian_kk")
+    public function insert_kk_kehilangan($arr_data = NULL, $table = "kk_kehilangan")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_kk_rusak($arr_data = NULL, $table = "kk_rusak")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_kk_perubahan_data($arr_data = NULL, $table = "kk_perubahan_data")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_kk_pecah_1desa($arr_data = NULL, $table = "kk_pecah_1desa")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_kk_pindah_keluar($arr_data = NULL, $table = "kk_pindah_keluar")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_kk_pengurangan_kematian($arr_data = NULL, $table = "kk_pengurangan_kematian")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_kk_penambahan_kedatangan($arr_data = NULL, $table = "kk_penambahan_kedatangan")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_kk_penambahan_kelahiran($arr_data = NULL, $table = "kk_penambahan_kelahiran")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+
+
+    public function insert_kk_baru($arr_data = NULL, $table = "antrian_kk")
     {
         $this->db->insert($table, $arr_data);
         return ($this->db->affected_rows() != 1) ? false : true;

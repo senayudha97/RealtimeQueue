@@ -480,7 +480,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/kk_handler/kk_kehilangan" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
           <input type="text" class="form-control resetable" id="name2_1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -498,7 +498,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Tutup</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
+          <button type="submit" id="btn_kkkehilangan" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
         </div>
       </form>
@@ -515,7 +515,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/kk_handler/kk_rusak" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
           <input type="text" class="form-control resetable" id="name2_2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -533,7 +533,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Tutup</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
+          <button type="submit" id="btn_kkrusak" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
         </div>
       </form>
@@ -671,7 +671,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/kk_handler/kk_perubahan_data" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
           <input type="text" class="form-control resetable" id="name2_3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -689,8 +689,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Tutup</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkperubahandata" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsuperubahandata" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
@@ -706,7 +706,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/kk_handler/kk_pecah_1desa" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
           <input type="text" class="form-control resetable" id="name2_4" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_4" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -724,8 +724,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Tutup</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkpecah_1desa" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsupecah_1desa" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
@@ -741,7 +741,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/kk_handler/kk_pindah_keluar" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
           <input type="text" class="form-control resetable" id="name2_5" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_5" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -766,8 +766,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Tutup</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkpindah_keluar" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsupindah_keluar" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
@@ -783,7 +783,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/kk_handler/kk_pengurangan_kematian" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
           <input type="text" class="form-control resetable" id="name2_6" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_6" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -808,8 +808,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Tutup</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kk_pengurangan_kematian" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsu_pengurangan_kematian" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
@@ -825,7 +825,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/kk_handler/kk_penambahan_kedatangan" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
           <input type="text" class="form-control resetable" id="name2_7" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_7" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -850,8 +850,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Tutup</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkpenambahan_kedatangan" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsupenambahan_kedatangan" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
@@ -867,7 +867,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_baru" enctype="multipart/form-data" method="POST">
+      <form action="admin/kk_handler/kk_penambahan_kelahiran" enctype="multipart/form-data" method="POST">
         <div class="modal-body">
           <input type="text" class="form-control resetable" id="name2_8" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone2_8" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -892,8 +892,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Tutup</button>
-          <button type="submit" id="btn_kkbaru" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
+          <button type="submit" id="btn_kkpenambahan_kelahiran" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsupenambahan_kelahiran" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
