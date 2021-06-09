@@ -54,7 +54,7 @@
                 <h3>File Upload User</h3>
                 <?php if ($data['jenis'] == 1) : ?>
                     <div class="row mb-3 pl-3">
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                             <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -71,7 +71,7 @@
                             </div>
 
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                             <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="aktakelahiran" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
