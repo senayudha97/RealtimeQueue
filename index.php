@@ -255,7 +255,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Kembali</button>
           <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -312,7 +312,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Kembali</button>
           <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -369,7 +369,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_ktp">Kembali</button>
           <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -455,7 +455,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk">Tutup</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk">Kembali</button>
       </div>
     </div>
   </div>
@@ -505,7 +505,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk">Tutup</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk">Kembali</button>
       </div>
     </div>
   </div>
@@ -542,7 +542,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
           <button type="submit" id="btn_kkkehilangan" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
         </div>
@@ -581,7 +581,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
           <button type="submit" id="btn_kkrusak" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
         </div>
@@ -625,7 +625,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Tutup</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Kembali</button>
       </div>
     </div>
   </div>
@@ -665,7 +665,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Tutup</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Kembali</button>
       </div>
     </div>
   </div>
@@ -705,7 +705,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Tutup</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Kembali</button>
       </div>
     </div>
   </div>
@@ -771,7 +771,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Kembali</button>
           <button type="submit" id="btn_kkkperubahandata" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsuperubahandata" class="btn btn-default">Kirim</button>
         </div>
@@ -841,7 +841,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Kembali</button>
           <button type="submit" id="btn_kkpecah_1desa" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsupecah_1desa" class="btn btn-default">Kirim</button>
         </div>
@@ -917,7 +917,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Kembali</button>
           <button type="submit" id="btn_kkpindah_keluar" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsupindah_keluar" class="btn btn-default">Kirim</button>
         </div>
@@ -993,7 +993,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Kembali</button>
           <button type="submit" id="btn_kk_pengurangan_kematian" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsu_pengurangan_kematian" class="btn btn-default">Kirim</button>
         </div>
@@ -1069,7 +1069,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Kembali</button>
           <button type="submit" id="btn_kkpenambahan_kedatangan" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsupenambahan_kedatangan" class="btn btn-default">Kirim</button>
         </div>
@@ -1145,7 +1145,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Kembali</button>
           <button type="submit" id="btn_kkpenambahan_kelahiran" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsupenambahan_kelahiran" class="btn btn-default">Kirim</button>
         </div>
@@ -1274,7 +1274,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Kembali</button>
           <button type="submit" id="akta_baru" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -1318,7 +1318,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Kembali</button>
           <button type="submit" id="akta_kehilangan" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -1393,7 +1393,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta">Kembali</button>
           <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -1527,7 +1527,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Kembali</button>
           <button type="submit" id="kia-pemula" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -1585,7 +1585,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Kembali</button>
           <button type="submit" id="kia_kehilangan" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
@@ -1673,7 +1673,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Tutup</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Kembali</button>
           <button type="submit" id="kia_rusak" class="btn btn-common asli">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
         </div>
