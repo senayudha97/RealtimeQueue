@@ -1,3 +1,4 @@
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
 <div class="container-fluid">
     <h2 class="mb-5"><?= $title; ?></h2>
 
@@ -56,7 +57,7 @@
                             <td scope="row"><?= $i; ?></td>
                             <td><?= content_date($value['tanggal_antrian']); ?></td>
                             <td><?= $value['nama']; ?></td>
-                            <td><?= $value['nohp']; ?></td>
+                            <td><a target="_blank" href="https://api.whatsapp.com/send?phone=<?= preg_replace('/0/', '62', $value['nohp'], 1); ?>&text=hallo" class="btn btn-success btn-sm">Whatsapp &nbsp; <img width="20" src="<?= base_url('assets/img/wa.png'); ?>" alt=""></a></td>
                             <td><?= $value['email']; ?></td>
                             <td><?= $value['jenis'] == 1 ?  'Baru' : 'Perubahan'; ?></td>
                             <td>
