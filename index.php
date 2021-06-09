@@ -726,8 +726,8 @@
 
           <dilv class="reservasi">
             <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
-            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
-            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="kkperubahandata custom-control-input" id="customSwitch2">
               <label class="kkperubahandata custom-control-label" for="customSwitch2">Aktifkan Mode Reservasi</label>
@@ -794,8 +794,8 @@
 
           <dilv class="reservasi">
             <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
-            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
-            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="kkpecah1desa custom-control-input" id="customSwitch3">
               <label class="kkpecah1desa custom-control-label" for="customSwitch3">Aktifkan Mode Reservasi</label>
@@ -864,8 +864,8 @@
 
           <dilv class="reservasi">
             <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
-            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
-            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="kkpindahkeluar custom-control-input" id="pindahkeluarkk">
               <label class="kkpindahkeluar custom-control-label" for="pindahkeluarkk">Aktifkan Mode Reservasi</label>
@@ -940,8 +940,8 @@
 
           <dilv class="reservasi">
             <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
-            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
-            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="kkpengurangankematian custom-control-input" id="pengurangankematiankk">
               <label class="kkpengurangankematian custom-control-label" for="pengurangankematiankk">Aktifkan Mode Reservasi</label>
@@ -1016,8 +1016,8 @@
 
           <dilv class="reservasi">
             <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
-            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
-            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="kkpenambahankedatangan custom-control-input" id="datepenambahankedatangankk">
               <label class="kkpenambahankedatangan custom-control-label" for="datepenambahankedatangankk">Aktifkan Mode Reservasi</label>
@@ -1092,8 +1092,8 @@
 
           <dilv class="reservasi">
             <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
-            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKTPbaru"></button></h6>
-            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKTPInput">
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="kkpenambahankelahiran custom-control-input" id="kelahirankk">
               <label class="kkpenambahankelahiran custom-control-label" for="kelahirankk">Aktifkan Mode Reservasi</label>
@@ -1469,6 +1469,40 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
+
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKIA" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKIAInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="KIArusakrservasi custom-control-input" id="dateKIApemula">
+              <label class="KIArusakrservasi custom-control-label" for="dateKIApemula">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="KIArusakrservasi">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#KIArusakrservasi').hide();
+              $('.KIArusakrservasi').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#KIArusakrservasi').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#KIArusakrservasi').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <!-- Data Diri -->
           <input type="text" class="form-control resetable" id="name4_1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone4_1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
@@ -1565,9 +1599,6 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">KIA RUSAK</h5>
-        &nbsp;
-        &nbsp;
-        <img src="assets/img/pos.png" width="50px" alt="">
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -1578,6 +1609,39 @@
           <input type="text" name="input[jenis]" value="1">
         </div>
         <div class="modal-body">
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKIA" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKIAInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="KIApemularservasi custom-control-input" id="dateKIArusak">
+              <label class="KIApemularservasi custom-control-label" for="dateKIArusak">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="KIApemularservasi">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#KIApemularservasi').hide();
+              $('.KIApemularservasi').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#KIApemularservasi').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#KIApemularservasi').hide();
+                }
+              });
+            </script>
+          </dilv>
+
           <!-- Data Diri -->
           <input type="text" class="form-control resetable" id="name4_3" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
           <input type="tel" class="form-control resetable" id="phone4_3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">

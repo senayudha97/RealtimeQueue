@@ -80,16 +80,18 @@
             $('.jamKehadiranKTP').text(data.jamKTP);
             $('.jamKehadiranKK').text(data.jamKTP);
             $('.jamKehadiranAkta').text(data.jamKTP);
+            $('.jamKehadiranKIA').text(data.jamKTP);
 
+            $('.jamKehediranKTPInput').val(data.jamKTP);
             $('.jamKehediranKKInput').val(data.jamKTP);
             $('.jamKehediranAktaInput').val(data.jamKTP);
+            $('.jamKehediranKIAInput').val(data.jamKTP);
 
 
             // $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);
             // $('#kkready1').text(data.maxAntrian.nilai - data.kk.nilai);
             // $('#kkready2').text(data.maxAntrian.nilai - data.kk.nilai);
             // $('.jamKehadiranKK').text(data.jamKK);
-            // $('.jamKehediranKTPInput').val(data.jamKTP);
             // $('.jamKehediranKKInput').val(data.jamKK);
           }
         }
