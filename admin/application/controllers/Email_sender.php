@@ -35,6 +35,8 @@ class Email_sender extends Guide
         $dataPost = $this->input->post('input');
 
         $this->db->insert('email_sender', $dataPost);
+        $this->sendEmail(['email' => "senayudha97@gmail.com", 'message' => $dataPost['mail'], 'istolak' => true]);
+
         $this->flash_success("Pengiriman Email Berhasil");
         redirect('Email_sender');
     }
