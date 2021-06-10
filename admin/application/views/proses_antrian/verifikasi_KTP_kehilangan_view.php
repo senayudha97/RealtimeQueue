@@ -56,7 +56,7 @@
                             <td scope="row"><?= $i; ?></td>
                             <td><?= content_date($value['tanggal_antrian']); ?></td>
                             <td><?= $value['nama']; ?></td>
-                            <td><?= $value['nohp']; ?></td>
+                            <td><a target="_blank" href="https://api.whatsapp.com/send?phone=<?= preg_replace('/0/', '62', $value['nohp'], 1); ?>&text=hallo" class="btn btn-success btn-sm">Whatsapp &nbsp; <img width="20" src="<?= base_url('assets/img/wa.png'); ?>" alt=""></a></td>
                             <td><?= $value['email']; ?></td>
                             <div class="container-fluid">
                                 <h2 class="mb-5"><?= $title; ?></h2>
