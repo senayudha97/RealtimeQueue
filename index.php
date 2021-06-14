@@ -691,7 +691,7 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan1">
+          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_pindah">
             <div class="services-item">
               <div class="icon">
                 <i class="lni-car"></i>
@@ -701,7 +701,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan2">
+          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_kematian">
             <div class="services-item">
               <div class="icon">
                 <i class="lni-pulse"></i>
@@ -972,7 +972,7 @@
   </div>
 </div>
 <!-- PINDAH KELUAR -->
-<div class="modal fade" id="mod_kk_perubahan_pengurangan1" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="mod_kk_perubahan_pengurangan_pindah" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -981,74 +981,38 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="admin/kk_handler/kk_pindah_keluar" enctype="multipart/form-data" method="POST">
-        <div class="modal-body">
-
-          <dilv class="reservasi">
-            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
-            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
-            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="kkpindahkeluar custom-control-input" id="pindahkeluarkk">
-              <label class="kkpindahkeluar custom-control-label" for="pindahkeluarkk">Aktifkan Mode Reservasi</label>
-            </div>
-
-            <div id="kkpindahkeluar">
-              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
-              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
-            </div>
-            <script>
-              $('#kkpindahkeluar').hide();
-              $('.kkpindahkeluar').click(function() {
-                if ($(this).is(':checked')) {
-                  $("input[type=date]").val("")
-                  $('#kkpindahkeluar').show();
-                } else {
-                  let today = new Date();
-                  let dd = String(today.getDate()).padStart(2, '0');
-                  let mm = String(today.getMonth() + 1).padStart(2, '0');
-                  let yyyy = today.getFullYear();
-                  today = yyyy + '-' + mm + '-' + dd;
-
-                  prosesTanggal(today);
-                  $('#kkpindahkeluar').hide();
-                }
-              });
-            </script>
-          </dilv>
-
-          <input type="text" class="form-control resetable" id="name2_5" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
-          <input type="tel" class="form-control resetable" id="phone2_5" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
-          <input type="email" class="form-control resetable" id="email2_5" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-
-          <div class="row">
-            <label class="col-lg-6" id="">
-              Surat Keterangan Pindah
-              <div class="custom-file">
-                <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="surat_pindah2_5">
-                <label class="custom-file-label" for="surat_pindah2_5">Pilih file Surat Keterangan Pindah</label>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_pindah_desa">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-car"></i>
               </div>
-            </label>
-            <label class="col-lg-6" id="">
-              Kartu Keluarga Lama
-              <div class="custom-file">
-                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_5" name="dokumen_lama2_5">
-                <label class="custom-file-label" for="dokumen_lama2_5">Pilih file Kartu Keluarga Lama</label>
+              <div class="services-content">
+                <h3><a>PINDAH DESA/KECAMATAN</a></h3>
               </div>
-            </label>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_pindah_kota">
+            <div class="services-item">
+              <div class="icon">
+                <i class="lni-apartment"></i>
+              </div>
+              <div class="services-content">
+                <h3><a>PINDAH KELUAR KOTA</a></h3>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Kembali</button>
-          <button type="submit" id="btn_kkpindah_keluar" class="btn btn-common">Kirim</button>
-          <button type="button" ondblclick="event.preventDefault()" id="palsupindah_keluar" class="btn btn-default">Kirim</button>
-        </div>
-      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Kembali</button>
+      </div>
     </div>
   </div>
 </div>
 <!-- KEMATIAN -->
-<div class="modal fade" id="mod_kk_perubahan_pengurangan2" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="mod_kk_perubahan_pengurangan_kematian" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -1270,6 +1234,159 @@
           <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Kembali</button>
           <button type="submit" id="btn_kkpenambahan_kelahiran" class="btn btn-common">Kirim</button>
           <button type="button" ondblclick="event.preventDefault()" id="palsupenambahan_kelahiran" class="btn btn-default">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- |FIFTH LAYER| -->
+<!-- PINDAH DESA/KECAMATAN -->
+<div class="modal fade" id="mod_kk_perubahan_pengurangan_pindah_desa" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">PINDAH DESA/KECAMATAN</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="admin/kk_handler/kk_pindah_keluar" enctype="multipart/form-data" method="POST">
+        <div class="modal-body">
+
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="kkpindahkeluar custom-control-input" id="pindahkeluarkk">
+              <label class="kkpindahkeluar custom-control-label" for="pindahkeluarkk">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="kkpindahkeluar">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#kkpindahkeluar').hide();
+              $('.kkpindahkeluar').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#kkpindahkeluar').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#kkpindahkeluar').hide();
+                }
+              });
+            </script>
+          </dilv>
+
+          <input type="text" class="form-control resetable" id="name2_5" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone2_5" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="email" class="form-control resetable" id="email2_5" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+          <div class="row">
+            <label class="col-lg-6" id="">
+              Surat Keterangan Pindah
+              <div class="custom-file">
+                <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="surat_pindah2_5">
+                <label class="custom-file-label" for="surat_pindah2_5">Pilih file Surat Keterangan Pindah</label>
+              </div>
+            </label>
+            <label class="col-lg-6" id="">
+              Kartu Keluarga Lama
+              <div class="custom-file">
+                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_5" name="dokumen_lama2_5">
+                <label class="custom-file-label" for="dokumen_lama2_5">Pilih file Kartu Keluarga Lama</label>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_pindah">Kembali</button>
+          <button type="submit" id="btn_kkpindah_keluar" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsupindah_keluar" class="btn btn-default">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- PINDAH KELUAR KOTA -->
+<div class="modal fade" id="mod_kk_perubahan_pengurangan_pindah_kota" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">PINDAH KELUAR KOTA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="admin/kk_handler/kk_pindah_keluar" enctype="multipart/form-data" method="POST">
+        <div class="modal-body">
+
+          <dilv class="reservasi">
+            <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+            <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
+            <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="kkpindahkeluar custom-control-input" id="pindahkeluarkk">
+              <label class="kkpindahkeluar custom-control-label" for="pindahkeluarkk">Aktifkan Mode Reservasi</label>
+            </div>
+
+            <div id="kkpindahkeluar">
+              <label for="tanggal_reservasi1">Tanggal Reservasi</label>
+              <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
+            </div>
+            <script>
+              $('#kkpindahkeluar').hide();
+              $('.kkpindahkeluar').click(function() {
+                if ($(this).is(':checked')) {
+                  $("input[type=date]").val("")
+                  $('#kkpindahkeluar').show();
+                } else {
+                  let today = new Date();
+                  let dd = String(today.getDate()).padStart(2, '0');
+                  let mm = String(today.getMonth() + 1).padStart(2, '0');
+                  let yyyy = today.getFullYear();
+                  today = yyyy + '-' + mm + '-' + dd;
+
+                  prosesTanggal(today);
+                  $('#kkpindahkeluar').hide();
+                }
+              });
+            </script>
+          </dilv>
+
+          <input type="text" class="form-control resetable" id="name2_5" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+          <input type="tel" class="form-control resetable" id="phone2_5" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+          <input type="email" class="form-control resetable" id="email2_5" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+          <div class="row">
+            <label class="col-lg-6" id="">
+              Surat Keterangan Pindah
+              <div class="custom-file">
+                <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="surat_pindah2_5">
+                <label class="custom-file-label" for="surat_pindah2_5">Pilih file Surat Keterangan Pindah</label>
+              </div>
+            </label>
+            <label class="col-lg-6" id="">
+              Kartu Keluarga Lama
+              <div class="custom-file">
+                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_5" name="dokumen_lama2_5">
+                <label class="custom-file-label" for="dokumen_lama2_5">Pilih file Kartu Keluarga Lama</label>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_pindah">Kembali</button>
+          <button type="submit" id="btn_kkpindah_keluar" class="btn btn-common">Kirim</button>
+          <button type="button" ondblclick="event.preventDefault()" id="palsupindah_keluar" class="btn btn-default">Kirim</button>
         </div>
       </form>
     </div>
