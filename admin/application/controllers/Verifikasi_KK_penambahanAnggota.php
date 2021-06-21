@@ -17,9 +17,9 @@ class Verifikasi_KK_penambahanAnggota extends Guide
         $data['title'] = get_title($this->uri->segment(1));
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->db->order_by('tanggal_antrian', 'ASC');
-        // $this->db->where('is_delete', $this->is_delete);
-        // $this->db->where('status ', 0);
-        // $this->db->where('tanggal_antrian ', date('Y-m-d'));
+        $this->db->where('is_delete', $this->is_delete);
+        $this->db->where('status ', 0);
+        $this->db->where('tanggal_antrian ', date('Y-m-d'));
         $data['data'] = $this->db->get('kk_penambahan_kedatangan')->result_array();
 
         $this->load->view('templates/header', $data);

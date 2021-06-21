@@ -338,7 +338,7 @@
 </div>
 <!-- PENAMBAHAN ANGGOTA -->
 <div class="modal fade" id="mod_kk_perubahan_penambahan" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PENAMBAHAN ANGGOTA</h5>
@@ -623,7 +623,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Kembali</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Kembali</button>
             </div>
         </div>
     </div>
@@ -697,8 +697,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Kembali</button>
-                    <button type="submit" id="btn_kk_pengurangan_kematian" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsu_pengurangan_kematian" class="btn btn-default">Kirim</button>
+                    <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
                 </div>
             </form>
         </div>
@@ -773,8 +773,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Kembali</button>
-                    <button type="submit" id="btn_kkpenambahan_kedatangan" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsupenambahan_kedatangan" class="btn btn-default">Kirim</button>
+                    <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
                 </div>
             </form>
         </div>
@@ -849,8 +849,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Kembali</button>
-                    <button type="submit" id="btn_kkpenambahan_kelahiran" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsupenambahan_kelahiran" class="btn btn-default">Kirim</button>
+                    <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
                 </div>
             </form>
         </div>

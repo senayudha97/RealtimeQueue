@@ -104,6 +104,10 @@ class KK_handler extends Guide
     public function kk_pengurangan_kematian()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+
 
         if ($this->Tbl_kk_handler->insert_kk_pengurangan_kematian($datapost) == 1) {
 
@@ -117,6 +121,9 @@ class KK_handler extends Guide
     public function kk_penambahan_kedatangan()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
 
         if ($this->Tbl_kk_handler->insert_kk_penambahan_kedatangan($datapost) == 1) {
 
@@ -130,7 +137,9 @@ class KK_handler extends Guide
     public function kk_penambahan_kelahiran()
     {
         $datapost = $this->input->post('input');
-
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
         if ($this->Tbl_kk_handler->insert_kk_penambahan_kelahiran($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
