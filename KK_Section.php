@@ -191,7 +191,6 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
                     <button type="submit" id="btn_kkkehilangan" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
                 </div>
             </form>
         </div>
@@ -251,7 +250,6 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
                     <button type="submit" id="btn_kkrusak" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsubaru" class="btn btn-default">Kirim</button>
                 </div>
             </form>
         </div>
@@ -340,7 +338,7 @@
 </div>
 <!-- PENAMBAHAN ANGGOTA -->
 <div class="modal fade" id="mod_kk_perubahan_penambahan" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PENAMBAHAN ANGGOTA</h5>
@@ -381,7 +379,7 @@
 <!-- |FOURTH LAYER| -->
 <!-- PERUBAHAN -->
 <div class="modal fade" id="mod_kk_perubahan_perubahan1" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PERUBAHAN KK</h5>
@@ -470,9 +468,9 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Kembali</button>
-                    <button type="submit" id="btn_kkkperubahandata" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsuperubahandata" class="btn btn-default">Kirim</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
+                    <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
                 </div>
             </form>
         </div>
@@ -582,9 +580,9 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Kembali</button>
-                    <button type="submit" id="btn_kkpecah_1desa" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsupecah_1desa" class="btn btn-default">Kirim</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
+                    <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
                 </div>
             </form>
         </div>
@@ -869,7 +867,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/kk_handler/kk_pindah_keluar" enctype="multipart/form-data" method="POST">
+            <form action="admin/kk_handler/kk_pindah_kecamatan" enctype="multipart/form-data" method="POST">
                 <div class="modal-body">
 
                     <dilv class="reservasi">
@@ -877,20 +875,20 @@
                         <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="kkpindahkeluar custom-control-input" id="pindahkeluarkk">
-                            <label class="kkpindahkeluar custom-control-label" for="pindahkeluarkk">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="kkpindah1desa custom-control-input" id="pindahkeluarkk">
+                            <label class="kkpindah1desa custom-control-label" for="pindahkeluarkk">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="kkpindahkeluar">
+                        <div id="kkpindah1desa">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#kkpindahkeluar').hide();
-                            $('.kkpindahkeluar').click(function() {
+                            $('#kkpindah1desa').hide();
+                            $('.kkpindah1desa').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#kkpindahkeluar').show();
+                                    $('#kkpindah1desa').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -899,7 +897,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#kkpindahkeluar').hide();
+                                    $('#kkpindah1desa').hide();
                                 }
                             });
                         </script>
@@ -928,8 +926,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_pindah">Kembali</button>
-                    <button type="submit" id="btn_kkpindah_keluar" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsupindah_keluar" class="btn btn-default">Kirim</button>
+                    <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
                 </div>
             </form>
         </div>
@@ -945,7 +943,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/kk_handler/kk_pindah_keluar" enctype="multipart/form-data" method="POST">
+            <form action="admin/kk_handler/kk_pindah_keluar_kota" enctype="multipart/form-data" method="POST">
                 <div class="modal-body">
 
                     <dilv class="reservasi">
@@ -953,8 +951,8 @@
                         <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKK" id="jamKehadiranKK"></button></h6>
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKKInput">
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="kkpindahkeluar custom-control-input" id="pindahkeluarkk">
-                            <label class="kkpindahkeluar custom-control-label" for="pindahkeluarkk">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="kkpindahkeluar custom-control-input" id="pindahkeluarkotakk">
+                            <label class="kkpindahkeluar custom-control-label" for="pindahkeluarkotakk">Aktifkan Mode Reservasi</label>
                         </div>
 
                         <div id="kkpindahkeluar">
@@ -1004,8 +1002,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_pindah">Kembali</button>
-                    <button type="submit" id="btn_kkpindah_keluar" class="btn btn-common">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" id="palsupindah_keluar" class="btn btn-default">Kirim</button>
+                    <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
                 </div>
             </form>
         </div>

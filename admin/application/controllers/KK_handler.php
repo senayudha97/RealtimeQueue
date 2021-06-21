@@ -10,10 +10,10 @@ class KK_handler extends Guide
         $this->load->model("Tbl_kk_handler");
     }
 
-    public function kk_kehilangan()
+    public function kk_kehilangan() // POS
     {
         $datapost = $this->input->post('input');
-
+        $datapost['tanggal_antrian'] = date('Y-m-d');
         if ($this->Tbl_kk_handler->insert_kk_kehilangan($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -23,10 +23,10 @@ class KK_handler extends Guide
         exit;
     }
 
-    public function kk_rusak()
+    public function kk_rusak() // POS
     {
         $datapost = $this->input->post('input');
-
+        $datapost['tanggal_antrian'] = date('Y-m-d');
         if ($this->Tbl_kk_handler->insert_kk_rusak($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -39,6 +39,9 @@ class KK_handler extends Guide
     public function kk_perubahan_data()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
 
         if ($this->Tbl_kk_handler->insert_kk_perubahan_data($datapost) == 1) {
 
@@ -52,6 +55,10 @@ class KK_handler extends Guide
     public function kk_pecah_1desa()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+
 
         if ($this->Tbl_kk_handler->insert_kk_pecah_1desa($datapost) == 1) {
 
@@ -62,11 +69,30 @@ class KK_handler extends Guide
         exit;
     }
 
-    public function kk_pindah_keluar()
+    public function kk_pindah_kecamatan()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
 
-        if ($this->Tbl_kk_handler->insert_kk_pindah_keluar($datapost) == 1) {
+        if ($this->Tbl_kk_handler->insert_kk_pindah_kecamatan($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
+
+    public function kk_pindah_keluar_kota()
+    {
+        $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+
+        if ($this->Tbl_kk_handler->insert_kk_pindah_keluar_kota($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
         } else {

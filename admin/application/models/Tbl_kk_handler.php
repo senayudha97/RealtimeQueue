@@ -28,7 +28,13 @@ class Tbl_kk_handler extends Gg_model
         return ($this->db->affected_rows() != 1) ? false : true;
     }
 
-    public function insert_kk_pindah_keluar($arr_data = NULL, $table = "kk_pindah_keluar")
+    public function insert_kk_pindah_kecamatan($arr_data = NULL, $table = "kk_pindah_kecamatan")
+    {
+        $this->db->insert($table, $arr_data);
+        return ($this->db->affected_rows() != 1) ? false : true;
+    }
+
+    public function insert_kk_pindah_keluar_kota($arr_data = NULL, $table = "kk_pindah_keluar_kota")
     {
         $this->db->insert($table, $arr_data);
         return ($this->db->affected_rows() != 1) ? false : true;
