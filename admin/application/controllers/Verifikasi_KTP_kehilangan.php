@@ -21,12 +21,12 @@ class verifikasi_KTP_kehilangan extends Guide
         $this->db->where('is_delete', $this->is_delete);
         $this->db->where('status ', 0);
         $this->db->where('tanggal_antrian ', date('Y-m-d'));
-        $data['data'] = $this->db->get('antrian_ktp')->result_array();
+        $data['data'] = $this->db->get('ktp_kehilangan')->result_array();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('proses_antrian/verifikasi_KTP_pemula_view', $data);
+        $this->load->view('proses_antrian/verifikasi_KTP_kehilangan_view', $data);
         $this->load->view('templates/footer');
     }
 
