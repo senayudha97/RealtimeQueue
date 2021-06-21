@@ -14,6 +14,9 @@ class KTP_handler extends Guide
     public function ktp_pemula()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
         if ($this->Tbl_ktp_handler->insert_ktp_pemula($datapost) == 1) {
             header("Location: http://localhost/siantrian");
         } else {
@@ -25,6 +28,9 @@ class KTP_handler extends Guide
     public function ktp_kehilangan()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
         if ($this->Tbl_ktp_handler->insert_ktp_kehilangan($datapost) == 1) {
             header("Location: http://localhost/siantrian");
         } else {
@@ -36,6 +42,9 @@ class KTP_handler extends Guide
     public function ktp_rusak()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
         if ($this->Tbl_ktp_handler->insert_ktp_rusak($datapost) == 1) {
             header("Location: http://localhost/siantrian");
         } else {
