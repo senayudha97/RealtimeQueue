@@ -13,6 +13,9 @@ class KIA_handler extends Guide
     public function KIA_pemula()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
 
         if ($this->Tbl_KIA_handler->insert_KIA_pemula($datapost) == 1) {
 
@@ -26,6 +29,8 @@ class KIA_handler extends Guide
     public function KIA_rusak()
     {
         $datapost = $this->input->post('input');
+        $datapost['tanggal_antrian'] = date('Y-m-d');
+
 
         if ($this->Tbl_KIA_handler->insert_KIA_rusak($datapost) == 1) {
 
@@ -39,6 +44,9 @@ class KIA_handler extends Guide
     public function KIA_kehilangan()
     {
         $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
 
         if ($this->Tbl_KIA_handler->insert_KIA_kehilangan($datapost) == 1) {
 
