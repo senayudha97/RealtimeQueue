@@ -13,7 +13,7 @@
 <?php include "KK_Section.php"; ?>
 
 <!-- MODAL AKTA START -->
-<?php include "Akta_Section.php"; ?>
+<?php include "Akta_Section2.php"; ?>
 
 <!-- MODAL KIA START -->
 <?php include "KIA_Section.php"; ?>

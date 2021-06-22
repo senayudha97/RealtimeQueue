@@ -10,11 +10,13 @@ class Akta_handler extends Guide
         $this->load->model("Tbl_akta_handler");
     }
 
-    public function akta_baru()
+    public function akta_kelahiran_baru()
     {
         $datapost = $this->input->post('input');
-
-        if ($this->Tbl_akta_handler->insert_akta_baru($datapost) == 1) {
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+        if ($this->Tbl_akta_handler->insert_akta_kelahiran_baru($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
         } else {
@@ -23,11 +25,13 @@ class Akta_handler extends Guide
         exit;
     }
 
-    public function akta_rusak()
+    public function akta_kelahiran_hilang()
     {
         $datapost = $this->input->post('input');
-
-        if ($this->Tbl_akta_handler->insert_akta_rusak($datapost) == 1) {
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+        if ($this->Tbl_akta_handler->insert_akta_kelahiran_hilang($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
         } else {
@@ -36,11 +40,14 @@ class Akta_handler extends Guide
         exit;
     }
 
-    public function akta_hilang()
+
+    public function akta_kelahiran_rusak()
     {
         $datapost = $this->input->post('input');
-
-        if ($this->Tbl_akta_handler->insert_akta_hilang($datapost) == 1) {
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+        if ($this->Tbl_akta_handler->insert_akta_kelahiran_rusak($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
         } else {

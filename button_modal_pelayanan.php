@@ -34,7 +34,7 @@
                         <i class="lni-home"></i>
                     </div>
                     <div class="services-content">
-                        <h3><a>Akta Kelahiran</a></h3>
+                        <h3><a>Akta</a></h3>
                     </div>
                 </div>
             </div>
