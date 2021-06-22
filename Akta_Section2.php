@@ -538,7 +538,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_rusak" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_kelahiran_pembaruan" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -550,20 +550,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktarusakreservasi custom-control-input" id="dateaktarusak">
-                            <label class="aktarusakreservasi custom-control-label" for="dateaktarusak">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktakelahiranpembaruanreservasi custom-control-input" id="dateaktakelahiranpembaruan">
+                            <label class="aktakelahiranpembaruanreservasi custom-control-label" for="dateaktakelahiranpembaruan">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktarusakreservasi">
+                        <div id="aktakelahiranpembaruanreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktarusakreservasi').hide();
-                            $('.aktarusakreservasi').click(function() {
+                            $('#aktakelahiranpembaruanreservasi').hide();
+                            $('.aktakelahiranpembaruanreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktarusakreservasi').show();
+                                    $('#aktakelahiranpembaruanreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -572,7 +572,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktarusakreservasi').hide();
+                                    $('#aktakelahiranpembaruanreservasi').hide();
                                 }
                             });
                         </script>

@@ -55,4 +55,20 @@ class Akta_handler extends Guide
         }
         exit;
     }
+
+
+    public function akta_kelahiran_pembaruan()
+    {
+        $datapost = $this->input->post('input');
+        if ($datapost['tanggal_antrian'] == null) {
+            $datapost['tanggal_antrian'] = date('Y-m-d');
+        }
+        if ($this->Tbl_akta_handler->insert_akta_kelahiran_pembaruan($datapost) == 1) {
+
+            header("Location: http://localhost/siantrian");
+        } else {
+            echo 'fail';
+        }
+        exit;
+    }
 }
