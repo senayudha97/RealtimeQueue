@@ -613,7 +613,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_baru" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_kematian_baru" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -626,20 +626,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktabarureservasi custom-control-input" id="dateaktabaru">
-                            <label class="aktabarureservasi custom-control-label" for="dateaktabaru">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktakematianbarureservasi custom-control-input" id="dateaktakematianbaru">
+                            <label class="aktakematianbarureservasi custom-control-label" for="dateaktakematianbaru">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktabarureservasi">
+                        <div id="aktakematianbarureservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktabarureservasi').hide();
-                            $('.aktabarureservasi').click(function() {
+                            $('#aktakematianbarureservasi').hide();
+                            $('.aktakematianbarureservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktabarureservasi').show();
+                                    $('#aktakematianbarureservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -648,7 +648,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktabarureservasi').hide();
+                                    $('#aktakematianbarureservasi').hide();
                                 }
                             });
                         </script>
@@ -689,7 +689,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_baru" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_kematian_hilang" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -702,20 +702,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktabarureservasi custom-control-input" id="dateaktabaru">
-                            <label class="aktabarureservasi custom-control-label" for="dateaktabaru">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktakematianhilangreservasi custom-control-input" id="dateaktakematianhilang">
+                            <label class="aktakematianhilangreservasi custom-control-label" for="dateaktakematianhilang">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktabarureservasi">
+                        <div id="aktakematianhilangreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktabarureservasi').hide();
-                            $('.aktabarureservasi').click(function() {
+                            $('#aktakematianhilangreservasi').hide();
+                            $('.aktakematianhilangreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktabarureservasi').show();
+                                    $('#aktakematianhilangreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -724,7 +724,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktabarureservasi').hide();
+                                    $('#aktakematianhilangreservasi').hide();
                                 }
                             });
                         </script>
@@ -765,7 +765,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_rusak" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_kematian_rusak" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -777,20 +777,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktarusakreservasi custom-control-input" id="dateaktarusak">
-                            <label class="aktarusakreservasi custom-control-label" for="dateaktarusak">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktakematianrusakreservasi custom-control-input" id="dateaktakematianrusak">
+                            <label class="aktakematianrusakreservasi custom-control-label" for="dateaktakematianrusak">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktarusakreservasi">
+                        <div id="aktakematianrusakreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktarusakreservasi').hide();
-                            $('.aktarusakreservasi').click(function() {
+                            $('#aktakematianrusakreservasi').hide();
+                            $('.aktakematianrusakreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktarusakreservasi').show();
+                                    $('#aktakematianrusakreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -799,7 +799,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktarusakreservasi').hide();
+                                    $('#aktakematianrusakreservasi').hide();
                                 }
                             });
                         </script>
@@ -840,7 +840,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_rusak" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_kematian_pembaruan" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -852,20 +852,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktarusakreservasi custom-control-input" id="dateaktarusak">
-                            <label class="aktarusakreservasi custom-control-label" for="dateaktarusak">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktakematianpembaruanreservasi custom-control-input" id="dateaktakematianpembaruan">
+                            <label class="aktakematianpembaruanreservasi custom-control-label" for="dateaktakematianpembaruan">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktarusakreservasi">
+                        <div id="aktakematianpembaruanreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktarusakreservasi').hide();
-                            $('.aktarusakreservasi').click(function() {
+                            $('#aktakematianpembaruanreservasi').hide();
+                            $('.aktakematianpembaruanreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktarusakreservasi').show();
+                                    $('#aktakematianpembaruanreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -874,7 +874,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktarusakreservasi').hide();
+                                    $('#aktakematianpembaruanreservasi').hide();
                                 }
                             });
                         </script>
@@ -915,7 +915,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_baru" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_perkawinan_baru" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -928,20 +928,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktabarureservasi custom-control-input" id="dateaktabaru">
-                            <label class="aktabarureservasi custom-control-label" for="dateaktabaru">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktaperkawinanbarureservasi custom-control-input" id="dateaktaperkawinanbaru">
+                            <label class="aktaperkawinanbarureservasi custom-control-label" for="dateaktaperkawinanbaru">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktabarureservasi">
+                        <div id="aktaperkawinanbarureservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktabarureservasi').hide();
-                            $('.aktabarureservasi').click(function() {
+                            $('#aktaperkawinanbarureservasi').hide();
+                            $('.aktaperkawinanbarureservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktabarureservasi').show();
+                                    $('#aktaperkawinanbarureservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -950,7 +950,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktabarureservasi').hide();
+                                    $('#aktaperkawinanbarureservasi').hide();
                                 }
                             });
                         </script>
@@ -991,7 +991,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_baru" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_perkawinan_hilang" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -1004,20 +1004,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktabarureservasi custom-control-input" id="dateaktabaru">
-                            <label class="aktabarureservasi custom-control-label" for="dateaktabaru">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktaperkawinanhilangreservasi custom-control-input" id="dateaktaperkawinanhilang">
+                            <label class="aktaperkawinanhilangreservasi custom-control-label" for="dateaktaperkawinanhilang">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktabarureservasi">
+                        <div id="aktaperkawinanhilangreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktabarureservasi').hide();
-                            $('.aktabarureservasi').click(function() {
+                            $('#aktaperkawinanhilangreservasi').hide();
+                            $('.aktaperkawinanhilangreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktabarureservasi').show();
+                                    $('#aktaperkawinanhilangreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -1026,7 +1026,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktabarureservasi').hide();
+                                    $('#aktaperkawinanhilangreservasi').hide();
                                 }
                             });
                         </script>
@@ -1067,7 +1067,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_rusak" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_perkawinan_rusak" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -1079,20 +1079,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktarusakreservasi custom-control-input" id="dateaktarusak">
-                            <label class="aktarusakreservasi custom-control-label" for="dateaktarusak">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktaperkawinanrusakreservasi custom-control-input" id="dateaktaperkawinanrusak">
+                            <label class="aktaperkawinanrusakreservasi custom-control-label" for="dateaktaperkawinanrusak">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktarusakreservasi">
+                        <div id="aktaperkawinanrusakreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktarusakreservasi').hide();
-                            $('.aktarusakreservasi').click(function() {
+                            $('#aktaperkawinanrusakreservasi').hide();
+                            $('.aktaperkawinanrusakreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktarusakreservasi').show();
+                                    $('#aktaperkawinanrusakreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -1101,7 +1101,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktarusakreservasi').hide();
+                                    $('#aktaperkawinanrusakreservasi').hide();
                                 }
                             });
                         </script>
@@ -1142,7 +1142,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_rusak" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_perkawinan_pembaruan" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -1154,20 +1154,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktarusakreservasi custom-control-input" id="dateaktarusak">
-                            <label class="aktarusakreservasi custom-control-label" for="dateaktarusak">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktaperkawinanpembaruanreservasi custom-control-input" id="dateaktaperkawinanpembaruan">
+                            <label class="aktaperkawinanpembaruanreservasi custom-control-label" for="dateaktaperkawinanpembaruan">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktarusakreservasi">
+                        <div id="aktaperkawinanpembaruanreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktarusakreservasi').hide();
-                            $('.aktarusakreservasi').click(function() {
+                            $('#aktaperkawinanpembaruanreservasi').hide();
+                            $('.aktaperkawinanpembaruanreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktarusakreservasi').show();
+                                    $('#aktaperkawinanpembaruanreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -1176,7 +1176,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktarusakreservasi').hide();
+                                    $('#aktaperkawinanpembaruanreservasi').hide();
                                 }
                             });
                         </script>
@@ -1217,7 +1217,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_baru" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_perceraian_baru" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -1230,20 +1230,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktabarureservasi custom-control-input" id="dateaktabaru">
-                            <label class="aktabarureservasi custom-control-label" for="dateaktabaru">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktaperceraianbarureservasi custom-control-input" id="dateaktaperceraianbaru">
+                            <label class="aktaperceraianbarureservasi custom-control-label" for="dateaktaperceraianbaru">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktabarureservasi">
+                        <div id="aktaperceraianbarureservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktabarureservasi').hide();
-                            $('.aktabarureservasi').click(function() {
+                            $('#aktaperceraianbarureservasi').hide();
+                            $('.aktaperceraianbarureservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktabarureservasi').show();
+                                    $('#aktaperceraianbarureservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -1252,7 +1252,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktabarureservasi').hide();
+                                    $('#aktaperceraianbarureservasi').hide();
                                 }
                             });
                         </script>
@@ -1293,7 +1293,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_baru" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_perceraian_hilang" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -1306,20 +1306,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktabarureservasi custom-control-input" id="dateaktabaru">
-                            <label class="aktabarureservasi custom-control-label" for="dateaktabaru">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktaperceraianhilangreservasi custom-control-input" id="dateaktaperceraianhilang">
+                            <label class="aktaperceraianhilangreservasi custom-control-label" for="dateaktaperceraianhilang">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktabarureservasi">
+                        <div id="aktaperceraianhilangreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktabarureservasi').hide();
-                            $('.aktabarureservasi').click(function() {
+                            $('#aktaperceraianhilangreservasi').hide();
+                            $('.aktaperceraianhilangreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktabarureservasi').show();
+                                    $('#aktaperceraianhilangreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -1328,7 +1328,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktabarureservasi').hide();
+                                    $('#aktaperceraianhilangreservasi').hide();
                                 }
                             });
                         </script>
@@ -1369,7 +1369,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_rusak" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_perceraian_rusak" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -1381,20 +1381,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktarusakreservasi custom-control-input" id="dateaktarusak">
-                            <label class="aktarusakreservasi custom-control-label" for="dateaktarusak">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktaperceraianrusakreservasi custom-control-input" id="dateaktaperceraianrusak">
+                            <label class="aktaperceraianrusakreservasi custom-control-label" for="dateaktaperceraianrusak">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktarusakreservasi">
+                        <div id="aktaperceraianrusakreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktarusakreservasi').hide();
-                            $('.aktarusakreservasi').click(function() {
+                            $('#aktaperceraianrusakreservasi').hide();
+                            $('.aktaperceraianrusakreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktarusakreservasi').show();
+                                    $('#aktaperceraianrusakreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -1403,7 +1403,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktarusakreservasi').hide();
+                                    $('#aktaperceraianrusakreservasi').hide();
                                 }
                             });
                         </script>
@@ -1444,7 +1444,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="admin/akta_handler/akta_rusak" enctype="multipart/form-data" method="POST">
+            <form action="admin/akta_handler/akta_perceraian_pembaruan" enctype="multipart/form-data" method="POST">
                 <div class="haiden">
                     <input type="text" name="input[jenis]" value="1">
                 </div>
@@ -1456,20 +1456,20 @@
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranAktaInput">
 
                         <div class="custom-control custom-switch">
-                            <input type="checkbox" class="aktarusakreservasi custom-control-input" id="dateaktarusak">
-                            <label class="aktarusakreservasi custom-control-label" for="dateaktarusak">Aktifkan Mode Reservasi</label>
+                            <input type="checkbox" class="aktaperceraianpembaruanreservasi custom-control-input" id="dateaktaperceraianpembaruan">
+                            <label class="aktaperceraianpembaruanreservasi custom-control-label" for="dateaktaperceraianpembaruan">Aktifkan Mode Reservasi</label>
                         </div>
 
-                        <div id="aktarusakreservasi">
+                        <div id="aktaperceraianpembaruanreservasi">
                             <label for="tanggal_reservasi1">Tanggal Reservasi</label>
                             <input type="date" require id="tanggal_reservasi1" onchange="prosesTanggal($(this).val())" name="input[tanggal_antrian]" class="form-control resetable">
                         </div>
                         <script>
-                            $('#aktarusakreservasi').hide();
-                            $('.aktarusakreservasi').click(function() {
+                            $('#aktaperceraianpembaruanreservasi').hide();
+                            $('.aktaperceraianpembaruanreservasi').click(function() {
                                 if ($(this).is(':checked')) {
                                     $("input[type=date]").val("")
-                                    $('#aktarusakreservasi').show();
+                                    $('#aktaperceraianpembaruanreservasi').show();
                                 } else {
                                     let today = new Date();
                                     let dd = String(today.getDate()).padStart(2, '0');
@@ -1478,7 +1478,7 @@
                                     today = yyyy + '-' + mm + '-' + dd;
 
                                     prosesTanggal(today);
-                                    $('#aktarusakreservasi').hide();
+                                    $('#aktaperceraianpembaruanreservasi').hide();
                                 }
                             });
                         </script>

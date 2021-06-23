@@ -25,7 +25,7 @@ $show = $this->db->query("SELECT user_menu.id FROM user_menu JOIN user_sub_menu 
     $role_id = $this->session->userdata('role_id');
     $queryMenu = "SELECT user_menu.id, menu, menu_icon FROM 
     user_menu JOIN user_access_menu on user_menu.id = user_access_menu.menu_id
-    WHERE user_access_menu.role_id = $role_id ORDER BY user_menu.menu_order ASC
+    WHERE user_access_menu.role_id = $role_id ORDER BY user_menu.menu ASC
     ";
 
     $menu = $this->db->query($queryMenu)->result_array();
