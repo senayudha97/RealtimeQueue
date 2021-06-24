@@ -60,7 +60,6 @@ class KTP_handler extends Guide
         $file_type = $_FILES['kartu_keluarga']['type'];
         $this->upload_file($namaSementara, $newfilenamekk, $file_type, './file_upload/ktp_hilang/');
 
-
         // do Upload Akta
         $namaSementara = $_FILES['akta_kelahiran']['tmp_name'];
         $temp = explode(".", $_FILES["akta_kelahiran"]["name"]);
@@ -129,14 +128,11 @@ class KTP_handler extends Guide
         }
     }
 
-
-
-
     function upload_file($namaSementara, $newfilename, $file_type, $dirUpload)
     {
         $allowed = array("image/jpeg", "image/gif");
         if (!in_array($file_type, $allowed)) {
-            $error_message = 'Format File KK yg Anda Upload Salah';
+            $error_message = 'Format File yg Anda Upload Salah';
             echo $error_message;
             exit;
         }
