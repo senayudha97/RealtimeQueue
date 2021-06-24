@@ -110,14 +110,14 @@
                         <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga1_1" name="kartu_keluarga1_1">
+                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga1_1" name="kartu_keluarga">
                                 <label class="custom-file-label" for="kartu_keluarga1_1">Pilih file Kartu Keluarga</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Akta Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran1_1" name="akta_kelahiran1_1">
+                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran1_1" name="akta_kelahiran">
                                 <label class="custom-file-label" for="akta_kelahiran1_1">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
@@ -161,21 +161,21 @@
                         <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga1_2" name="kartu_keluarga1_2">
+                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga1_2" name="kartu_keluarga">
                                 <label class="custom-file-label" for="kartu_keluarga1_2">Pilih file Kartu Keluarga</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Akta Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran1_2" name="akta_kelahiran1_2">
+                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran1_2" name="akta_kelahiran">
                                 <label class="custom-file-label" for="akta_kelahiran1_2">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Keterangan Kehilangan
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan1_2" name="surat_kehilangan1_2">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan1_2" name="surat_kehilangan">
                                 <label class="custom-file-label" for="surat_kehilangan1_2">Pilih file Surat Keterangan Kehilangan</label>
                             </div>
                         </label>
@@ -219,22 +219,22 @@
                         <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga1_3" name="kartu_keluarga1_3">
-                                <label class="custom-file-label" for="kartu_keluarga1_3">Pilih file Kartu Keluarga</label>
+                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga1_3" name="kartu_keluarga">
+                                <label class="custom-file-label" for="kartu_keluarga">Pilih file Kartu Keluarga</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Akta Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran1_3" name="akta_kelahiran1_3">
-                                <label class="custom-file-label" for="akta_kelahiran1_3">Pilih file Akta Kelahiran</label>
+                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran1_3" name="akta_kelahiran">
+                                <label class="custom-file-label" for="akta_kelahiran">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Dokumen Lama
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="dokumen_lama1_3">
-                                <label class="custom-file-label" for="dokumen_lama1_3">Pilih file KTP Lama</label>
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="ktp_lama">
+                                <label class="custom-file-label" for="ktp_lama">Pilih file KTP Lama</label>
                             </div>
                         </label>
                     </div>
