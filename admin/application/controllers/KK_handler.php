@@ -14,6 +14,49 @@ class KK_handler extends Guide
     {
         $datapost = $this->input->post('input');
         $datapost['tanggal_antrian'] = date('Y-m-d');
+
+        // do Upload Surat Hilang
+        $namaSementara = $_FILES['surat_kehilangan']['tmp_name'];
+        $temp = explode(".", $_FILES["surat_kehilangan"]["name"]);
+        $newfilesuratkehilangan = $datapost['nohp'] . '_surat_hilang_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['surat_kehilangan']['type'];
+        $this->upload_file($namaSementara, $newfilesuratkehilangan, $file_type, './file_upload/kk_hilang/');
+        $datapost['file_surat_hilang'] = $newfilesuratkehilangan;
+
+        // do Upload Fotocopy KK
+        $namaSementara = $_FILES['fotocopy_kk']['tmp_name'];
+        $temp = explode(".", $_FILES["fotocopy_kk"]["name"]);
+        $newfileftckk = $datapost['nohp'] . '_ftcpp_kk_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['fotocopy_kk']['type'];
+        $this->upload_file($namaSementara, $newfileftckk, $file_type, './file_upload/kk_hilang/');
+        $datapost['file_fotocopy_kk'] = $newfileftckk;
+
+        // do Upload KTP Asli
+        $namaSementara = $_FILES['ktp_asli']['tmp_name'];
+        $temp = explode(".", $_FILES["ktp_asli"]["name"]);
+        $newfilektpasli = $datapost['nohp'] . '_ktp_asli_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['ktp_asli']['type'];
+        $this->upload_file($namaSementara, $newfilektpasli, $file_type, './file_upload/kk_hilang/');
+        $datapost['file_ktp_asli'] = $newfilektpasli;
+
+        // do Upload Surat 3
+        $namaSementara = $_FILES['surat_3']['tmp_name'];
+        $temp = explode(".", $_FILES["surat_3"]["name"]);
+        $newfilesurat3 = $datapost['nohp'] . '_surat_3_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['surat_3']['type'];
+        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk_hilang/');
+        $datapost['file_surat_3'] = $newfilesurat3;
+
+        // do Upload ijazah
+        $namaSementara = $_FILES['ijazah']['tmp_name'];
+        $temp = explode(".", $_FILES["ijazah"]["name"]);
+        $newfilesurat3 = $datapost['nohp'] . '_ijazah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['ijazah']['type'];
+        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk_hilang/');
+        $datapost['file_ijazah'] = $newfilesurat3;
+
+
+
         if ($this->Tbl_kk_handler->insert_kk_kehilangan($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -27,6 +70,48 @@ class KK_handler extends Guide
     {
         $datapost = $this->input->post('input');
         $datapost['tanggal_antrian'] = date('Y-m-d');
+
+        // do Upload file_kk_rusak
+        $namaSementara = $_FILES['file_kk_rusak']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kk_rusak"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kk_rusak_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kk_rusak']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk_rusak/');
+        $datapost['file_kk_rusak'] = $newfileupload;
+
+        // do Upload file_surat3
+        $namaSementara = $_FILES['file_surat3']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat3"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat3_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat3']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk_rusak/');
+        $datapost['file_surat3'] = $newfileupload;
+
+        // do Upload file_surat3
+        $namaSementara = $_FILES['file_surat3']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat3"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat3_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat3']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk_rusak/');
+        $datapost['file_surat3'] = $newfileupload;
+
+        // do Upload file_ijazah
+        $namaSementara = $_FILES['file_ijazah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ijazah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ijazah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ijazah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk_rusak/');
+        $datapost['file_ijazah'] = $newfileupload;
+
+        // do Upload file_akta_kelahiran
+        $namaSementara = $_FILES['file_akta_kelahiran']['tmp_name'];
+        $temp = explode(".", $_FILES["file_akta_kelahiran"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_akta_kelahiran_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_akta_kelahiran']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk_rusak/');
+        $datapost['file_akta_kelahiran'] = $newfileupload;
+
+
         if ($this->Tbl_kk_handler->insert_kk_rusak($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -376,6 +461,24 @@ class KK_handler extends Guide
         }
 
         $dirUpload =  './file_upload/kk_baru/';
+        $terupload = move_uploaded_file($namaSementara, $dirUpload . $newfilename);
+
+        if ($terupload) {
+            echo "Upload berhasil!<br/>";
+        } else {
+            echo "Upload Gagal!";
+        }
+    }
+
+    function upload_file($namaSementara, $newfilename, $file_type, $dirUpload)
+    {
+        $allowed = array("image/jpeg", "image/gif", "image/png");
+        if (!in_array($file_type, $allowed)) {
+            $error_message = 'Format File yg Anda Upload Salah';
+            echo $error_message;
+            exit;
+        }
+
         $terupload = move_uploaded_file($namaSementara, $dirUpload . $newfilename);
 
         if ($terupload) {
