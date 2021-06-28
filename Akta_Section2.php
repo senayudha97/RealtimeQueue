@@ -1,3 +1,10 @@
+<style>
+    .modal-body {
+        max-height: calc(100vh - 200px);
+        overflow-y: auto;
+    }
+</style>
+
 <!-- MODAL AKTA START -->
 <!-- |FIRST LAYER| -->
 <div class="modal fade" id="mod_akta" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
