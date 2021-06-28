@@ -106,6 +106,22 @@
                     <!-- Doc -->
                     <div class="row">
                         <label class="col-lg-6" id="">
+                            Pas Foto 3x4
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga4_1" name="pasfoto">
+                                <label class="custom-file-label" for="kartu_keluarga4_1">Pilih file Pas Foto 3x4</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-6" id="">
+                            Surat Nikah
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_1" name="surat_nikah">
+                                <label class="custom-file-label" for="akta_kelahiran4_1">Pilih file Surat Nkah</label>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="kartu_keluarga4_1" name="kartu_keluarga">

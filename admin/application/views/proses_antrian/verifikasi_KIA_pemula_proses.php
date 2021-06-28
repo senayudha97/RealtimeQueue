@@ -59,6 +59,12 @@
                         <div class="col-3">
                             <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
                         </div>
+                        <div class="col-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#pasfoto">Pasfoto 3x4 <span class="fas fa-fw fa-file"></span></button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surat_nikah">Surat Nikah <span class="fas fa-fw fa-file"></span></button>
+                        </div>
 
                         <!-- Modal KK -->
                         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -85,6 +91,36 @@
                                     </div>
                                     <center>
                                         <img class="card-img" src="<?= base_url('file_upload/kia_pemula/') . $data['file_akta_kelahiran']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal Pasfoto -->
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="pasfoto" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Pasfoto</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kia_pemula/') . $data['file_pasfoto']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal Surat Nikah -->
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="surat_nikah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Surat Nikah</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kia_pemula/') . $data['file_surat_nikah']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>

@@ -32,9 +32,25 @@ class KIA_handler extends Guide
         $file_type = $_FILES['akta_kelahiran']['type'];
         $this->upload_file($namaSementara, $newfilenameakta, $file_type, './file_upload/kia_pemula/');
 
+        // do Upload Pasfoto
+        $namaSementara = $_FILES['pasfoto']['tmp_name'];
+        $temp = explode(".", $_FILES["pasfoto"]["name"]);
+        $newfilenamepasfoto = $datapost['nama'] . '_pasfoto_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['pasfoto']['type'];
+        $this->upload_file($namaSementara, $newfilenamepasfoto, $file_type, './file_upload/kia_pemula/');
+
+        // do Upload Pasfoto
+        $namaSementara = $_FILES['surat_nikah']['tmp_name'];
+        $temp = explode(".", $_FILES["surat_nikah"]["name"]);
+        $newfilenamesurat_nikah = $datapost['nama'] . '_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['surat_nikah']['type'];
+        $this->upload_file($namaSementara, $newfilenamesurat_nikah, $file_type, './file_upload/kia_pemula/');
+
         // Input Nama Baru File ke List $datapost
         $datapost['file_kk'] = $newfilenamekk;
+        $datapost['file_pasfoto'] = $newfilenamepasfoto;
         $datapost['file_akta_kelahiran'] = $newfilenameakta;
+        $datapost['file_surat_nikah'] = $newfilenamesurat_nikah;
 
         if ($this->Tbl_KIA_handler->insert_KIA_pemula($datapost) == 1) {
 
