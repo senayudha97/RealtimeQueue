@@ -54,69 +54,82 @@
                 <h3>File Upload User</h3>
                 <div class="row mb-3 pl-3">
                     <div class="col-sm-4">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kksuami">Kartu Keluarga Suami <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kksuami" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Preview Kartu Keluarga</h4>
+                                        <h4 class="modal-title">Preview Kartu Keluarga Suami</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_perubahan_data/') . $data['file_kk']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_kk_suami']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-4">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktp">KTP <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktp" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kksistri">Kartu Keluarga Istri <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kksistri" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Preview KTP</h4>
+                                        <h4 class="modal-title">Preview Kartu Keluarga Istri</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_perubahan_data/') . $data['file_ktp']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_kk_istri']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-4">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="aktakelahiran" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suratnikah">Surat Nikah <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="suratnikah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Preview Akta Kelahiran</h4>
+                                        <h4 class="modal-title">Preview Surat Nikah</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_perubahan_data/') . $data['file_akta_kelahiran']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_surat_nikah']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="row mb-3 pl-3">
                     <div class="col-sm-4">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surat3">Surat Nikah/Cerai/Akta Kematian <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="surat3" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#Ijazahsuami">Ijazah Suami <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="Ijazahsuami" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Preview Surat Nikah/Cerai/Akta Kematian</h4>
+                                        <h4 class="modal-title">Preview Ijazah Suami</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_perubahan_data/') . $data['file_surat3']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_ijazah_suami']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#IjazahIstri">Ijazah Istri <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="IjazahIstri" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Ijazah Istri</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_ijazah_istri']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
@@ -124,16 +137,50 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#pindahagama">Surat Pindah Agama <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="pindahagama" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#akta">Akta <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="akta" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Preview Surat Pindah Agama</h4>
+                                        <h4 class="modal-title">Preview Akta</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_perubahan_data/') . $data['file_surat_pindah_agama']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_akta']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3 pl-3">
+                    <div class="col-sm-4">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suratnikahortusuami">Surat Nikah Orang Tua Suami <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="suratnikahortusuami" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Surat Nikah Orang Tua SUami</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_surat_nikah_ortu_suami']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suratnikahortuistri">Surat Nikah Orang Tua Istri <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="suratnikahortuistri" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Surat Nikah Orang Tua Istri</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_surat_nikah_ortu_istri']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
@@ -141,8 +188,8 @@
                     </div>
 
 
-                </div>
 
+                </div>
                 <div class="modal-footer">
                     <button class="text-light btn btn-danger" onclick="tolak()"><span class="fas fa-fw fa-times"></span> Tolak</button>
                     <button class="text-light btn btn-success" onclick="verif()"><span class="fas fa-fw fa-check"></span> Verifikai</button>

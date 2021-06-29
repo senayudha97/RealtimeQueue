@@ -184,6 +184,71 @@ class KK_handler extends Guide
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
 
+        // do Upload file_kk_suami
+        $namaSementara = $_FILES['file_kk_suami']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kk_suami"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kk_suami_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kk_suami']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_kk_suami'] = $newfileupload;
+
+        // do Upload file_kk_istri
+        $namaSementara = $_FILES['file_kk_istri']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kk_istri"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kk_istri_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kk_istri']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_kk_istri'] = $newfileupload;
+
+        // do Upload file_surat_nikah
+        $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_surat_nikah'] = $newfileupload;
+
+        // do Upload file_ijazah_suami
+        $namaSementara = $_FILES['file_ijazah_suami']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ijazah_suami"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ijazah_suami_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ijazah_suami']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_ijazah_suami'] = $newfileupload;
+
+        // do Upload file_ijazah_istri
+        $namaSementara = $_FILES['file_ijazah_istri']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ijazah_istri"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ijazah_istri_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ijazah_istri']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_ijazah_istri'] = $newfileupload;
+
+        // do Upload file_akta
+        $namaSementara = $_FILES['file_akta']['tmp_name'];
+        $temp = explode(".", $_FILES["file_akta"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_akta_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_akta']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_akta'] = $newfileupload;
+
+        // do Upload file_surat_nikah_ortu_suami
+        $namaSementara = $_FILES['file_surat_nikah_ortu_suami']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah_ortu_suami"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_ortu_suami_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah_ortu_suami']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_surat_nikah_ortu_suami'] = $newfileupload;
+
+        // do Upload file_surat_nikah_ortu_istri
+        $namaSementara = $_FILES['file_surat_nikah_ortu_istri']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah_ortu_istri"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_ortu_istri_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah_ortu_istri']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_surat_nikah_ortu_istri'] = $newfileupload;
+
+
 
         if ($this->Tbl_kk_handler->insert_kk_pecah_1desa($datapost) == 1) {
 
