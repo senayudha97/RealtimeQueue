@@ -382,7 +382,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">PERUBAHAN KK</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">PERUBAHAN DATA KK</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -426,6 +426,8 @@
                     <input type="tel" class="form-control resetable" id="phone2_3" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
                     <input type="email" class="form-control resetable" id="email2_3" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
 
+
+                    <!-- Doc -->
                     <div class="row">
                         <label class="col-lg-4" id="">
                             KK Asli
@@ -1009,3 +1011,10 @@
         </div>
     </div>
 </div>
+
+<script>
+    $('.custom-file-input').on('change', function() {
+        let fileName = $(this).val().split('\\').pop();
+        $(this).next('.custom-file-label').addClass('selected').html(fileName);
+    });
+</script>
