@@ -22,7 +22,7 @@ class KIA_handler extends Guide
         $temp = explode(".", $_FILES["kartu_keluarga"]["name"]);
         $newfilenamekk = $datapost['nama'] . '_kk_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['kartu_keluarga']['type'];
-        $this->upload_file($namaSementara, $newfilenamekk, $file_type, './file_upload/kia_pemula/');
+        $this->upload_file($namaSementara, $newfilenamekk, $file_type, './file_upload/kia/kia_pemula/');
 
 
         // do Upload Akta
@@ -30,21 +30,21 @@ class KIA_handler extends Guide
         $temp = explode(".", $_FILES["akta_kelahiran"]["name"]);
         $newfilenameakta = $datapost['nama'] . '_akta_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['akta_kelahiran']['type'];
-        $this->upload_file($namaSementara, $newfilenameakta, $file_type, './file_upload/kia_pemula/');
+        $this->upload_file($namaSementara, $newfilenameakta, $file_type, './file_upload/kia/kia_pemula/');
 
         // do Upload Pasfoto
         $namaSementara = $_FILES['pasfoto']['tmp_name'];
         $temp = explode(".", $_FILES["pasfoto"]["name"]);
         $newfilenamepasfoto = $datapost['nama'] . '_pasfoto_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['pasfoto']['type'];
-        $this->upload_file($namaSementara, $newfilenamepasfoto, $file_type, './file_upload/kia_pemula/');
+        $this->upload_file($namaSementara, $newfilenamepasfoto, $file_type, './file_upload/kia/kia_pemula/');
 
         // do Upload Pasfoto
         $namaSementara = $_FILES['surat_nikah']['tmp_name'];
         $temp = explode(".", $_FILES["surat_nikah"]["name"]);
         $newfilenamesurat_nikah = $datapost['nama'] . '_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['surat_nikah']['type'];
-        $this->upload_file($namaSementara, $newfilenamesurat_nikah, $file_type, './file_upload/kia_pemula/');
+        $this->upload_file($namaSementara, $newfilenamesurat_nikah, $file_type, './file_upload/kia/kia_pemula/');
 
         // Input Nama Baru File ke List $datapost
         $datapost['file_kk'] = $newfilenamekk;

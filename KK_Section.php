@@ -432,21 +432,21 @@
                         <label class="col-lg-4" id="">
                             KK Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="dokumen_lama2_3">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_kk">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-4" id="">
                             KTP Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="dokumen_lama2_3">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_ktp">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-4" id="">
                             Akta Kelahiran Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="dokumen_lama2_3">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_akta_kelahiran">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file Akta </label>
                             </div>
                         </label>
@@ -455,14 +455,14 @@
                         <label class="col-lg-6" id="">
                             Surat Nikah/Akta Cerai/ Akta Kematian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="dokumen_lama2_3">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_surat3">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Surat Mualaf / Baptis (Apabila Pindah Agama)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="dokumen_lama2_3">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_surat_pindah_agama">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
@@ -1011,10 +1011,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    $('.custom-file-input').on('change', function() {
-        let fileName = $(this).val().split('\\').pop();
-        $(this).next('.custom-file-label').addClass('selected').html(fileName);
-    });
-</script>

@@ -63,7 +63,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -79,7 +79,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_buku_nikah']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_buku_nikah']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_pindah']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_pindah']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -114,7 +114,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -132,7 +132,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_keterangan_hilang']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_keterangan_hilang']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -155,7 +155,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_kk_lama']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_kk_lama']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -187,7 +187,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_kk_lama']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_kk_lama']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -206,7 +206,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -223,7 +223,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_keterangan_pindah']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_keterangan_pindah']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -239,7 +239,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_kk_lama']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_kk_lama']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -258,7 +258,7 @@
                                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                 </div>
                                                 <center>
-                                                    <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_keterangan_datang_dari_luar_negri']; ?>" alt="">
+                                                    <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_keterangan_datang_dari_luar_negri']; ?>" alt="">
                                                 </center>
                                             </div>
                                         </div>
@@ -277,7 +277,7 @@
                                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                 </div>
                                                 <center>
-                                                    <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_paspor_tinggal_tetap']; ?>" alt="">
+                                                    <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_paspor_tinggal_tetap']; ?>" alt="">
                                                 </center>
                                             </div>
                                         </div>
@@ -297,7 +297,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_pengantar']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -313,7 +313,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_keterangan_pindah']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_keterangan_pindah']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -329,7 +329,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_kk_lama']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_kk_lama']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>
@@ -348,7 +348,7 @@
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <center>
-                                                <img class="card-img" src="<?= base_url('file_upload/kk_baru/') . $data['file_surat_keterangan_kematian']; ?>" alt="">
+                                                <img class="card-img" src="<?= base_url('file_upload/kk/kk_baru/') . $data['file_surat_keterangan_kematian']; ?>" alt="">
                                             </center>
                                         </div>
                                     </div>

@@ -75,7 +75,7 @@
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kia_pemula/') . $data['file_kk']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kia/kia_pemula/') . $data['file_kk']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kia_pemula/') . $data['file_akta_kelahiran']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kia/kia_pemula/') . $data['file_akta_kelahiran']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kia_pemula/') . $data['file_pasfoto']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kia/kia_pemula/') . $data['file_pasfoto']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kia_pemula/') . $data['file_surat_nikah']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kia/kia_pemula/') . $data['file_surat_nikah']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>

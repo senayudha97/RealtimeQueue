@@ -79,7 +79,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/ktp_hilang/') . $data['file_kk']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_hilang/') . $data['file_kk']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/ktp_hilang/') . $data['file_akta_kelahiran']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_hilang/') . $data['file_akta_kelahiran']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/ktp_hilang/') . $data['file_surat_hilang']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_hilang/') . $data['file_surat_hilang']; ?>" alt="">
                     </center>
                 </div>
             </div>

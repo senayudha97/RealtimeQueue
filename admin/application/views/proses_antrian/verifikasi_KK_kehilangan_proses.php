@@ -87,7 +87,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_hilang/') . $data['file_surat_hilang']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_hilang/') . $data['file_surat_hilang']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_hilang/') . $data['file_fotocopy_kk']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_hilang/') . $data['file_fotocopy_kk']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_hilang/') . $data['file_ktp_asli']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_hilang/') . $data['file_ktp_asli']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_hilang/') . $data['file_surat_3']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_hilang/') . $data['file_surat_3']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_hilang/') . $data['file_ijazah']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_hilang/') . $data['file_ijazah']; ?>" alt="">
                     </center>
                 </div>
             </div>

@@ -85,7 +85,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_rusak/') . $data['file_kk_rusak']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_rusak/') . $data['file_kk_rusak']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_rusak/') . $data['file_akta_kelahiran']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_rusak/') . $data['file_akta_kelahiran']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_rusak/') . $data['file_surat3']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_rusak/') . $data['file_surat3']; ?>" alt="">
                     </center>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk_rusak/') . $data['file_ijazah']; ?>" alt="">
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_rusak/') . $data['file_ijazah']; ?>" alt="">
                     </center>
                 </div>
             </div>
