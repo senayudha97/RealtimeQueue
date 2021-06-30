@@ -16,6 +16,48 @@ class Akta_handler extends Guide
         if ($datapost['tanggal_antrian'] == null) {
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
+
+        // do Upload file_surat_kelahiran
+        $namaSementara = $_FILES['file_surat_kelahiran']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_kelahiran"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_kelahiran_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_kelahiran']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_baru/');
+        $datapost['file_surat_kelahiran'] = $newfileupload;
+
+        // do Upload file_surat_nikah
+        $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_baru/');
+        $datapost['file_surat_nikah'] = $newfileupload;
+
+        // do Upload file_ijazah
+        $namaSementara = $_FILES['file_ijazah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ijazah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ijazah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ijazah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_baru/');
+        $datapost['file_ijazah'] = $newfileupload;
+
+        // do Upload file_kartu_keluarga
+        $namaSementara = $_FILES['file_kartu_keluarga']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kartu_keluarga"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kartu_keluarga_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kartu_keluarga']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_baru/');
+        $datapost['file_kartu_keluarga'] = $newfileupload;
+
+        // do Upload file_ktp_ortu
+        $namaSementara = $_FILES['file_ktp_ortu']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ktp_ortu"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ktp_ortu_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ktp_ortu']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_baru/');
+        $datapost['file_ktp_ortu'] = $newfileupload;
+
+
         if ($this->Tbl_akta_handler->insert_akta_kelahiran_baru($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -31,6 +73,56 @@ class Akta_handler extends Guide
         if ($datapost['tanggal_antrian'] == null) {
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
+
+        // do Upload file_surat_kelahiran
+        $namaSementara = $_FILES['file_surat_kelahiran']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_kelahiran"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_kelahiran_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_kelahiran']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_hilang/');
+        $datapost['file_surat_kelahiran'] = $newfileupload;
+
+        // do Upload file_surat_nikah
+        $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_hilang/');
+        $datapost['file_surat_nikah'] = $newfileupload;
+
+        // do Upload file_ijazah
+        $namaSementara = $_FILES['file_ijazah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ijazah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ijazah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ijazah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_hilang/');
+        $datapost['file_ijazah'] = $newfileupload;
+
+        // do Upload file_kartu_keluarga
+        $namaSementara = $_FILES['file_kartu_keluarga']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kartu_keluarga"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kartu_keluarga_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kartu_keluarga']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_hilang/');
+        $datapost['file_kartu_keluarga'] = $newfileupload;
+
+        // do Upload file_ktp_ortu
+        $namaSementara = $_FILES['file_ktp_ortu']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ktp_ortu"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ktp_ortu_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ktp_ortu']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_hilang/');
+        $datapost['file_ktp_ortu'] = $newfileupload;
+
+        // do Upload file_surat_kehilangan
+        $namaSementara = $_FILES['file_surat_kehilangan']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_kehilangan"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_kehilangan_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_kehilangan']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_hilang/');
+        $datapost['file_surat_kehilangan'] = $newfileupload;
+
+
         if ($this->Tbl_akta_handler->insert_akta_kelahiran_hilang($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -47,6 +139,56 @@ class Akta_handler extends Guide
         if ($datapost['tanggal_antrian'] == null) {
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
+
+        // do Upload file_surat_kelahiran
+        $namaSementara = $_FILES['file_surat_kelahiran']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_kelahiran"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_kelahiran_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_kelahiran']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_rusak/');
+        $datapost['file_surat_kelahiran'] = $newfileupload;
+
+        // do Upload file_surat_nikah
+        $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_rusak/');
+        $datapost['file_surat_nikah'] = $newfileupload;
+
+        // do Upload file_ijazah
+        $namaSementara = $_FILES['file_ijazah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ijazah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ijazah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ijazah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_rusak/');
+        $datapost['file_ijazah'] = $newfileupload;
+
+        // do Upload file_kartu_keluarga
+        $namaSementara = $_FILES['file_kartu_keluarga']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kartu_keluarga"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kartu_keluarga_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kartu_keluarga']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_rusak/');
+        $datapost['file_kartu_keluarga'] = $newfileupload;
+
+        // do Upload file_ktp_ortu
+        $namaSementara = $_FILES['file_ktp_ortu']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ktp_ortu"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ktp_ortu_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ktp_ortu']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_rusak/');
+        $datapost['file_ktp_ortu'] = $newfileupload;
+
+        // do Upload file_akta_lama
+        $namaSementara = $_FILES['file_akta_lama']['tmp_name'];
+        $temp = explode(".", $_FILES["file_akta_lama"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_akta_lama_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_akta_lama']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_rusak/');
+        $datapost['file_akta_lama'] = $newfileupload;
+
+
         if ($this->Tbl_akta_handler->insert_akta_kelahiran_rusak($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -63,6 +205,56 @@ class Akta_handler extends Guide
         if ($datapost['tanggal_antrian'] == null) {
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
+
+        // do Upload file_surat_kelahiran
+        $namaSementara = $_FILES['file_surat_kelahiran']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_kelahiran"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_kelahiran_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_kelahiran']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_pembaruan/');
+        $datapost['file_surat_kelahiran'] = $newfileupload;
+
+        // do Upload file_surat_nikah
+        $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_pembaruan/');
+        $datapost['file_surat_nikah'] = $newfileupload;
+
+        // do Upload file_ijazah
+        $namaSementara = $_FILES['file_ijazah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ijazah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ijazah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ijazah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_pembaruan/');
+        $datapost['file_ijazah'] = $newfileupload;
+
+        // do Upload file_kartu_keluarga
+        $namaSementara = $_FILES['file_kartu_keluarga']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kartu_keluarga"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kartu_keluarga_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kartu_keluarga']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_pembaruan/');
+        $datapost['file_kartu_keluarga'] = $newfileupload;
+
+        // do Upload file_ktp_ortu
+        $namaSementara = $_FILES['file_ktp_ortu']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ktp_ortu"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ktp_ortu_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ktp_ortu']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_pembaruan/');
+        $datapost['file_ktp_ortu'] = $newfileupload;
+
+        // do Upload file_akta_lama
+        $namaSementara = $_FILES['file_akta_lama']['tmp_name'];
+        $temp = explode(".", $_FILES["file_akta_lama"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_akta_lama_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_akta_lama']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kelahiran_pembaruan/');
+        $datapost['file_akta_lama'] = $newfileupload;
+
+
         if ($this->Tbl_akta_handler->insert_akta_kelahiran_pembaruan($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -262,5 +454,23 @@ class Akta_handler extends Guide
             echo 'fail';
         }
         exit;
+    }
+
+    function upload_file($namaSementara, $newfilename, $file_type, $dirUpload)
+    {
+        $allowed = array("image/jpeg", "image/gif", "image/png");
+        if (!in_array($file_type, $allowed)) {
+            $error_message = 'Format File yg Anda Upload Salah';
+            echo $error_message;
+            exit;
+        }
+
+        $terupload = move_uploaded_file($namaSementara, $dirUpload . $newfilename);
+
+        if ($terupload) {
+            echo "Upload berhasil!<br/>";
+        } else {
+            echo "Upload Gagal!";
+        }
     }
 }

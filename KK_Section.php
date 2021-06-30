@@ -880,15 +880,36 @@
                         <label class="col-lg-6" id="">
                             Surat Keterangan Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="surat_kelahiran2_8">
+                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_surat_kelahiran">
                                 <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file Surat Keterangan Kelahiran</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
-                            Kartu Keluarga Lama
+                            Fotocopy Surat Nikah
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_8" name="dokumen_lama2_8">
-                                <label class="custom-file-label" for="dokumen_lama2_8">Pilih file Kartu Keluarga Lama</label>
+                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_surat_nikah">
+                                <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file Fotocopy Surat Nikah</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-6" id="">
+                            Ijazah Asli
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_ijazah">
+                                <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file Ijazah Asli</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-6" id="">
+                            Kartu Keluarga
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_kartu_keluarga">
+                                <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file Kartu Keluarga</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            KTP Orang Tua
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_ktp_ortu">
+                                <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file KTP Orang Tua</label>
                             </div>
                         </label>
                     </div>
