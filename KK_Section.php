@@ -152,7 +152,7 @@
 
                     <div class="row">
                         <label class="col-lg-12" id="">
-                            Surat Keterangan Kehilangan
+                            Surat Keterangan Kehilangan dari Kepolisian
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_kehilangan">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
@@ -176,13 +176,6 @@
                             Surat Nikah / Akta Cerai / Akta Kematian Asli
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_3">
-                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                            </div>
-                        </label>
-                        <label class="col-lg-12" id="">
-                            Ijazah Terkahir
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="ijazah">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>

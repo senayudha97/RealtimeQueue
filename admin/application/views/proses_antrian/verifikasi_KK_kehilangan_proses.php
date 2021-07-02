@@ -54,21 +54,16 @@
                 <h3>File Upload User</h3>
                 <div class="row mb-3 pl-3">
                     <div class="col-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#skk">Surat Keterangan Kehilangan <span class="fas fa-fw fa-file"></span></button>
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#skk">Surat Keterangan Kehilangan dari Kepolisian <span class="fas fa-fw fa-file"></span></button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suratnikah">Surat Nikah / Akta Cerai / Akta Kematian Asli <span class="fas fa-fw fa-file"></span></button>
                     </div>
                     <div class="col-3">
                         <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#fotocopykk">Fotocopy KK <span class="fas fa-fw fa-file"></span></button>
                     </div>
                     <div class="col-3">
                         <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktpasli">KTP Asli <span class="fas fa-fw fa-file"></span></button>
-                    </div>
-                </div>
-                <div class="row mb-3 pl-3">
-                    <div class="col-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suratnikah">Surat Nikah / Akta Cerai / Akta Kematian Asli <span class="fas fa-fw fa-file"></span></button>
-                    </div>
-                    <div class="col-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ijazah">Ijazah Terkahir <span class="fas fa-fw fa-file"></span></button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -83,7 +78,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview Surat Keterangan Kehilangan</h4>
+                        <h4 class="modal-title">Preview Surat Keterangan Kehilangan dari Kepolisian</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -132,19 +127,6 @@
             </div>
         </div>
 
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ijazah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Preview Ijazah Terkahir</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <center>
-                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_hilang/') . $data['file_ijazah']; ?>" alt="">
-                    </center>
-                </div>
-            </div>
-        </div>
 
 </div>
 </div>

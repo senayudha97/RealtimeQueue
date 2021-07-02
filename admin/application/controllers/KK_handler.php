@@ -20,7 +20,7 @@ class KK_handler extends Guide
         $temp = explode(".", $_FILES["surat_kehilangan"]["name"]);
         $newfilesuratkehilangan = $datapost['nohp'] . '_surat_hilang_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['surat_kehilangan']['type'];
-        $this->upload_file($namaSementara, $newfilesuratkehilangan, $file_type, './file_upload/kk_hilang/');
+        $this->upload_file($namaSementara, $newfilesuratkehilangan, $file_type, './file_upload/kk/kk_hilang/');
         $datapost['file_surat_hilang'] = $newfilesuratkehilangan;
 
         // do Upload Fotocopy KK
@@ -28,7 +28,7 @@ class KK_handler extends Guide
         $temp = explode(".", $_FILES["fotocopy_kk"]["name"]);
         $newfileftckk = $datapost['nohp'] . '_ftcpp_kk_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['fotocopy_kk']['type'];
-        $this->upload_file($namaSementara, $newfileftckk, $file_type, './file_upload/kk_hilang/');
+        $this->upload_file($namaSementara, $newfileftckk, $file_type, './file_upload/kk/kk_hilang/');
         $datapost['file_fotocopy_kk'] = $newfileftckk;
 
         // do Upload KTP Asli
@@ -36,7 +36,7 @@ class KK_handler extends Guide
         $temp = explode(".", $_FILES["ktp_asli"]["name"]);
         $newfilektpasli = $datapost['nohp'] . '_ktp_asli_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['ktp_asli']['type'];
-        $this->upload_file($namaSementara, $newfilektpasli, $file_type, './file_upload/kk_hilang/');
+        $this->upload_file($namaSementara, $newfilektpasli, $file_type, './file_upload/kk/kk_hilang/');
         $datapost['file_ktp_asli'] = $newfilektpasli;
 
         // do Upload Surat 3
@@ -44,16 +44,16 @@ class KK_handler extends Guide
         $temp = explode(".", $_FILES["surat_3"]["name"]);
         $newfilesurat3 = $datapost['nohp'] . '_surat_3_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['surat_3']['type'];
-        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk_hilang/');
+        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_hilang/');
         $datapost['file_surat_3'] = $newfilesurat3;
 
-        // do Upload ijazah
-        $namaSementara = $_FILES['ijazah']['tmp_name'];
-        $temp = explode(".", $_FILES["ijazah"]["name"]);
-        $newfilesurat3 = $datapost['nohp'] . '_ijazah_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['ijazah']['type'];
-        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk_hilang/');
-        $datapost['file_ijazah'] = $newfilesurat3;
+        // // do Upload ijazah
+        // $namaSementara = $_FILES['ijazah']['tmp_name'];
+        // $temp = explode(".", $_FILES["ijazah"]["name"]);
+        // $newfilesurat3 = $datapost['nohp'] . '_ijazah_' . round(microtime(true)) . '.' . end($temp);
+        // $file_type = $_FILES['ijazah']['type'];
+        // $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_hilang/');
+        // $datapost['file_ijazah'] = $newfilesurat3;
 
 
 
@@ -607,7 +607,7 @@ class KK_handler extends Guide
             exit;
         }
 
-        $dirUpload =  './file_upload/kk_baru/';
+        $dirUpload =  './file_upload/kk/kk_baru/';
         $terupload = move_uploaded_file($namaSementara, $dirUpload . $newfilename);
 
         if ($terupload) {

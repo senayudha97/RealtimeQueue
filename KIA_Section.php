@@ -187,10 +187,10 @@
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
-                            Surat Keterangan Kehilangan
+                            Surat Keterangan Kehilangan dari Kepolisian
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="surat_kehilangan4_2" name="surat_kehilangan">
-                                <label class="custom-file-label" for="surat_kehilangan4_2">Pilih file Surat Keterangan Kehilangan</label>
+                                <label class="custom-file-label" for="surat_kehilangan4_2">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
                             </div>
                         </label>
                     </div>

@@ -60,7 +60,7 @@
                         <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
                     </div>
                     <div class="col-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surathilang">Surat Keterangan Kehilangan <span class="fas fa-fw fa-file"></span></button>
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surathilang">Surat Keterangan Kehilangan dari Kepolisian <span class="fas fa-fw fa-file"></span></button>
                     </div>
                 </div>
                 <div class="modal-footer">

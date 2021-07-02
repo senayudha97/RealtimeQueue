@@ -153,12 +153,12 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surhil">Surat Keterangan Kehilangan <span class="fas fa-fw fa-file"></span></button>
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surhil">Surat Keterangan Kehilangan dari Kepolisian <span class="fas fa-fw fa-file"></span></button>
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="surhil" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Preview Surat Keterangan Kehilangan</h4>
+                                            <h4 class="modal-title">Preview Surat Keterangan Kehilangan dari Kepolisian</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <center>

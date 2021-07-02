@@ -329,7 +329,7 @@
             <input type="file" require id="keterangan_pindah3" name="file_surat_pindah" class="form-control resetable">
           </div>
           <div id="tmp_keterangan_kehilangan3" class="d-none">
-            <label for="keterangan_kehilangan3">Surat Keterangan Kehilangan</label>
+            <label for="keterangan_kehilangan3">Surat Keterangan Kehilangan dari Kepolisian</label>
             <input type="file" require id="keterangan_kehilangan3" name="file_surat_keterangan_hilang" class="form-control resetable">
           </div>
         </div>

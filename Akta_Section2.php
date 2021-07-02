@@ -517,10 +517,10 @@
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
-                                Surat Keterangan Kehilangan
+                                Surat Keterangan Kehilangan dari Kepolisian
                                 <div class="custom-file">
                                     <input type="file" required class="custom-file-input resetable" id="surat_kelahiran311" name="ijazah">
-                                    <label class="custom-file-label" for="surat_kelahiran311">Pilih file Surat Keterangan Kehilangan</label>
+                                    <label class="custom-file-label" for="surat_kelahiran311">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
                                 </div>
                             </label>
                         </div>
@@ -998,10 +998,10 @@
                         </div>
                         <div class="row">
                             <label class="col-lg-12" id="">
-                                Surat Keterangan Kehilangan
+                                Surat Keterangan Kehilangan dari Kepolisian
                                 <div class="custom-file">
                                     <input type="file" required class="custom-file-input resetable" id="surat_kehilangan322" name="file_surat_kehilangan">
-                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file Surat Keterangan Kehilangan</label>
+                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
                                 </div>
                             </label>
                         </div>
@@ -1781,10 +1781,10 @@
                         </div>
                         <div class="row">
                             <label class="col-lg-12" id="">
-                                Surat Keterangan Kehilangan
+                                Surat Keterangan Kehilangan dari Kepolisian
                                 <div class="custom-file">
                                     <input type="file" required class="custom-file-input resetable" id="surat_kehilangan332" name="surat_kehilangan332">
-                                    <label class="custom-file-label" for="surat_kehilangan332">Pilih file Surat Keterangan Kehilangan</label>
+                                    <label class="custom-file-label" for="surat_kehilangan332">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
                                 </div>
                             </label>
                         </div>
@@ -2598,10 +2598,10 @@
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
-                                Surat Keterangan Kehilangan
+                                Surat Keterangan Kehilangan dari Kepolisian
                                 <div class="custom-file">
                                     <input type="file" required class="custom-file-input resetable" id="surat_kehilangan332" name="file_surat_kehilangan">
-                                    <label class="custom-file-label" for="surat_kehilangan342">Pilih file Surat Keterangan Kehilangan</label>
+                                    <label class="custom-file-label" for="surat_kehilangan342">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
                                 </div>
                             </label>
                         </div>
