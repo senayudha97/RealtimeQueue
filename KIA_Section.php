@@ -66,7 +66,7 @@
                 <div class="modal-body">
 
                     <dilv class="reservasi">
-                        <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+                        <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kia_reservasi"></button></h5>
                         <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKIA" id="jamKehadiranKK"></button></h6>
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKIAInput">
                         <div class="custom-control custom-switch">
@@ -221,7 +221,7 @@
                 </div>
                 <div class="modal-body">
                     <dilv class="reservasi">
-                        <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kk_reservasi"></button></h5>
+                        <h5 class="text-dark">Kuota Tersedia : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light kia_reservasi"></button></h5>
                         <h6 class="text-dark">Jam Kehadiran Anda : <button onclick="event.preventDefault()" class="btn btn-sm font-weight-bold bg-danger text-light jamKehadiranKIA" id="jamKehadiranKK"></button></h6>
                         <input type="text" name="input[jamkehadiran]" class="haiden jamKehediranKIAInput">
                         <div class="custom-control custom-switch">

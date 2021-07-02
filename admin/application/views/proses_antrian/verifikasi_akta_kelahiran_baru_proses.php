@@ -52,85 +52,87 @@
                     </div>
                 </div>
                 <h3>File Upload User</h3>
-                <div class="row mb-3 pl-3">
-                    <div class="col-sm-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surat_kelahiran">Surat Keterangan Kelahiran <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="surat_kelahiran" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Preview Surat Keterangan Kelahiran</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div id="file-upload">
+                    <div class="row mb-3 pl-3">
+                        <div class="col-sm-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surat_kelahiran">Surat Keterangan Kelahiran <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="surat_kelahiran" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Surat Keterangan Kelahiran</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_surat_kelahiran']; ?>" alt="">
+                                        </center>
                                     </div>
-                                    <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_surat_kelahiran']; ?>" alt="">
-                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#buku_nikah">Buku Nikah Orang Tua <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="buku_nikah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Buku Nikah Orang Tua</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_surat_nikah']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ijazah">Ijazah <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ijazah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Ijazah</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_ijazah']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Kartu Keluarga</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_kartu_keluarga']; ?>" alt="">
+                                        </center>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#buku_nikah">Buku Nikah Orang Tua <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="buku_nikah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Preview Buku Nikah Orang Tua</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row mb-3 pl-3">
+                        <div class="col-sm-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktp_orangtua">KTP <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktp_orangtua" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview KTP</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_ktp_ortu']; ?>" alt="">
+                                        </center>
                                     </div>
-                                    <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_surat_nikah']; ?>" alt="">
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ijazah">Ijazah <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ijazah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Preview Ijazah</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_ijazah']; ?>" alt="">
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Preview Kartu Keluarga</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_kartu_keluarga']; ?>" alt="">
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-3 pl-3">
-                    <div class="col-sm-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktp_orangtua">KTP <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktp_orangtua" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Preview KTP</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/akta/akta_kelahiran_baru/') . $data['file_ktp_ortu']; ?>" alt="">
-                                    </center>
                                 </div>
                             </div>
                         </div>

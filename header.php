@@ -101,7 +101,7 @@
                     <div class="card-body">
                       <center>
                         <h5 class="card-title mb-3">Akta</h5>
-                        <h3 class="card-subtitle mb-2 text-muted" id="rtkakta">0</h3>
+                        <h3 class="card-subtitle mb-2 text-muted" id="rtakta">0</h3>
                       </center>
                     </div>
                   </div>

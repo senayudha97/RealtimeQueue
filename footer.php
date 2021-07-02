@@ -63,6 +63,8 @@
           const data = JSON.parse(param);
           $('#rtktp').text(data.ktp.nilai);
           $('#rtkk').text(data.kk.nilai);
+          $('#rtakta').text(data.akta.nilai);
+          $('#rtkia').text(data.kia.nilai);
 
           if (data.maxAntrian == 0) {
             $('.asli').hide();
@@ -70,6 +72,8 @@
 
             $('#ktp_reservasi').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
             $('.kk_reservasi').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
+            $('.akta_reservasi').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
+            $('.kia_reservasi').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
 
 
             $('#ktpready2').text('ANTRIAN TANGGAL INI TIDAK TERSEDIA');
@@ -80,18 +84,19 @@
             $('.asli').show();
 
             $('#ktp_reservasi').text(data.maxAntrian.nilai - data.ktp.nilai);
-            $('.kk_reservasi').text(data.maxAntrian.nilai - data.ktp.nilai);
-            $('.akta_reservasi').text(data.maxAntrian.nilai - data.ktp.nilai);
+            $('.kk_reservasi').text(data.maxAntrian.nilai - data.kk.nilai);
+            $('.akta_reservasi').text(data.maxAntrian.nilai - data.akta.nilai);
+            $('.kia_reservasi').text(data.maxAntrian.nilai - data.kia.nilai);
 
             $('.jamKehadiranKTP').text(data.jamKTP);
             $('.jamKehadiranKK').text(data.jamKTP);
-            $('.jamKehadiranAkta').text(data.jamKTP);
-            $('.jamKehadiranKIA').text(data.jamKTP);
+            $('.jamKehadiranAkta').text(data.jamAkta);
+            $('.jamKehadiranKIA').text(data.jamKIA);
 
             $('.jamKehediranKTPInput').val(data.jamKTP);
             $('.jamKehediranKKInput').val(data.jamKTP);
-            $('.jamKehediranAktaInput').val(data.jamKTP);
-            $('.jamKehediranKIAInput').val(data.jamKTP);
+            $('.jamKehediranAktaInput').val(data.jamAkta);
+            $('.jamKehediranKIAInput').val(data.jamKIA);
 
 
             // $('#ktpready2').text(data.maxAntrian.nilai - data.ktp.nilai);

@@ -101,7 +101,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">
+                    <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan_pindah">
                         <div class="services-item">
                             <div class="icon">
                                 <i class="lni-eraser"></i>
@@ -111,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">
+                    <div class="col-md-4 col-lg-4 col-xs-12" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan1">
                         <div class="services-item">
                             <div class="icon">
                                 <i class="lni-add-files"></i>
@@ -632,7 +632,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_pengurangan">Kembali</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Kembali</button>
             </div>
         </div>
     </div>
@@ -818,7 +818,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_penambahan">Kembali</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan">Kembali</button>
                     <button type="submit" id="send_ktp" class="btn btn-common asli">Kirim</button>
                     <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
                 </div>

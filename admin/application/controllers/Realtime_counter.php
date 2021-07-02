@@ -91,25 +91,68 @@ class Realtime_counter extends Guide
     {
         $date = $_GET['tanggal_antrian'];
 
-
-        $data['kk'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_kk JOIN antrian_bulanan ON antrian_kk.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND antrian_kk.tanggal_antrian = '$date' ")->row_array();
-
-
+        // Realtime Counter KTP
         $ktp_pemula = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM ktp_pemula JOIN antrian_bulanan ON ktp_pemula.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND ktp_pemula.tanggal_antrian = '$date' ")->row_array()['nilai'];
 
         $data['ktp']['nilai'] = $ktp_pemula;
+
+        // Realtime Counter KIA
+        $kia_pemula = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM kia_pemula JOIN antrian_bulanan ON kia_pemula.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND kia_pemula.tanggal_antrian = '$date' ")->row_array()['nilai'];
+
+        $data['kia']['nilai'] = $kia_pemula;
+
+        // Realtime Counter KK
+        $data['kk'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_kk JOIN antrian_bulanan ON antrian_kk.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND antrian_kk.tanggal_antrian = '$date' ")->row_array();
+
+        // Realtime Counter Akta
+        $akta_kelahiran_baru = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kelahiran_baru JOIN antrian_bulanan ON akta_kelahiran_baru.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kelahiran_baru.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_kelahiran_hilang = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kelahiran_hilang JOIN antrian_bulanan ON akta_kelahiran_hilang.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kelahiran_hilang.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_kelahiran_rusak = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kelahiran_rusak JOIN antrian_bulanan ON akta_kelahiran_rusak.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kelahiran_rusak.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_kelahiran_pembaruan = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kelahiran_pembaruan JOIN antrian_bulanan ON akta_kelahiran_pembaruan.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kelahiran_pembaruan.tanggal_antrian = '$date' ")->row_array()['nilai'];
+
+        $akta_kematian_baru = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kematian_baru JOIN antrian_bulanan ON akta_kematian_baru.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kematian_baru.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_kematian_hilang = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kematian_hilang JOIN antrian_bulanan ON akta_kematian_hilang.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kematian_hilang.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_kematian_rusak = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kematian_rusak JOIN antrian_bulanan ON akta_kematian_rusak.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kematian_rusak.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_kematian_pembaruan = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kematian_pembaruan JOIN antrian_bulanan ON akta_kematian_pembaruan.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kematian_pembaruan.tanggal_antrian = '$date' ")->row_array()['nilai'];
+
+        $akta_perceraian_baru = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_perceraian_baru JOIN antrian_bulanan ON akta_perceraian_baru.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_perceraian_baru.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_perceraian_hilang = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_perceraian_hilang JOIN antrian_bulanan ON akta_perceraian_hilang.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_perceraian_hilang.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_perceraian_rusak = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_perceraian_rusak JOIN antrian_bulanan ON akta_perceraian_rusak.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_perceraian_rusak.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_perceraian_pembaruan = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_perceraian_pembaruan JOIN antrian_bulanan ON akta_perceraian_pembaruan.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_perceraian_pembaruan.tanggal_antrian = '$date' ")->row_array()['nilai'];
+
+        $akta_perkawinan_baru = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_perkawinan_baru JOIN antrian_bulanan ON akta_perkawinan_baru.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_perkawinan_baru.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_perkawinan_hilang = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_perkawinan_hilang JOIN antrian_bulanan ON akta_perkawinan_hilang.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_perkawinan_hilang.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_perkawinan_rusak = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_perkawinan_rusak JOIN antrian_bulanan ON akta_perkawinan_rusak.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_perkawinan_rusak.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $akta_perkawinan_pembaruan = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_perkawinan_pembaruan JOIN antrian_bulanan ON akta_perkawinan_pembaruan.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_perkawinan_pembaruan.tanggal_antrian = '$date' ")->row_array()['nilai'];
+
+        $data['akta']['nilai'] = $akta_kelahiran_baru + $akta_kelahiran_hilang + $akta_kelahiran_rusak + $akta_kelahiran_pembaruan + $akta_kematian_baru
+            + $akta_kematian_hilang
+            + $akta_kematian_rusak
+            + $akta_kematian_pembaruan
+            + $akta_perceraian_baru
+            + $akta_perceraian_hilang
+            + $akta_perceraian_rusak
+            + $akta_perceraian_pembaruan
+            + $akta_perkawinan_baru
+            + $akta_perkawinan_hilang
+            + $akta_perkawinan_rusak
+            + $akta_perkawinan_pembaruan;
 
         $data['maxAntrian'] = $this->db->query("SELECT maksimal_antrian AS 'nilai' FROM antrian_bulanan WHERE tanggal_antrian = '$date' AND islibur = 0")->row_array();
 
 
         $data['jamKK'] = $this->jam($data['kk']['nilai'], 1);
         $data['jamKTP'] = $this->jam($data['ktp']['nilai'], 1);
+        $data['jamAkta'] = $this->jam($data['akta']['nilai'], 1);
+        $data['jamKIA'] = $this->jam($data['kia']['nilai'], 1);
 
 
         if ($data['maxAntrian'] == NULL || strtotime($date) < strtotime(date('Y-m-d'))) {
             $data['maxAntrian'] = 0;
             $data['jamKK'] = 0;
             $data['jamKTP'] = 0;
+            $data['jamAkta'] = 0;
+            $data['jamKIA'] = 0;
         }
 
         echo json_encode($data);
