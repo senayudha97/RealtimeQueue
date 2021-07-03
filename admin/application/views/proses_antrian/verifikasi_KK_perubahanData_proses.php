@@ -87,6 +87,7 @@
                         </div>
                     </div>
 
+
                     <div class="col-sm-4">
                         <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
                         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="aktakelahiran" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -134,6 +135,23 @@
                                     </div>
                                     <center>
                                         <img class="card-img" src="<?= base_url('file_upload/kk/kk_perubahan_data/') . $data['file_surat_pindah_agama']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ijazah">Ijazah <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ijazah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Ijazah</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_perubahan_data/') . $data['file_ijazah']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>

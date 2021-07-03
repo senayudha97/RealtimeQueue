@@ -168,6 +168,16 @@ class KK_handler extends Guide
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_perubahan_data/');
         $datapost['file_surat_pindah_agama'] = $newfileupload;
 
+        // do Upload file_ijazah
+        if ($_FILES['file_ijazah']['tmp_name'] != "") {
+            $namaSementara = $_FILES['file_ijazah']['tmp_name'];
+            $temp = explode(".", $_FILES["file_ijazah"]["name"]);
+            $newfileupload = $datapost['nohp'] . '_surat_pindah_agama_' . round(microtime(true)) . '.' . end($temp);
+            $file_type = $_FILES['file_ijazah']['type'];
+            $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_perubahan_data/');
+            $datapost['file_ijazah'] = $newfileupload;
+        }
+
         if ($this->Tbl_kk_handler->insert_kk_perubahan_data($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -266,6 +276,62 @@ class KK_handler extends Guide
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
 
+        // do Upload file_kk_daerah_asal
+        $namaSementara = $_FILES['file_kk_daerah_asal']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kk_daerah_asal"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kk_daerah_asal_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kk_daerah_asal']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
+        $datapost['file_kk_daerah_asal'] = $newfileupload;
+
+        // do Upload file_surat_nikah
+        $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
+        $datapost['file_surat_nikah'] = $newfileupload;
+
+        // do Upload file_ktp
+        $namaSementara = $_FILES['file_ktp']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ktp"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ktp_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ktp']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
+        $datapost['file_ktp'] = $newfileupload;
+
+        // do Upload file_selfie_ktp
+        $namaSementara = $_FILES['file_selfie_ktp']['tmp_name'];
+        $temp = explode(".", $_FILES["file_selfie_ktp"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_selfie_ktp_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_selfie_ktp']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
+        $datapost['file_selfie_ktp'] = $newfileupload;
+
+        // do Upload file_sptjm
+        $namaSementara = $_FILES['file_sptjm']['tmp_name'];
+        $temp = explode(".", $_FILES["file_sptjm"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_sptjm_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_sptjm']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
+        $datapost['file_sptjm'] = $newfileupload;
+
+        // do Upload file_ijazah
+        $namaSementara = $_FILES['file_ijazah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ijazah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ijazah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ijazah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
+        $datapost['file_ijazah'] = $newfileupload;
+
+        // do Upload file_kk_daerah_tujuan
+        $namaSementara = $_FILES['file_kk_daerah_tujuan']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kk_daerah_tujuan"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kk_daerah_tujuan_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kk_daerah_tujuan']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
+        $datapost['file_kk_daerah_tujuan'] = $newfileupload;
+
         if ($this->Tbl_kk_handler->insert_kk_pindah_kecamatan($datapost) == 1) {
 
             header("Location: http://localhost/siantrian");
@@ -338,7 +404,7 @@ class KK_handler extends Guide
         $file_type = $_FILES['file_surat_kelahiran']['type'];
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_penambahan_kelahiran/');
         $datapost['file_surat_kelahiran'] = $newfileupload;
-       
+
         // do Upload file_surat_nikah
         $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
         $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
@@ -361,7 +427,7 @@ class KK_handler extends Guide
         $newfileupload = $datapost['nohp'] . '_file_kartu_keluarga_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['file_kartu_keluarga']['type'];
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/file_kartu_keluargakk_penambahan_kelahiran/');
-        $datapost['file_kartu_keluarga'] = $newfileupload; 
+        $datapost['file_kartu_keluarga'] = $newfileupload;
 
         // do Upload file_ktp_ortu
         $namaSementara = $_FILES['file_ktp_ortu']['tmp_name'];
