@@ -63,6 +63,9 @@
                     <div class="col-3">
                         <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ijazah">Ijazah Terkahir <span class="fas fa-fw fa-file"></span></button>
                     </div>
+                    <div class="col-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#sptjm">SPTJM <span class="fas fa-fw fa-file"></span></button>
+                    </div>
                 </div>
                 <div class="row mb-3 pl-3">
                     <div class="col-3">
@@ -86,6 +89,19 @@
                     </div>
                     <center>
                         <img class="card-img" src="<?= base_url('file_upload/kk/kk_rusak/') . $data['file_kk_rusak']; ?>" alt="">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="sptjm" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Preview KK Lama yang Rusak </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <center>
+                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_rusak/') . $data['file_sptjm']; ?>" alt="">
                     </center>
                 </div>
             </div>

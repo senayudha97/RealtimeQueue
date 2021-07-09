@@ -60,7 +60,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_kelahiran_baru($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -125,7 +125,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_kelahiran_hilang($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -191,7 +191,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_kelahiran_rusak($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -257,7 +257,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_kelahiran_pembaruan($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -274,7 +274,7 @@ class Akta_handler extends Guide
         }
         if ($this->Tbl_akta_handler->insert_akta_perkawinan_baru($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -289,7 +289,7 @@ class Akta_handler extends Guide
         }
         if ($this->Tbl_akta_handler->insert_akta_perkawinan_hilang($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -305,7 +305,7 @@ class Akta_handler extends Guide
         }
         if ($this->Tbl_akta_handler->insert_akta_perkawinan_rusak($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -321,7 +321,7 @@ class Akta_handler extends Guide
         }
         if ($this->Tbl_akta_handler->insert_akta_perkawinan_pembaruan($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -387,7 +387,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_kematian_baru($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -460,7 +460,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_kematian_hilang($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -534,7 +534,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_kematian_rusak($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -609,7 +609,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_kematian_pembaruan($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -684,7 +684,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_perceraian_baru($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -765,7 +765,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_perceraian_hilang($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -847,7 +847,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_perceraian_rusak($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -929,7 +929,7 @@ class Akta_handler extends Guide
 
         if ($this->Tbl_akta_handler->insert_akta_perceraian_pembaruan($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }

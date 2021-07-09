@@ -101,6 +101,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="row mb-3 pl-3">
                     <div class="col-sm-4">
@@ -181,6 +182,23 @@
                                     </div>
                                     <center>
                                         <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_surat_nikah_ortu_istri']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#sptjm">SPTJM <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="sptjm" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview SPTJM</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pecah1desa/') . $data['file_sptjm']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>

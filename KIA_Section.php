@@ -106,22 +106,6 @@
                     <!-- Doc -->
                     <div class="row">
                         <label class="col-lg-6" id="">
-                            Pas Foto 3x4
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga4_1" name="pasfoto">
-                                <label class="custom-file-label" for="kartu_keluarga4_1">Pilih file Pas Foto 3x4</label>
-                            </div>
-                        </label>
-                        <label class="col-lg-6" id="">
-                            Surat Nikah
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_1" name="surat_nikah">
-                                <label class="custom-file-label" for="akta_kelahiran4_1">Pilih file Surat Nkah</label>
-                            </div>
-                        </label>
-                    </div>
-                    <div class="row">
-                        <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="kartu_keluarga4_1" name="kartu_keluarga">
@@ -135,7 +119,24 @@
                                 <label class="custom-file-label" for="akta_kelahiran4_1">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
+                        <label class="col-lg-12" id="">
+                            Pasfoto 3x4(Diatas 5 Tahun, Background Merah Tahun Kelahiran Ganjil Jika Genap Background Biru)
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_1" name="pasfoto">
+                                <label class="custom-file-label" for="akta_kelahiran4_1">Pilih file Pasfoto</label>
+                            </div>
+                        </label>
                     </div>
+                    <div class="row">
+                        <label class="col-lg-12" id="">
+                            Buku Nikah
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_1" name="surat_nikah">
+                                <label class="custom-file-label" for="akta_kelahiran4_1">Pilih file Buku Nikah</label>
+                            </div>
+                        </label>
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Kembali</button>

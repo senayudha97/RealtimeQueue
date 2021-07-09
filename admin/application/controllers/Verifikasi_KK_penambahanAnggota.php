@@ -38,6 +38,7 @@ class Verifikasi_KK_penambahanAnggota extends Guide
         $this->db->where('id', $param);
         $data['data'] = $this->db->get('kk_penambahan_kedatangan')->row_array();
 
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);

@@ -401,7 +401,7 @@
     <div class="error__title">Oops</div>
     <div class="error__subtitle">Aplikasi Tidak Aktif</div>
     <div class="error__description">Aplikasi Siantrian sedang dimatikan oleh pihak Dukcapil <br> Hal ini berkemungkinan sedang adanya maintenance,<br> hari libur atau sudah melewati jam kerja Kantor Dispenduk</div>
-    <button onclick="window.location.href = 'http://localhost/siantrian';" class="error__button error__button--active">REFRESH HALAMAN </button>
+    <button onclick="window.location.href = 'http://localhost:8080/siantrian';" class="error__button error__button--active">REFRESH HALAMAN </button>
     <!-- <button class="error__button">CONTACT</button> -->
 </div>
 

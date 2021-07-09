@@ -179,6 +179,13 @@
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
+                        <label class="col-lg-12" id="">
+                            Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -236,6 +243,13 @@
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="dokumen_lama2_2" name="file_akta_kelahiran">
                                 <label class="custom-file-label" for="dokumen_lama2_2">Pilih file Kartu Keluarga Lama</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
                     </div>
@@ -467,6 +481,15 @@
                             </div>
                         </label>
                     </div>
+                    <div class="row">
+                        <label class="col-lg-12" id="">
+                            Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_perubahan_perubahan">Kembali</button>
@@ -583,6 +606,13 @@
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_surat_nikah_ortu_istri">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
                     </div>
@@ -803,15 +833,24 @@
                         <label class="col-lg-6" id="">
                             Surat Keterangan Pindah
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="surat_pindah2_7">
+                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_surat_pindah">
                                 <label class="custom-file-label" for="surat_pindah2_7">Pilih file Surat Keterangan Pindah</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Kartu Keluarga Lama
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_7" name="dokumen_lama2_7">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_7" name="file_kk">
                                 <label class="custom-file-label" for="dokumen_lama2_7">Pilih file Kartu Keluarga Lama</label>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-12" id="">
+                            SPTJM
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_sptjm">
+                                <label class="custom-file-label" for="sptjm2_7">Pilih file SPTJM</label>
                             </div>
                         </label>
                     </div>
@@ -1099,24 +1138,33 @@
                             <label class="col-lg-6" id="">
                                 KTP
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="surat_pindah2_5">
+                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_ktp">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file KTP</label>
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
                                 Kartu Keluarga Lama
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="dokumen_lama2_5" name="dokumen_lama2_5">
+                                    <input type="file" class="custom-file-input resetable" id="dokumen_lama2_5" name="file_kk">
                                     <label class="custom-file-label" for="dokumen_lama2_5">Pilih file Kartu Keluarga Lama</label>
                                 </div>
                             </label>
                         </div>
                         <div class="row">
-                            <label class="col-lg-12" id="">
+
+                            <label class="col-lg-6" id="">
                                 Selfie Memegang KTP
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="surat_pindah2_5">
+                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_ktp_selfie">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file Selfie Memegang KTP</label>
+                                </div>
+                            </label>
+
+                            <label class="col-lg-6" id="">
+                                Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                    <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                                 </div>
                             </label>
 

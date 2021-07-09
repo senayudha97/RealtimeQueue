@@ -61,7 +61,7 @@
                             <td><?= $value['email']; ?></td>
                             <td><?= $value['jenis'] == 1 ?  'Baru' : 'Perubahan'; ?></td>
                             <td>
-                                <a href="<?= base_url("verifikasi_antrian_ktp/proses/" . $value['id']); ?>" class="btn btn-success rounded-left"><span class="fas fa-fw fa-check"></span>Proses Antrian</a>
+                                <a href="<?= base_url("Verifikasi_KK_penambahanAnggota/proses/" . $value['id']); ?>" class="btn btn-success rounded-left"><span class="fas fa-fw fa-check"></span>Proses Antrian</a>
                             </td>
                         </tr>
                         <?php $i++; ?>

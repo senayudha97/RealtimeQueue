@@ -52,18 +52,18 @@
                     </div>
                 </div>
                 <h3>File Upload User</h3>
-                <div class="row mb-3 pl-3">
+                <div class="row">
                     <div class="col-sm-3">
-                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suratpindah">Surat Keterangan Pindah <span class="fas fa-fw fa-file"></span></button>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="suratpindah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktp">KTP <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktp" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Preview Surat Keterangan Pindah</h4>
+                                        <h4 class="modal-title">Preview KTP</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_kedatangan/') . $data['file_surat_pindah']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pindah_kota/') . $data['file_ktp']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
@@ -80,7 +80,24 @@
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_kedatangan/') . $data['file_kk']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pindah_kota/') . $data['file_kk']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktpselfie">KTP Selfie <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktpselfie" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview KTP Selfie</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pindah_kota/') . $data['file_kk']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
@@ -97,19 +114,17 @@
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_kedatangan/') . $data['file_sptjm']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pindah_kota/') . $data['file_sptjm']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-                <div class="modal-footer">
-                    <button class="text-light btn btn-danger" onclick="tolak()"><span class="fas fa-fw fa-times"></span> Tolak</button>
-                    <button class="text-light btn btn-success" onclick="verif()"><span class="fas fa-fw fa-check"></span> Verifikai</button>
-                </div>
+            </div>
+            <div class="modal-footer col-12">
+                <button class="text-light btn btn-danger" onclick="tolak()"><span class="fas fa-fw fa-times"></span> Tolak</button>
+                <button class="text-light btn btn-success" onclick="verif()"><span class="fas fa-fw fa-check"></span> Verifikai</button>
             </div>
         </di>
 

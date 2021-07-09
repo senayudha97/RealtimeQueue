@@ -54,7 +54,7 @@ class KIA_handler extends Guide
 
         if ($this->Tbl_KIA_handler->insert_KIA_pemula($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -97,7 +97,7 @@ class KIA_handler extends Guide
 
         if ($this->Tbl_KIA_handler->insert_KIA_kehilangan($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -139,7 +139,7 @@ class KIA_handler extends Guide
 
         if ($this->Tbl_KIA_handler->insert_KIA_rusak($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }

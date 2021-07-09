@@ -39,7 +39,7 @@ class KTP_handler extends Guide
 
 
         if ($this->Tbl_ktp_handler->insert_ktp_pemula($datapost) == 1) {
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
             exit;
@@ -81,7 +81,7 @@ class KTP_handler extends Guide
 
 
         if ($this->Tbl_ktp_handler->insert_ktp_kehilangan($datapost) == 1) {
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
             exit;
@@ -121,7 +121,7 @@ class KTP_handler extends Guide
         $datapost['file_ktp_lama'] = $newfilektplama;
 
         if ($this->Tbl_ktp_handler->insert_ktp_rusak($datapost) == 1) {
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
             exit;

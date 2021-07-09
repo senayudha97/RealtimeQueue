@@ -47,6 +47,14 @@ class KK_handler extends Guide
         $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_hilang/');
         $datapost['file_surat_3'] = $newfilesurat3;
 
+        // do Upload file_sptjm
+        $namaSementara = $_FILES['file_sptjm']['tmp_name'];
+        $temp = explode(".", $_FILES["file_sptjm"]["name"]);
+        $newfilesurat3 = $datapost['nohp'] . '_file_sptjm_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_sptjm']['type'];
+        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_hilang/');
+        $datapost['file_sptjm'] = $newfilesurat3;
+
         // // do Upload ijazah
         // $namaSementara = $_FILES['ijazah']['tmp_name'];
         // $temp = explode(".", $_FILES["ijazah"]["name"]);
@@ -59,7 +67,7 @@ class KK_handler extends Guide
 
         if ($this->Tbl_kk_handler->insert_kk_kehilangan($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -111,10 +119,19 @@ class KK_handler extends Guide
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_rusak/');
         $datapost['file_akta_kelahiran'] = $newfileupload;
 
+        // do Upload file_sptjm
+        $namaSementara = $_FILES['file_sptjm']['tmp_name'];
+        $temp = explode(".", $_FILES["file_sptjm"]["name"]);
+        $newfilesurat3 = $datapost['nohp'] . '_file_sptjm_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_sptjm']['type'];
+        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_rusak/');
+        $datapost['file_sptjm'] = $newfilesurat3;
+
+
 
         if ($this->Tbl_kk_handler->insert_kk_rusak($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -161,12 +178,14 @@ class KK_handler extends Guide
         $datapost['file_surat3'] = $newfileupload;
 
         // do Upload file_surat_pindah_agama
-        $namaSementara = $_FILES['file_surat_pindah_agama']['tmp_name'];
-        $temp = explode(".", $_FILES["file_surat_pindah_agama"]["name"]);
-        $newfileupload = $datapost['nohp'] . '_surat_pindah_agama_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['file_surat_pindah_agama']['type'];
-        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_perubahan_data/');
-        $datapost['file_surat_pindah_agama'] = $newfileupload;
+        if ($_FILES['file_surat_pindah_agama']['tmp_name'] != "") {
+            $namaSementara = $_FILES['file_surat_pindah_agama']['tmp_name'];
+            $temp = explode(".", $_FILES["file_surat_pindah_agama"]["name"]);
+            $newfileupload = $datapost['nohp'] . '_surat_pindah_agama_' . round(microtime(true)) . '.' . end($temp);
+            $file_type = $_FILES['file_surat_pindah_agama']['type'];
+            $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_perubahan_data/');
+            $datapost['file_surat_pindah_agama'] = $newfileupload;
+        }
 
         // do Upload file_ijazah
         if ($_FILES['file_ijazah']['tmp_name'] != "") {
@@ -178,9 +197,18 @@ class KK_handler extends Guide
             $datapost['file_ijazah'] = $newfileupload;
         }
 
+        // do Upload file_sptjm
+        $namaSementara = $_FILES['file_sptjm']['tmp_name'];
+        $temp = explode(".", $_FILES["file_sptjm"]["name"]);
+        $newfilesurat3 = $datapost['nohp'] . '_file_sptjm_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_sptjm']['type'];
+        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_perubahan_data/');
+        $datapost['file_sptjm'] = $newfilesurat3;
+
+
         if ($this->Tbl_kk_handler->insert_kk_perubahan_data($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -258,11 +286,20 @@ class KK_handler extends Guide
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pecah1desa/');
         $datapost['file_surat_nikah_ortu_istri'] = $newfileupload;
 
+        // do Upload file_sptjm
+        $namaSementara = $_FILES['file_sptjm']['tmp_name'];
+        $temp = explode(".", $_FILES["file_sptjm"]["name"]);
+        $newfilesurat3 = $datapost['nohp'] . '_file_sptjm_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_sptjm']['type'];
+        $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_sptjm'] = $newfilesurat3;
+
+
 
 
         if ($this->Tbl_kk_handler->insert_kk_pecah_1desa($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -332,9 +369,11 @@ class KK_handler extends Guide
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
         $datapost['file_kk_daerah_tujuan'] = $newfileupload;
 
+
+
         if ($this->Tbl_kk_handler->insert_kk_pindah_kecamatan($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -348,9 +387,42 @@ class KK_handler extends Guide
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
 
+        // do Upload file_ktp
+        $namaSementara = $_FILES['file_ktp']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ktp"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ktp_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ktp']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_kota/');
+        $datapost['file_ktp'] = $newfileupload;
+
+        // do Upload file_kk
+        $namaSementara = $_FILES['file_kk']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kk"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kk_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kk']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_kota/');
+        $datapost['file_kk'] = $newfileupload;
+
+        // do Upload file_ktp_selfie
+        $namaSementara = $_FILES['file_ktp_selfie']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ktp_selfie"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ktp_selfie_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ktp_selfie']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_kota/');
+        $datapost['file_ktp_selfie'] = $newfileupload;
+
+        // do Upload file_sptjm
+        $namaSementara = $_FILES['file_sptjm']['tmp_name'];
+        $temp = explode(".", $_FILES["file_sptjm"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_sptjm_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_sptjm']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_kota/');
+        $datapost['file_sptjm'] = $newfileupload;
+
+
         if ($this->Tbl_kk_handler->insert_kk_pindah_keluar_kota($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -367,7 +439,7 @@ class KK_handler extends Guide
 
         if ($this->Tbl_kk_handler->insert_kk_pengurangan_kematian($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -381,9 +453,35 @@ class KK_handler extends Guide
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
 
+        // do Upload file_sptjm
+        $namaSementara = $_FILES['file_sptjm']['tmp_name'];
+        $temp = explode(".", $_FILES["file_sptjm"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_sptjm_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_sptjm']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
+        $datapost['file_sptjm'] = $newfileupload;
+
+
+        // do Upload file_surat_pindah
+        $namaSementara = $_FILES['file_surat_pindah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_pindah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_pindah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_pindah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
+        $datapost['file_surat_pindah'] = $newfileupload;
+
+        // do Upload file_kk
+        $namaSementara = $_FILES['file_kk']['tmp_name'];
+        $temp = explode(".", $_FILES["file_kk"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_kk_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_kk']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
+        $datapost['file_kk'] = $newfileupload;
+
+
         if ($this->Tbl_kk_handler->insert_kk_penambahan_kedatangan($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -440,7 +538,7 @@ class KK_handler extends Guide
 
         if ($this->Tbl_kk_handler->insert_kk_penambahan_kelahiran($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -511,7 +609,7 @@ class KK_handler extends Guide
 
         if ($this->Tbl_kk_handler->insert_ktp_baru($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }
@@ -657,7 +755,7 @@ class KK_handler extends Guide
 
         if ($this->Tbl_kk_handler->insert_kk_baru($datapost) == 1) {
 
-            header("Location: http://localhost/siantrian");
+            header("Location: http://localhost:8080/siantrian");
         } else {
             echo 'fail';
         }

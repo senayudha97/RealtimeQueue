@@ -15,30 +15,8 @@
                 <div class="row">
                     <div class="col-sm-10 mb-3">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <!-- <input type="text" class="form-control easydatepicker" name="tgl[awal]" value="<?= date('d-m-Y'); ?>"> -->
-                                <input type="text" class="form-control easydatepicker" id="valtable" value="<?= date('d-m-Y'); ?>">
-                            </div>
-                            <div class="col-sm-6">
-                                <button class="btn  btn-danger" id="search"><i class="fas fa-search"></i></button>
-                                <!-- <input type="text" class="form-control easydatepicker" name="tgl[akhir]" value="<?= date('d-m-Y'); ?>"> -->
-                                <!-- <button type="submit" class="btn btn-danger "><span class="fas fa-fw fa-file-pdf"></span>PDF</button> -->
-                                &nbsp;
-                                <!-- <button type="submit" name="excel" class="btn btn-success "><span class="fas fa-fw fa-file-excel"></span>Excel</button> -->
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <!-- <input type="text" class="form-control easydatepicker" name="tgl[awal]" value="<?= date('d-m-Y'); ?>"> -->
-                                <input type="text" class="form-control easydatepicker" id="valtable" value="<?= date('d-m-Y'); ?>">
-                            </div>
-                            <div class="col-sm-6">
-                                <button class="btn  btn-danger" id="search"><i class="fas fa-search"></i></button>
-                                <!-- <input type="text" class="form-control easydatepicker" name="tgl[akhir]" value="<?= date('d-m-Y'); ?>"> -->
-                                <!-- <button type="submit" class="btn btn-danger "><span class="fas fa-fw fa-file-pdf"></span>PDF</button> -->
-                                &nbsp;
-                                <!-- <button type="submit" name="excel" class="btn btn-success "><span class="fas fa-fw fa-file-excel"></span>Excel</button> -->
-                            </div>
+
+
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
