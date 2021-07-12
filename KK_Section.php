@@ -846,11 +846,50 @@
                         </label>
                     </div>
                     <div class="row">
-                        <label class="col-lg-12" id="">
+                        <label class="col-lg-6" id="">
                             SPTJM
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_sptjm">
                                 <label class="custom-file-label" for="sptjm2_7">Pilih file SPTJM</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-6" id="">
+                            KTP
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_ktp">
+                                <label class="custom-file-label" for="sptjm2_7">Pilih file KTP</label>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-6" id="">
+                            Surat Nikah
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_surat_nikah">
+                                <label class="custom-file-label" for="sptjm2_7">Pilih file Surat Nikah</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-6" id="">
+                            Ijazah(Optional)
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_ijazah">
+                                <label class="custom-file-label" for="sptjm2_7">Pilih file Ijazah(Optional)</label>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-6" id="">
+                            Akta Kelahiran
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_akta_kelahiran">
+                                <label class="custom-file-label" for="sptjm2_7">Pilih file Akta Kelahiran</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-6" id="">
+                            Surat Keterangan
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_sk">
+                                <label class="custom-file-label" for="sptjm2_7">Pilih file Surat Keterangan</label>
                             </div>
                         </label>
                     </div>

@@ -104,6 +104,91 @@
                         </div>
                     </div>
 
+                    <div class="col-sm-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktp">KTP <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktp" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview KTP</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_kedatangan/') . $data['file_ktp']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 mt-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suratnkah">Surat Nikah <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="suratnkah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Surat Nikah</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_kedatangan/') . $data['file_surat_nikah']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 mt-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ijazah">Ijazah <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ijazah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Ijazah</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_kedatangan/') . $data['file_ijazah']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 mt-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#akta">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="akta" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Akta Kelahiran</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_kedatangan/') . $data['file_akta_kelahiran']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 mt-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#sk">Surat keterangan <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="sk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Surat keterangan</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_kedatangan/') . $data['file_sk']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="modal-footer">

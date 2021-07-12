@@ -2,6 +2,7 @@
 <?php gatewayApp(); ?>
 <!DOCTYPE html>
 <html lang="en">
+<?php date_default_timezone_set("Asia/Bangkok"); ?>
 
 <head>
   <!-- Required meta tags -->

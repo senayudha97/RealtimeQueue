@@ -8,6 +8,7 @@ class KK_handler extends Guide
     {
         parent::__construct();
         $this->load->model("Tbl_kk_handler");
+        date_default_timezone_set("Asia/Bangkok");
     }
 
     public function kk_kehilangan() // POS
@@ -477,6 +478,54 @@ class KK_handler extends Guide
         $file_type = $_FILES['file_kk']['type'];
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
         $datapost['file_kk'] = $newfileupload;
+
+
+        // do Upload file_ktp
+        $namaSementara = $_FILES['file_ktp']['tmp_name'];
+        $temp = explode(".", $_FILES["file_ktp"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_ktp_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_ktp']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
+        $datapost['file_ktp'] = $newfileupload;
+
+        // do Upload file_surat_nikah
+        $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_nikah']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
+        $datapost['file_surat_nikah'] = $newfileupload;
+
+        // do Upload file_ijazah
+        if ($_FILES['file_ijazah']['size'] == 0) {
+            echo 'berhasil skip';
+        } else {
+            $namaSementara = $_FILES['file_ijazah']['tmp_name'];
+            $temp = explode(".", $_FILES["file_ijazah"]["name"]);
+            $newfileupload = $datapost['nohp'] . '_file_ijazah_' . round(microtime(true)) . '.' . end($temp);
+            $file_type = $_FILES['file_ijazah']['type'];
+            $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
+            $datapost['file_ijazah'] = $newfileupload;
+        }
+
+        // do Upload file_akta_kelahiran
+        $namaSementara = $_FILES['file_akta_kelahiran']['tmp_name'];
+        $temp = explode(".", $_FILES["file_akta_kelahiran"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_akta_kelahiran_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_akta_kelahiran']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
+        $datapost['file_akta_kelahiran'] = $newfileupload;
+
+        // do Upload file_sk
+        $namaSementara = $_FILES['file_sk']['tmp_name'];
+        $temp = explode(".", $_FILES["file_sk"]["name"]);
+        $newfileupload = $datapost['nohp'] . '_file_sk_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_sk']['type'];
+        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
+        $datapost['file_sk'] = $newfileupload;
+
+
+
 
 
         if ($this->Tbl_kk_handler->insert_kk_penambahan_kedatangan($datapost) == 1) {
