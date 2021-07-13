@@ -9,7 +9,6 @@ class Form_kia extends Guide
     public function __construct()
     {
         parent::__construct();
-        // $this->load->model("Tbl_verifikasi_kia");
         is_logged_in();
     }
 
@@ -17,11 +16,7 @@ class Form_kia extends Guide
     {
         $data['title'] = get_title($this->uri->segment(1));
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $this->db->order_by('tanggal_antrian', 'ASC');
-        $this->db->where('is_delete', $this->is_delete);
-        $this->db->where('status ', 0);
-        $this->db->where('tanggal_antrian ', date('Y-m-d'));
-        // $data['data'] = $this->db->get('kia_perubahan_data')->result_array();
+        $data['data'] = $this->db->query("SELECT * FROM form_pengajuan WHERE nama_form LIKE '%kia%'")->result_array();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -30,49 +25,103 @@ class Form_kia extends Guide
         $this->load->view('templates/footer');
     }
 
-    public function proses($param = "")
+    public function edit()
     {
-        $data['title'] = get_title($this->uri->segment(1));
-        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $this->db->order_by('tanggal_antrian', 'ASC');
-        $this->db->where('is_delete', $this->is_delete);
-        $this->db->where('id', $param);
-        $data['data'] = $this->db->get('kia_perubahan_data')->row_array();
+        $tipe = $_POST['upload'];
+        $id = $_POST['key'];
+        $file_lama = $_POST['file_lama'];
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('templates/sidebar', $data);
-        $this->load->view('templates/topbar', $data);
-        $this->load->view('proses_antrian/' . $this->controller_dir . '_proses', $data);
-        $this->load->view('templates/footer');
-    }
 
-    public function verif($id = "")
-    {
-        $this->db->where('id', $id);
-        $this->db->set('status', 2);
-        if ($this->db->update('kia_perubahan_data')) {
-            $this->db->where('id', $id);
-            $user = $this->db->get('kia_perubahan_data')->row_array();
-            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'kia' . ',' . $id;
-            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
-            $this->flash_success("Proses Verifikasi KTP Berhasil");
-            redirect('' . $this->controller_dir . '');
+
+        switch ($tipe) {
+            case "pemula":
+                if ($file_lama != '') {
+                    if (unlink(FCPATH . '/file_upload/form_pengajuan/kia/' . $file_lama)) {
+                    } else {
+                        $this->flash_fail("Proses Gagal");
+                        redirect($this->controller_dir);
+                    }
+                }
+
+                $namaSementara = $_FILES['kia_pemula']['tmp_name'];
+                $temp = explode(".", $_FILES["kia_pemula"]["name"]);
+                $newnamefile = 'kia_pemula_' . round(microtime(true)) . '.' . end($temp);
+                $file_type = $_FILES['kia_pemula']['type'];
+                $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/form_pengajuan/kia/');
+                $this->db->set('file', $newnamefile);
+                $this->db->where('id', $id);
+                if ($this->db->update('form_pengajuan')) {
+                    $this->flash_success("Proses Upload File Berhasil");
+                    redirect($this->controller_dir);
+                }
+
+
+                break;
+            case "hilang":
+                if ($file_lama != '') {
+                    if (unlink(FCPATH . '/file_upload/form_pengajuan/kia/' . $file_lama)) {
+                    } else {
+                        $this->flash_fail("Proses Gagal");
+                        redirect($this->controller_dir);
+                    }
+                }
+
+                $namaSementara = $_FILES['kia_hilang']['tmp_name'];
+                $temp = explode(".", $_FILES["kia_hilang"]["name"]);
+                $newnamefile = 'kia_hilang_' . round(microtime(true)) . '.' . end($temp);
+                $file_type = $_FILES['kia_hilang']['type'];
+                $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/form_pengajuan/kia/');
+                $this->db->set('file', $newnamefile);
+                $this->db->where('id', $id);
+                if ($this->db->update('form_pengajuan')) {
+                    $this->flash_success("Proses Upload File Berhasil");
+                    redirect($this->controller_dir);
+                }
+
+                break;
+            case "rusak":
+                if ($file_lama != '') {
+                    if (unlink(FCPATH . '/file_upload/form_pengajuan/kia/' . $file_lama)) {
+                    } else {
+                        $this->flash_fail("Proses Gagal");
+                        redirect($this->controller_dir);
+                    }
+                }
+
+                $namaSementara = $_FILES['kia_rusak']['tmp_name'];
+                $temp = explode(".", $_FILES["kia_rusak"]["name"]);
+                $newnamefile = 'kia_rusak_' . round(microtime(true)) . '.' . end($temp);
+                $file_type = $_FILES['kia_rusak']['type'];
+                $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/form_pengajuan/kia/');
+                $this->db->set('file', $newnamefile);
+                $this->db->where('id', $id);
+                if ($this->db->update('form_pengajuan')) {
+                    $this->flash_success("Proses Upload File Berhasil");
+                    redirect($this->controller_dir);
+                }
+
+                break;
+            default:
+                $this->flash_fail("Perintah Salah!");
+                redirect($this->controller_dir);
         }
     }
-    public function tolak()
-    {
-        $id = $_POST['id'];
-        $catatan = (!empty($_POST['catatan'])) ? $_POST['catatan'] : "Pengajuan anda di tolak";
 
-        $catatan = urldecode($catatan);
-        $this->db->where('id', $id);
-        $this->db->set('status', 1);
-        $this->db->set('catatan_penolakan', $catatan);
-        if ($this->db->update('kia_perubahan_data')) {
-            $user = $this->db->get('kia_perubahan_data')->row_array();
-            $this->sendEmail(['email' => $user['email'], 'message' => $catatan, 'istolak' => true]);
-            $this->flash_success("Proses Tolak KTP Berhasil");
-            redirect('' . $this->controller_dir . '');
+    function upload_file($namaSementara, $newfilename, $file_type, $dirUpload)
+    {
+        $allowed = array("image/jpeg", "image/gif", "application/pdf");
+        if (!in_array($file_type, $allowed)) {
+            $error_message = 'Format File yg Anda Upload Salah';
+            echo $error_message;
+            exit;
+        }
+
+        $terupload = move_uploaded_file($namaSementara, $dirUpload . $newfilename);
+
+        if ($terupload) {
+            echo "Upload berhasil!<br/>";
+        } else {
+            echo "Upload Gagal!";
         }
     }
 }
