@@ -189,7 +189,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA KELAHIRAN BARU <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[0]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA KELAHIRAN BARU
+                            <?php if ($data[0]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[0]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -233,7 +237,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA KELAHIRAN HILANG <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[1]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA KELAHIRAN HILANG
+                            <?php if ($data[1]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[1]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -277,7 +285,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA KELAHIRAN RUSAK <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[2]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA KELAHIRAN RUSAK
+                            <?php if ($data[2]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[2]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -321,7 +333,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA KELAHIRAN PEMBARUAN <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[3]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA KELAHIRAN PEMBARUAN
+                            <?php if ($data[3]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[3]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -365,7 +381,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA KEMATIAN BARU <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[4]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA KEMATIAN BARU
+                            <?php if ($data[4]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[4]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -409,7 +429,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA KEMATIAN HILANG <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[5]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA KEMATIAN HILANG
+                            <?php if ($data[5]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[5]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -453,7 +477,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA KEMATIAN RUSAK <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[6]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA KEMATIAN RUSAK
+                            <?php if ($data[6]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[6]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -497,7 +525,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA KEMATIAN PEMBARUAN <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[7]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA KEMATIAN PEMBARUAN
+                            <?php if ($data[7]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[7]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -541,7 +573,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA PERKAWINAN BARU <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[8]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA PERKAWINAN BARU
+                            <?php if ($data[8]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[8]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -585,7 +621,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA PERKAWINAN HILANG <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[9]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA PERKAWINAN HILANG
+                            <?php if ($data[9]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[9]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -629,7 +669,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA PERKAWINAN RUSAK <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[10]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA PERKAWINAN RUSAK
+                            <?php if ($data[10]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[10]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -673,7 +717,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA PERKAWINAN PEMBARUAN <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[11]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA PERKAWINAN PEMBARUAN
+                            <?php if ($data[11]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[11]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -717,7 +765,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA PERCERAIAN BARU <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[12]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA PERCERAIAN BARU
+                            <?php if ($data[12]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[12]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -761,7 +813,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA PERCERAIAN HILANG <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[13]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA PERCERAIAN HILANG
+                            <?php if ($data[13]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[13]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -805,7 +861,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA PERCERAIAN RUSAK <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[14]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA PERCERAIAN RUSAK
+                            <?php if ($data[14]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[14]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>
@@ -849,7 +909,11 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview AKTA PERCERAIAN PEMBARUAN <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[15]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                        <h4 class="modal-title">Preview AKTA PERCERAIAN PEMBARUAN
+                            <?php if ($data[15]['file'] != '') : ?>
+                                <a href="<?= base_url('file_upload/form_pengajuan/akta/' . $data[15]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                            <?php endif; ?>
+                        </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <center>

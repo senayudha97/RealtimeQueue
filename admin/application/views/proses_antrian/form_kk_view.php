@@ -107,7 +107,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form KK Hilang <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[0]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form KK Hilang
+                        <?php if ($data[0]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[0]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
@@ -151,7 +155,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form KK Rusak <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[1]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form KK Rusak
+                        <?php if ($data[1]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[1]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
@@ -196,7 +204,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form KK Perubahan Data <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[2]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form KK Perubahan Data
+                        <?php if ($data[2]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[2]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
@@ -241,7 +253,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form Pecah KK dalam 1 Desa <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[3]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form Pecah KK dalam 1 Desa
+                        <?php if ($data[3]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[3]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
@@ -286,7 +302,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form Pindah Desa/Kecamatan <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[4]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form Pindah Desa/Kecamatan
+                        <?php if ($data[4]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[4]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
@@ -331,7 +351,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form Pindah Kota <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[5]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form Pindah Kota
+                        <?php if ($data[5]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[5]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
@@ -376,7 +400,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form Kedatangan <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[6]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form Kedatangan
+                        <?php if ($data[6]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/kk/' . $data[6]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>

@@ -41,7 +41,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form KTP Pemula <a href="<?= base_url('file_upload/form_pengajuan/ktp/' . $data[0]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form KTP Pemula
+                        <?php if ($data[0]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/ktp/' . $data[0]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
@@ -86,7 +90,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form KTP Hilang <a href="<?= base_url('file_upload/form_pengajuan/ktp/' . $data[1]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form KTP Hilang
+                        <?php if ($data[1]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/ktp/' . $data[1]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
@@ -130,7 +138,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Preview Form KTP Rusak <a href="<?= base_url('file_upload/form_pengajuan/ktp/' . $data[2]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a></h4>
+                    <h4 class="modal-title">Preview Form KTP Rusak
+                        <?php if ($data[2]['file'] != '') : ?>
+                            <a href="<?= base_url('file_upload/form_pengajuan/ktp/' . $data[2]['file']); ?>" target="_blank" class="btn btn-success">Buka Full Screen</a>
+                        <?php endif; ?>
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <center>
