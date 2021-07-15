@@ -151,9 +151,4 @@ class KTP_handler extends Guide
     {
         echo json_encode($this->db->query("SELECT file FROM form_pengajuan WHERE nama_form LIKE '%ktp%'")->result_array());
     }
-
-    public function formKK()
-    {
-        echo json_encode($this->db->query("SELECT file FROM form_pengajuan WHERE nama_form LIKE '%kk%'")->result_array());
-    }
 }

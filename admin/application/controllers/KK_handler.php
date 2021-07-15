@@ -847,4 +847,11 @@ class KK_handler extends Guide
             echo "Upload Gagal!";
         }
     }
+
+
+    // KK Form File
+    public function formKK()
+    {
+        echo json_encode($this->db->query("SELECT file FROM form_pengajuan WHERE nama_form LIKE '%kk%'")->result_array());
+    }
 }

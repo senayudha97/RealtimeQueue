@@ -108,7 +108,7 @@ class Form_kk extends Guide
                 }
 
                 break;
-            case "  pecah1desa":
+            case "pecah1desa":
                 if ($file_lama != '') {
                     if (unlink(FCPATH . '/file_upload/form_pengajuan/kk/' . $file_lama)) {
                     } else {

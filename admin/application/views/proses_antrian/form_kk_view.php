@@ -188,7 +188,7 @@
                         <form method="POST" enctype="multipart/form-data" action="<?= base_url($this->controller_dir . '/edit'); ?>">
                             <input type="hidden" name="upload" value="kkrusak">
                             <input type="hidden" name="key" value="<?= $data[1]['id']; ?>">
-                            <input type="hidden" name="file_lama" value="<?= $data[0]['file']; ?>">
+                            <input type="hidden" name="file_lama" value="<?= $data[1]['file']; ?>">
                             <input type="file" name="kkrusak" required class="form-control">
                             <button type="submit" class="btn btn-block btn-success mt-3">UPLOAD <span class="fas fa-fw fa-upload"></span></button>
                         </form>
@@ -236,8 +236,8 @@
                     <div class="container mt-5 mb-5">
                         <form method="POST" enctype="multipart/form-data" action="<?= base_url($this->controller_dir . '/edit'); ?>">
                             <input type="hidden" name="upload" value="perubahandata">
-                            <input type="hidden" name="key" value="<?= $data[0]['id']; ?>">
-                            <input type="hidden" name="file_lama" value="<?= $data[0]['file']; ?>">
+                            <input type="hidden" name="key" value="<?= $data[2]['id']; ?>">
+                            <input type="hidden" name="file_lama" value="<?= $data[2]['file']; ?>">
                             <input type="file" name="perubahandata" required class="form-control">
                             <button type="submit" class="btn btn-block btn-success mt-3">UPLOAD <span class="fas fa-fw fa-upload"></span></button>
                         </form>
@@ -285,8 +285,8 @@
                     <div class="container mt-5 mb-5">
                         <form method="POST" enctype="multipart/form-data" action="<?= base_url($this->controller_dir . '/edit'); ?>">
                             <input type="hidden" name="upload" value="pecah1desa">
-                            <input type="hidden" name="key" value="<?= $data[0]['id']; ?>">
-                            <input type="hidden" name="file_lama" value="<?= $data[0]['file']; ?>">
+                            <input type="hidden" name="key" value="<?= $data[3]['id']; ?>">
+                            <input type="hidden" name="file_lama" value="<?= $data[3]['file']; ?>">
                             <input type="file" name="pecah1desa" required class="form-control">
                             <button type="submit" class="btn btn-block btn-success mt-3">UPLOAD <span class="fas fa-fw fa-upload"></span></button>
                         </form>
@@ -334,8 +334,8 @@
                     <div class="container mt-5 mb-5">
                         <form method="POST" enctype="multipart/form-data" action="<?= base_url($this->controller_dir . '/edit'); ?>">
                             <input type="hidden" name="upload" value="pindahdesa">
-                            <input type="hidden" name="key" value="<?= $data[0]['id']; ?>">
-                            <input type="hidden" name="file_lama" value="<?= $data[0]['file']; ?>">
+                            <input type="hidden" name="key" value="<?= $data[4]['id']; ?>">
+                            <input type="hidden" name="file_lama" value="<?= $data[4]['file']; ?>">
                             <input type="file" name="pindahdesa" required class="form-control">
                             <button type="submit" class="btn btn-block btn-success mt-3">UPLOAD <span class="fas fa-fw fa-upload"></span></button>
                         </form>
@@ -383,8 +383,8 @@
                     <div class="container mt-5 mb-5">
                         <form method="POST" enctype="multipart/form-data" action="<?= base_url($this->controller_dir . '/edit'); ?>">
                             <input type="hidden" name="upload" value="pindahkota">
-                            <input type="hidden" name="key" value="<?= $data[0]['id']; ?>">
-                            <input type="hidden" name="file_lama" value="<?= $data[0]['file']; ?>">
+                            <input type="hidden" name="key" value="<?= $data[5]['id']; ?>">
+                            <input type="hidden" name="file_lama" value="<?= $data[5]['file']; ?>">
                             <input type="file" name="pindahkota" required class="form-control">
                             <button type="submit" class="btn btn-block btn-success mt-3">UPLOAD <span class="fas fa-fw fa-upload"></span></button>
                         </form>
@@ -432,8 +432,8 @@
                     <div class="container mt-5 mb-5">
                         <form method="POST" enctype="multipart/form-data" action="<?= base_url($this->controller_dir . '/edit'); ?>">
                             <input type="hidden" name="upload" value="kedatangan">
-                            <input type="hidden" name="key" value="<?= $data[0]['id']; ?>">
-                            <input type="hidden" name="file_lama" value="<?= $data[0]['file']; ?>">
+                            <input type="hidden" name="key" value="<?= $data[6]['id']; ?>">
+                            <input type="hidden" name="file_lama" value="<?= $data[6]['file']; ?>">
                             <input type="file" name="kedatangan" required class="form-control">
                             <button type="submit" class="btn btn-block btn-success mt-3">UPLOAD <span class="fas fa-fw fa-upload"></span></button>
                         </form>
