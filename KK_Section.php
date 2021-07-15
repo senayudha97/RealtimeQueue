@@ -1,3 +1,8 @@
+<script>
+
+</script>
+
+
 <!-- |FIRST LAYER| -->
 <div class="modal fade" id="mod_kk" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -136,7 +141,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PENGURUSAN KK HILANG</h5>
-                &nbsp;
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 &nbsp;
                 <img src="assets/img/pos.png" width="50px" alt="">
 
@@ -202,8 +209,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PENGURUSAN KK RUSAK</h5>
-                &nbsp;
-                &nbsp;
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div> &nbsp;
                 <img src="assets/img/pos.png" width="50px" alt="">
 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -390,6 +398,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PERUBAHAN DATA KK</h5>
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -506,6 +517,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PECAH KK DALAM 1 DESA</h5>
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -785,6 +799,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">KEDATANGAN</h5>
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -1007,6 +1024,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PINDAH DESA/KECAMATAN</h5>
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -1127,6 +1147,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PINDAH KELUAR KOTA</h5>
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

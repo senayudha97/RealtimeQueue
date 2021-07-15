@@ -1,3 +1,16 @@
+<!-- Consume API -->
+<script>
+    $.get("admin/KTP_handler/formKTP", function(data) {
+        let json = JSON.parse(data);
+
+        (json[0].file != '') ? $("#ktppemula").attr("href", "admin/file_upload/form_pengajuan/ktp/" + json[0].file): $("#ktppemula").hide();
+
+        (json[1].file != '') ? $("#ktphilang").attr("href", "admin/file_upload/form_pengajuan/ktp/" + json[1].file): $("#ktphilang").hide();
+
+        (json[2].file != '') ? $("#ktprusak").attr("href", "admin/file_upload/form_pengajuan/ktp/" + json[2].file): $("#ktprusak").hide();
+    });
+</script>
+
 <!-- First Layer -->
 <div class="modal fade" id="mod_ktp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -56,6 +69,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">KTP PEMULA</h5>
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" target="_blank" id="ktppemula" href="">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -139,7 +155,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">KTP KEHILANGAN</h5>
-                &nbsp;
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" target="_blank" id="ktphilang" href="">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 &nbsp;
                 <img src="assets/img/pos.png" width="50px" alt="">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -197,7 +215,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">KTP RUSAK</h5>
-                &nbsp;
+                <div class="downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" target="_blank" id="ktprusak" href="">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 &nbsp;
                 <img src="assets/img/pos.png" width="50px" alt="">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
