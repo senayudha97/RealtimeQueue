@@ -42,6 +42,7 @@ class Form_kk extends Guide
 
         switch ($tipe) {
             case "kkhilang":
+                die("BERHASIL");
                 if ($file_lama != '') {
                     if (unlink(FCPATH . '/file_upload/form_pengajuan/kk/' . $file_lama)) {
                     } else {
@@ -98,7 +99,7 @@ class Form_kk extends Guide
                 $namaSementara = $_FILES['perubahandata']['tmp_name'];
                 $temp = explode(".", $_FILES["perubahandata"]["name"]);
                 $newnamefile = 'perubahandata_' . round(microtime(true)) . '.' . end($temp);
-                $file_type = $_FILES['ktp_pemulaperubahandatatype'];
+                $file_type = $_FILES['perubahandata']['type'];
                 $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/form_pengajuan/kk/');
                 $this->db->set('file', $newnamefile);
                 $this->db->where('id', $id);
