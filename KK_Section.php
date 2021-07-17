@@ -507,10 +507,17 @@
                         </label>
                     </div>
                     <div class="row">
-                        <label class="col-lg-12" id="">
+                        <label class="col-lg-6" id="">
                             Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-6" id="">
+                            Surat Keterangan
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_keterangan">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
@@ -647,6 +654,13 @@
                             Surat Pernyataan Tertulis Yang Punya Anak
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_punya_anak">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Surat Keterangan
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_keterangan">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
