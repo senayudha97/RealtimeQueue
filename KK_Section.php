@@ -157,65 +157,65 @@
                 <h5 class="modal-title"">PENGURUSAN KK HILANG</h5>
                 <div class=" downloadForm pl-3">
                     <a class="btn btn-common rounded-0" href="" target="_blank" id="kkhilang">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
-            </div>
-            &nbsp;
-            <img src="assets/img/pos.png" width="50px" alt="">
-
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <form action="admin/kk_handler/kk_kehilangan" enctype="multipart/form-data" method="POST">
-            <div class="modal-body">
-                <input type="text" class="form-control resetable" id="name2_1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
-                <input type="tel" class="form-control resetable" id="phone2_1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
-                <input type="email" class="form-control resetable" id="email2_1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
-
-                <div class="row">
-                    <label class="col-lg-12" id="">
-                        Surat Keterangan Kehilangan dari Kepolisian
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_kehilangan">
-                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                        </div>
-                    </label>
-                    <label class="col-lg-12" id="">
-                        Fotocopy KK (Jika ada)
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="fotocopy_kk">
-                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                        </div>
-                    </label>
-                    <label class="col-lg-12" id="">
-                        KTP Asli
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="ktp_asli">
-                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                        </div>
-                    </label>
-                    <label class="col-lg-12" id="">
-                        Surat Nikah / Akta Cerai / Akta Kematian Asli
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_3">
-                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                        </div>
-                    </label>
-                    <label class="col-lg-12" id="">
-                        Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
-                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                        </div>
-                    </label>
                 </div>
+                &nbsp;
+                <img src="assets/img/pos.png" width="50px" alt="">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
-                <button type="submit" id="btn_kkkehilangan" class="btn btn-common">Kirim</button>
-            </div>
-        </form>
+            <form action="admin/kk_handler/kk_kehilangan" enctype="multipart/form-data" method="POST">
+                <div class="modal-body">
+                    <input type="text" class="form-control resetable" id="name2_1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+                    <input type="tel" class="form-control resetable" id="phone2_1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+                    <input type="email" class="form-control resetable" id="email2_1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+                    <div class="row">
+                        <label class="col-lg-12" id="">
+                            Surat Keterangan Kehilangan dari Kepolisian
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_kehilangan">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Fotocopy KK (Jika ada)
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="fotocopy_kk">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            KTP Asli
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="ktp_asli">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Surat Nikah / Akta Cerai / Akta Kematian Asli
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_3">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
+                    <button type="submit" id="btn_kkkehilangan" class="btn btn-common">Kirim</button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 </div>
 <!-- RUSAK -->
 <div class="modal fade" id="mod_kk_baru_rusak" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -640,6 +640,13 @@
                             Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Surat Pernyataan Tertulis Yang Punya Anak
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_punya_anak">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
