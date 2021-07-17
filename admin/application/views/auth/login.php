@@ -11,8 +11,7 @@
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
                     <div class="text-center mt-5">
-                        <!-- <h3 id="title" class="h3">Sistem Infromasi Antrian</h3> -->
-                        <h3 id="title" class="h3">SIANTRIAN</h3>
+                        <h3 id="title" class="h3">Sistem Infromasi Antrian</h3>
                     </div>
                     <div class="row">
                         <div class="col-lg">
