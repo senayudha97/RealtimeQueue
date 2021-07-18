@@ -97,7 +97,7 @@
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <center>
-                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pindah_kota/') . $data['file_kk']; ?>" alt="">
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pindah_kota/') . $data['file_ktp_selfie']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>
@@ -115,6 +115,23 @@
                                     </div>
                                     <center>
                                         <img class="card-img" src="<?= base_url('file_upload/kk/kk_pindah_kota/') . $data['file_sptjm']; ?>" alt="">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 mt-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#fileform">Form Isian <span class="fas fa-fw fa-file"></span></button>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="fileform" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preview Form Isian</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <center>
+                                        <img class="card-img" src="<?= base_url('file_upload/kk/kk_pindah_kota/') . $data['file_form']; ?>" alt="">
                                     </center>
                                 </div>
                             </div>

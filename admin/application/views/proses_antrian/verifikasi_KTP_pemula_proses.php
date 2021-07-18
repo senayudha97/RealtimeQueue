@@ -59,6 +59,9 @@
                     <div class="col-3">
                         <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#aktakelahiran">Akta Kelahiran <span class="fas fa-fw fa-file"></span></button>
                     </div>
+                    <div class="col-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#formisian">Form Isian <span class="fas fa-fw fa-file"></span></button>
+                    </div>
 
                     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
@@ -83,6 +86,20 @@
                                 </div>
                                 <center>
                                     <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_pemula/') . $data['file_akta_kelahiran']; ?>" alt="">
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="formisian" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Preview Form Isian</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <center>
+                                    <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_pemula/') . $data['file_form']; ?>" alt="">
                                 </center>
                             </div>
                         </div>

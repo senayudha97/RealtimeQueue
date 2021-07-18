@@ -62,8 +62,10 @@
                     <div class="col-3">
                         <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktplama">KTP Lama <span class="fas fa-fw fa-file"></span></button>
                     </div>
+                    <div class="col-3">
+                        <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#formisian">Form Isian <span class="fas fa-fw fa-file"></span></button>
+                    </div>
                 </div>
-
 
                 <div class="modal-footer">
                     <button class="text-light btn btn-danger" onclick="tolak()"><span class="fas fa-fw fa-times"></span> Tolak</button>
@@ -75,6 +77,20 @@
 </div>
 
 <!-- Modal -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="formisian" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Preview Form Isian</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <center>
+                <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_rusak/') . $data['file_form']; ?>" alt="">
+            </center>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -83,7 +99,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <center>
-                <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_hilang/') . $data['file_kk']; ?>" alt="">
+                <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_rusak/') . $data['file_kk']; ?>" alt="">
             </center>
         </div>
     </div>
@@ -97,7 +113,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <center>
-                <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_hilang/') . $data['file_akta_kelahiran']; ?>" alt="">
+                <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_rusak/') . $data['file_akta_kelahiran']; ?>" alt="">
             </center>
         </div>
     </div>
@@ -111,7 +127,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <center>
-                <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_hilang/') . $data['file_ktp_lama']; ?>" alt="">
+                <img class="card-img" src="<?= base_url('file_upload/ktp/ktp_rusak/') . $data['file_ktp_lama']; ?>" alt="">
             </center>
         </div>
     </div>

@@ -138,72 +138,72 @@
                 <h5 class="modal-title"">PENGURUSAN KK HILANG</h5>
                 <div class=" downloadForm pl-3">
                     <a class="btn btn-common rounded-0" href="" target="_blank" id="kkhilang">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
-                </div>
-                &nbsp;
-                <img src="assets/img/pos.png" width="50px" alt="">
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
             </div>
-            <form action="admin/kk_handler/kk_kehilangan" enctype="multipart/form-data" method="POST">
-                <div class="modal-body">
-                    <input type="text" class="form-control resetable" id="name2_1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
-                    <input type="tel" class="form-control resetable" id="phone2_1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
-                    <input type="email" class="form-control resetable" id="email2_1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+            &nbsp;
+            <img src="assets/img/pos.png" width="50px" alt="">
 
-                    <div class="row">
-                        <label class="col-lg-12" id="">
-                            Surat Keterangan Kehilangan dari Kepolisian
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_kehilangan">
-                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                            </div>
-                        </label>
-                        <label class="col-lg-12" id="">
-                            Fotocopy KK (Jika ada)
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="fotocopy_kk">
-                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                            </div>
-                        </label>
-                        <label class="col-lg-12" id="">
-                            KTP Asli
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="ktp_asli">
-                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                            </div>
-                        </label>
-                        <label class="col-lg-12" id="">
-                            Surat Nikah / Akta Cerai / Akta Kematian Asli
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_3">
-                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                            </div>
-                        </label>
-                        <label class="col-lg-12" id="">
-                            Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
-                                <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
-                            </div>
-                        </label>
-                        <label class="col-lg-12" id="">
-                            Form Isian
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
-                                <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
-                    <button type="submit" id="btn_kkkehilangan" class="btn btn-common">Kirim</button>
-                </div>
-            </form>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
+        <form action="admin/kk_handler/kk_kehilangan" enctype="multipart/form-data" method="POST">
+            <div class="modal-body">
+                <input type="text" class="form-control resetable" id="name2_1" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
+                <input type="tel" class="form-control resetable" id="phone2_1" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
+                <input type="email" class="form-control resetable" id="email2_1" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+
+                <div class="row">
+                    <label class="col-lg-12" id="">
+                        Surat Keterangan Kehilangan dari Kepolisian
+                        <div class="custom-file">
+                            <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_kehilangan">
+                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                        </div>
+                    </label>
+                    <label class="col-lg-12" id="">
+                        Fotocopy KK (Jika ada)
+                        <div class="custom-file">
+                            <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="fotocopy_kk">
+                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                        </div>
+                    </label>
+                    <label class="col-lg-12" id="">
+                        KTP Asli
+                        <div class="custom-file">
+                            <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="ktp_asli">
+                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                        </div>
+                    </label>
+                    <label class="col-lg-12" id="">
+                        Surat Nikah / Akta Cerai / Akta Kematian Asli
+                        <div class="custom-file">
+                            <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="surat_3">
+                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                        </div>
+                    </label>
+                    <label class="col-lg-12" id="">
+                        Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
+                        <div class="custom-file">
+                            <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                            <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
+                        </div>
+                    </label>
+                    <label class="col-lg-12" id="">
+                        Form Isian
+                        <div class="custom-file">
+                            <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                            <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kk_baru">Kembali</button>
+                <button type="submit" id="btn_kkkehilangan" class="btn btn-common">Kirim</button>
+            </div>
+        </form>
     </div>
+</div>
 </div>
 <!-- RUSAK -->
 <div class="modal fade" id="mod_kk_baru_rusak" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -230,42 +230,42 @@
                         <label class="col-lg-12" id="">
                             Kartu Keluarga Asli Yang Rusak
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_2" name="file_kk_rusak">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_2" name="file_kk_rusak">
                                 <label class="custom-file-label" for="dokumen_lama2_2">Pilih file Kartu Keluarga Lama</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Nikah / Akta Cerai/ Akta Kematian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_2" name="file_surat3">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_2" name="file_surat3">
                                 <label class="custom-file-label" for="dokumen_lama2_2">Pilih file Kartu Keluarga Lama</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Ijazah Terakhir (Optional)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_2" name="file_ijazah">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_2" name="file_ijazah">
                                 <label class="custom-file-label" for="dokumen_lama2_2">Pilih file Kartu Keluarga Lama</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Akta Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_2" name="file_akta_kelahiran">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_2" name="file_akta_kelahiran">
                                 <label class="custom-file-label" for="dokumen_lama2_2">Pilih file Kartu Keluarga Lama</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Form Isian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
                                 <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
@@ -408,7 +408,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">PERUBAHAN DATA KK</h5>
                 <div class="downloadForm pl-3">
-                    <a class="btn btn-common rounded-0" id="kkperubahandata" target="_blank" href="">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                    <a class="btn btn-common rounded-0" id="kkperubahandataform" target="_blank" href="">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -459,21 +459,21 @@
                         <label class="col-lg-4" id="">
                             KK Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_kk">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_3" name="file_kk">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-4" id="">
                             KTP Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_ktp">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_3" name="file_ktp">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-4" id="">
                             Akta Kelahiran Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_akta_kelahiran">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_3" name="file_akta_kelahiran">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file Akta </label>
                             </div>
                         </label>
@@ -482,21 +482,21 @@
                         <label class="col-lg-4" id="">
                             Surat Nikah/Akta Cerai/ Akta Kematian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_surat3">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_3" name="file_surat3">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-4" id="">
                             Surat Mualaf / Baptis (Apabila Pindah Agama)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_surat_pindah_agama">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_3" name="file_surat_pindah_agama">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-4" id="">
                             Ijazah (Apabila merubah status pendidikan)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_3" name="file_ijazah">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_3" name="file_ijazah">
                                 <label class="custom-file-label" for="dokumen_lama2_3">Pilih file </label>
                             </div>
                         </label>
@@ -505,14 +505,14 @@
                         <label class="col-lg-6" id="">
                             Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Surat Keterangan
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_keterangan">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_keterangan">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
@@ -521,7 +521,7 @@
                         <label class="col-lg-12" id="">
                             Form Isian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
                                 <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
@@ -594,84 +594,84 @@
                         <label class="col-lg-12" id="">
                             KK Suami
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_kk_suami">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_4" name="file_kk_suami">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             KK Istri
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_kk_istri">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_4" name="file_kk_istri">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Nikah Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_surat_nikah">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_4" name="file_surat_nikah">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Ijazah Suami Terakhir Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_ijazah_suami">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_4" name="file_ijazah_suami">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Ijazah Istri Terakhir Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_ijazah_istri">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_4" name="file_ijazah_istri">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Akta Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_akta">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_4" name="file_akta">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Nikah Dari Orang Tua Suami
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_surat_nikah_ortu_suami">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_4" name="file_surat_nikah_ortu_suami">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Nikah Dari Orang Tua Istri
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_4" name="file_surat_nikah_ortu_istri">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_4" name="file_surat_nikah_ortu_istri">
                                 <label class="custom-file-label" for="dokumen_lama2_4">Pilih file </label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Pernyataan Tertulis Yang Punya Anak
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_punya_anak">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_punya_anak">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Keterangan
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_keterangan">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_surat_keterangan">
                                 <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Form Isian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
                                 <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
@@ -783,14 +783,14 @@
                             <label class="col-lg-6" id="">
                                 Surat Keterangan Kematian
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="surat_kematian321" name="surat_kematian">
+                                    <input type="file" required required class="custom-file-input resetable" id="surat_kematian321" name="surat_kematian">
                                     <label class="custom-file-label" for="surat_kematian321">Pilih file Surat Keterangan Kematian</label>
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
                                 Kartu Keluarga Asli
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="kartu_keluarga" name="kartu_keluarga">
+                                    <input type="file" required required class="custom-file-input resetable" id="kartu_keluarga" name="kartu_keluarga">
                                     <label class="custom-file-label" for="kartu_keluarga">Pilih file Kartu Keluarga Asli</label>
                                 </div>
                             </label>
@@ -799,14 +799,14 @@
                             <label class="col-lg-6" id="">
                                 KTP Asli
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="ktp" name="ktp">
+                                    <input type="file" required required class="custom-file-input resetable" id="ktp" name="ktp">
                                     <label class="custom-file-label" for="ktp">Pilih file KTP Asli</label>
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
                                 Surat Nikah atau Akta Perkawinan
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="surat_nikah321" name="surat_nikah">
+                                    <input type="file" required required class="custom-file-input resetable" id="surat_nikah321" name="surat_nikah">
                                     <label class="custom-file-label" for="surat_nikah321">Pilih file Surat Nikah atau Akta Perkawinan</label>
                                 </div>
                             </label>
@@ -815,14 +815,14 @@
                             <label class="col-lg-6" id="">
                                 KTP Saksi 1
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="ktp" name="ktp">
+                                    <input type="file" required required class="custom-file-input resetable" id="ktp" name="ktp">
                                     <label class="custom-file-label" for="ktp">Pilih file KTP Saksi 1</label>
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
                                 KTP Saksi 2
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="surat_nikah321" name="surat_nikah">
+                                    <input type="file" required required class="custom-file-input resetable" id="surat_nikah321" name="surat_nikah">
                                     <label class="custom-file-label" for="surat_nikah321">Pilih file KTP Saksi 2</label>
                                 </div>
                             </label>
@@ -896,14 +896,14 @@
                         <label class="col-lg-6" id="">
                             Surat Keterangan Pindah
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_surat_pindah">
+                                <input type="file" required class="custom-file-input resetable" id="surat_pindah2_7" name="file_surat_pindah">
                                 <label class="custom-file-label" for="surat_pindah2_7">Pilih file Surat Keterangan Pindah</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Kartu Keluarga Lama
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama2_7" name="file_kk">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_7" name="file_kk">
                                 <label class="custom-file-label" for="dokumen_lama2_7">Pilih file Kartu Keluarga Lama</label>
                             </div>
                         </label>
@@ -912,14 +912,14 @@
                         <label class="col-lg-6" id="">
                             SPTJM
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_sptjm">
+                                <input type="file" required class="custom-file-input resetable" id="surat_pindah2_7" name="file_sptjm">
                                 <label class="custom-file-label" for="sptjm2_7">Pilih file SPTJM</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             KTP
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_ktp">
+                                <input type="file" required class="custom-file-input resetable" id="surat_pindah2_7" name="file_ktp">
                                 <label class="custom-file-label" for="sptjm2_7">Pilih file KTP</label>
                             </div>
                         </label>
@@ -928,14 +928,14 @@
                         <label class="col-lg-6" id="">
                             Surat Nikah
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_surat_nikah">
+                                <input type="file" required class="custom-file-input resetable" id="surat_pindah2_7" name="file_surat_nikah">
                                 <label class="custom-file-label" for="sptjm2_7">Pilih file Surat Nikah</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Ijazah(Optional)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_ijazah">
+                                <input type="file" required class="custom-file-input resetable" id="surat_pindah2_7" name="file_ijazah">
                                 <label class="custom-file-label" for="sptjm2_7">Pilih file Ijazah(Optional)</label>
                             </div>
                         </label>
@@ -944,14 +944,14 @@
                         <label class="col-lg-6" id="">
                             Akta Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_akta_kelahiran">
+                                <input type="file" required class="custom-file-input resetable" id="surat_pindah2_7" name="file_akta_kelahiran">
                                 <label class="custom-file-label" for="sptjm2_7">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Surat Keterangan
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_pindah2_7" name="file_sk">
+                                <input type="file" required class="custom-file-input resetable" id="surat_pindah2_7" name="file_sk">
                                 <label class="custom-file-label" for="sptjm2_7">Pilih file Surat Keterangan</label>
                             </div>
                         </label>
@@ -960,7 +960,7 @@
                         <label class="col-lg-12" id="">
                             Form Isian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
                                 <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
@@ -1029,35 +1029,35 @@
                         <label class="col-lg-6" id="">
                             Surat Keterangan Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_surat_kelahiran">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_surat_kelahiran">
                                 <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file Surat Keterangan Kelahiran</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Fotocopy Surat Nikah
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_surat_nikah">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_surat_nikah">
                                 <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file Fotocopy Surat Nikah</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Ijazah Asli
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_ijazah">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_ijazah">
                                 <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file Ijazah Asli</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_kartu_keluarga">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_kartu_keluarga">
                                 <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file Kartu Keluarga</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             KTP Orang Tua
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_ktp_ortu">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kelahiran2_8" name="file_ktp_ortu">
                                 <label class="custom-file-label" for="surat_kelahiran2_8">Pilih file KTP Orang Tua</label>
                             </div>
                         </label>
@@ -1132,14 +1132,14 @@
                             <label class="col-lg-6" id="">
                                 KK Asli dari Daerah Asal
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_kk_daerah_asal">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_kk_daerah_asal">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file KK Asli dari Daerah Asal</label>
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
                                 Surat Nikah
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_surat_nikah">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_surat_nikah">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file Surat Nikah</label>
                                 </div>
                             </label>
@@ -1148,14 +1148,14 @@
                             <label class="col-lg-6" id="">
                                 KTP
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_ktp">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_ktp">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file KTP</label>
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
                                 Foto Selfie Memegang KTP
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_selfie_ktp">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_selfie_ktp">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file Foto Selfie Memegang KTP</label>
                                 </div>
                             </label>
@@ -1164,14 +1164,14 @@
                             <label class="col-lg-6" id="">
                                 SPTJM Kependudukan
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_sptjm">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_sptjm">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file SPTJM Kependudukan</label>
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
                                 Ijazah Terakhir
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_ijazah">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_ijazah">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file Ijazah Terakhir</label>
                                 </div>
                             </label>
@@ -1180,19 +1180,19 @@
                             <label class="col-lg-12" id="">
                                 KK Daerah Tujuan
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_kk_daerah_tujuan">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_kk_daerah_tujuan">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file KK Daerah Tujuan</label>
                                 </div>
                             </label>
                         </div>
                         <div class="row">
                             <label class="col-lg-12" id="">
-                            Form Isian
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
-                                <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
-                            </div>
-                        </label>
+                                Form Isian
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                    <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
+                                </div>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -1264,14 +1264,14 @@
                             <label class="col-lg-6" id="">
                                 KTP
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_ktp">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_ktp">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file KTP</label>
                                 </div>
                             </label>
                             <label class="col-lg-6" id="">
                                 Kartu Keluarga Lama
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="dokumen_lama2_5" name="file_kk">
+                                    <input type="file" required class="custom-file-input resetable" id="dokumen_lama2_5" name="file_kk">
                                     <label class="custom-file-label" for="dokumen_lama2_5">Pilih file Kartu Keluarga Lama</label>
                                 </div>
                             </label>
@@ -1281,7 +1281,7 @@
                             <label class="col-lg-6" id="">
                                 Selfie Memegang KTP
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_pindah2_5" name="file_ktp_selfie">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_pindah2_5" name="file_ktp_selfie">
                                     <label class="custom-file-label" for="surat_pindah2_5">Pilih file Selfie Memegang KTP</label>
                                 </div>
                             </label>
@@ -1289,7 +1289,7 @@
                             <label class="col-lg-6" id="">
                                 Surat Pernyataan Tanggungjawab Mutlak(SPTJM)
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan2_1" name="file_sptjm">
                                     <label class="custom-file-label" for="surat_kehilangan2_1">Pilih File</label>
                                 </div>
                             </label>
@@ -1297,12 +1297,12 @@
                         </div>
                         <div class="row">
                             <label class="col-lg-12" id="">
-                            Form Isian
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
-                                <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
-                            </div>
-                        </label>
+                                Form Isian
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                    <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
+                                </div>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -1325,7 +1325,7 @@
 
             (json[1].file != '') ? $("#kkrusak").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[1].file): $("#kkrusak").hide();
 
-            (json[2].file != '') ? $("#kkperubahandata").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[2].file): $("#kkperubahandata").hide();
+            (json[2].file != '') ? $("#kkperubahandataform").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[2].file): $("#kkperubahandataform").hide();
 
             (json[3].file != '') ? $("#kkpecah1desaform").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[3].file): $("#kkpecah1desaform").hide();
 

@@ -64,6 +64,15 @@ class KK_handler extends Guide
         // $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_hilang/');
         // $datapost['file_ijazah'] = $newfilesurat3;
 
+        // do Upload file_form
+        $namaSementara = $_FILES['file_form']['tmp_name'];
+        $temp = explode(".", $_FILES["file_form"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_form_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_form']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_hilang/');
+        $datapost['file_form'] = $newnamefile;
+
+
 
 
         if ($this->Tbl_kk_handler->insert_kk_kehilangan($datapost) == 1) {
@@ -127,6 +136,15 @@ class KK_handler extends Guide
         $file_type = $_FILES['file_sptjm']['type'];
         $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_rusak/');
         $datapost['file_sptjm'] = $newfilesurat3;
+
+        // do Upload file_form
+        $namaSementara = $_FILES['file_form']['tmp_name'];
+        $temp = explode(".", $_FILES["file_form"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_form_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_form']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_rusak/');
+        $datapost['file_form'] = $newnamefile;
+
 
 
 
@@ -205,6 +223,22 @@ class KK_handler extends Guide
         $file_type = $_FILES['file_sptjm']['type'];
         $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_perubahan_data/');
         $datapost['file_sptjm'] = $newfilesurat3;
+
+        // do Upload file_form
+        $namaSementara = $_FILES['file_form']['tmp_name'];
+        $temp = explode(".", $_FILES["file_form"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_form_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_form']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_perubahan_data/');
+        $datapost['file_form'] = $newnamefile;
+
+        // do Upload file_surat_keterangan
+        $namaSementara = $_FILES['file_surat_keterangan']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_keterangan"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_surat_keterangan_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_keterangan']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_perubahan_data/');
+        $datapost['file_surat_keterangan'] = $newnamefile;
 
 
         if ($this->Tbl_kk_handler->insert_kk_perubahan_data($datapost) == 1) {
@@ -295,6 +329,23 @@ class KK_handler extends Guide
         $this->upload_file($namaSementara, $newfilesurat3, $file_type, './file_upload/kk/kk_pecah1desa/');
         $datapost['file_sptjm'] = $newfilesurat3;
 
+        // do Upload file_form
+        $namaSementara = $_FILES['file_form']['tmp_name'];
+        $temp = explode(".", $_FILES["file_form"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_form_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_form']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_form'] = $newnamefile;
+
+        // do Upload file_surat_keterangan
+        $namaSementara = $_FILES['file_surat_keterangan']['tmp_name'];
+        $temp = explode(".", $_FILES["file_surat_keterangan"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_surat_keterangan_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_surat_keterangan']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_pecah1desa/');
+        $datapost['file_surat_keterangan'] = $newnamefile;
+
+
 
 
 
@@ -370,6 +421,15 @@ class KK_handler extends Guide
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_desa/');
         $datapost['file_kk_daerah_tujuan'] = $newfileupload;
 
+        // do Upload file_form
+        $namaSementara = $_FILES['file_form']['tmp_name'];
+        $temp = explode(".", $_FILES["file_form"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_form_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_form']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_pindah_desa/');
+        $datapost['file_form'] = $newnamefile;
+
+
 
 
         if ($this->Tbl_kk_handler->insert_kk_pindah_kecamatan($datapost) == 1) {
@@ -419,6 +479,15 @@ class KK_handler extends Guide
         $file_type = $_FILES['file_sptjm']['type'];
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_pindah_kota/');
         $datapost['file_sptjm'] = $newfileupload;
+
+        // do Upload file_form
+        $namaSementara = $_FILES['file_form']['tmp_name'];
+        $temp = explode(".", $_FILES["file_form"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_form_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_form']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_pindah_kota/');
+        $datapost['file_form'] = $newnamefile;
+
 
 
         if ($this->Tbl_kk_handler->insert_kk_pindah_keluar_kota($datapost) == 1) {
@@ -523,6 +592,15 @@ class KK_handler extends Guide
         $file_type = $_FILES['file_sk']['type'];
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/kk/kk_kedatangan/');
         $datapost['file_sk'] = $newfileupload;
+
+        // do Upload file_form
+        $namaSementara = $_FILES['file_form']['tmp_name'];
+        $temp = explode(".", $_FILES["file_form"]["name"]);
+        $newnamefile = $datapost['nohp'] . '_file_form_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES['file_form']['type'];
+        $this->upload_file($namaSementara, $newnamefile, $file_type, './file_upload/kk/kk_kedatangan/');
+        $datapost['file_form'] = $newnamefile;
+
 
 
 
