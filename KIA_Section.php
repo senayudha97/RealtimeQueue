@@ -136,7 +136,15 @@
                             </div>
                         </label>
                     </div>
-
+                    <div class="row">
+                        <label class="col-lg-12" id="">
+                            Form Isian
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
+                            </div>
+                        </label>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_kia">Kembali</button>
@@ -192,6 +200,13 @@
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="surat_kehilangan4_2" name="surat_kehilangan">
                                 <label class="custom-file-label" for="surat_kehilangan4_2">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Form Isian
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
                     </div>
@@ -280,6 +295,13 @@
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input resetable" id="dokumen_lama4_3" name="kia_lama">
                                 <label class="custom-file-label" for="dokumen_lama4_3">Pilih file KIA Lama</label>
+                            </div>
+                        </label>
+                        <label class="col-lg-12" id="">
+                            Form Isian
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
                     </div>

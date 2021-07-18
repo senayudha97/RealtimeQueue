@@ -124,6 +124,13 @@
                                 <label class="custom-file-label" for="akta_kelahiran1_1">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
+                        <label class="col-lg-12" id="">
+                            Form Isian
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran1_1" name="file_form">
+                                <label class="custom-file-label" for="akta_kelahiran1_1">Pilih file Form Isian</label>
+                            </div>
+                        </label>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -184,6 +191,14 @@
                                 <label class="custom-file-label" for="surat_kehilangan1_2">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
                             </div>
                         </label>
+                        <label class="col-lg-12" id="">
+                            Form Isian
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan1_2" name="file_form">
+                                <label class="custom-file-label" for="surat_kehilangan1_2">Pilih file Form Isian</label>
+                            </div>
+                        </label>
+
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -244,6 +259,14 @@
                                 <label class="custom-file-label" for="ktp_lama">Pilih file KTP Lama</label>
                             </div>
                         </label>
+                        <label class="col-lg-12" id="">
+                            Form Isian
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
+                            </div>
+                        </label>
+
                     </div>
                 </div>
                 <div class="modal-footer">
