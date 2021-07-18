@@ -1,8 +1,8 @@
 <style>
-.modal-body {
-    max-height: calc(100vh - 200px);
-    overflow-y: auto;
-}
+    .modal-body {
+        max-height: calc(100vh - 200px);
+        overflow-y: auto;
+    }
 </style>
 
 <!-- MODAL AKTA START -->
@@ -314,6 +314,10 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA KELAHIRAN BARU</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="kelahiranbaru">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
+
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -424,6 +428,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA KELAHIRAN HILANG</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="kelahiranhilang">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -550,6 +557,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA KELAHIRAN RUSAK</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="kelahiranrusak">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -651,17 +661,17 @@
                             </label>
 
                         </div>
-                    </label>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kelahiran">Kembali</button>
-                <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
-                <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
-            </div>
-        </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kelahiran">Kembali</button>
+                    <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 </div>
 <!-- KELAHIRAN PEMBARUAN -->
 <div class="modal fade" id="mod_akta_kelahiran_pembaruan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -669,6 +679,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA KELAHIRAN PEMBARUAN</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="kelahiranpembaruan">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -770,17 +783,17 @@
                             </label>
 
                         </div>
-                    </label>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kelahiran">Kembali</button>
-                <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
-                <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
-            </div>
-        </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kelahiran">Kembali</button>
+                    <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
+                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 </div>
 <!-- KEMATIAN BARU -->
 <div class="modal fade" id="mod_akta_kematian_baru" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -788,6 +801,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA KEMATIAN BARU</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="kematianbaru">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -905,6 +921,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA KEMATIAN HILANG</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="kematianhilang">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -1038,6 +1057,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA KEMATIAN RUSAK</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="kematianrusak">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -1163,6 +1185,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA KEMATIAN PEMBARUAN</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="kematianpembaruan">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -1288,6 +1313,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA PERKAWINAN BARU</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="perkawinanbaru">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -1542,6 +1570,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA PERKAWINAN HILANG</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="perkawinanhilang">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -1830,6 +1861,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA PERKAWINAN RUSAK</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="perkawinanrusak">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -2108,6 +2142,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA PERKAWINAN PEMBARUAN</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="perkawinanpembaruan">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -2387,6 +2424,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA PERCERAIAN BARU</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="perceraianbaru">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -2513,6 +2553,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA PERCERAIAN HILANG</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="perceraianhilang">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -2655,6 +2698,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA PERCERAIAN RUSAK</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="perceraianrusak">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -2797,6 +2843,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">AKTA PERCERAIAN PEMBARUAN</h5>
+                <div class=" downloadForm pl-3">
+                    <a class="btn btn-common rounded-0" href="" target="_blank" id="perceraianpembaruan">FORM <span class="icon"><i class="fa fa-download"></i></span></a>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -2926,3 +2975,44 @@
     </div>
 </div>
 <!-- MODAL AKTA END -->
+
+<!-- Request Data Form -->
+<script>
+    $(document).ready(function() {
+        $.get("admin/Akta_handler/formAkta", function(data) {
+            let json = JSON.parse(data);
+
+            (json[0].file != '') ? $("#kelahiranbaru").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[0].file): $("#kelahiranbaru").hide();
+
+            (json[1].file != '') ? $("#kelahiranhilang").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[1].file): $("#kelahiranhilang").hide();
+
+            (json[2].file != '') ? $("#kelahiranrusak").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[2].file): $("#kelahiranrusak").hide();
+
+            (json[3].file != '') ? $("#kelahiranpembaruan").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[3].file): $("#kelahiranpembaruan").hide();
+
+            (json[4].file != '') ? $("#kematianbaru").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[4].file): $("#kematianbaru").hide();
+
+            (json[5].file != '') ? $("#kematianhilang").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[5].file): $("#kematianhilang").hide();
+
+            (json[6].file != '') ? $("#kematianrusak").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[6].file): $("#kematianrusak").hide();
+
+            (json[7].file != '') ? $("#kematianpembaruan").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[7].file): $("#kematianpembaruan").hide();
+
+            (json[8].file != '') ? $("#perkawinanbaru").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[8].file): $("#perkawinanbaru").hide();
+
+            (json[9].file != '') ? $("#perkawinanhilang").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[9].file): $("#perkawinanhilang").hide();
+
+            (json[10].file != '') ? $("#perkawinanrusak").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[10].file): $("#perkawinanrusak").hide();
+
+            (json[11].file != '') ? $("#perkawinanpembaruan").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[11].file): $("#perkawinanpembaruan").hide();
+
+            (json[12].file != '') ? $("#perceraiananbaru").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[12].file): $("#perceraiananbaru").hide();
+
+            (json[13].file != '') ? $("#perceraiananhilang").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[13].file): $("#perceraiananhilang").hide();
+
+            (json[14].file != '') ? $("#perceraiananrusak").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[14].file): $("#perceraiananrusak").hide();
+
+            (json[15].file != '') ? $("#perceraiananpembaruan").attr("href", "admin/file_upload/form_pengajuan/akta/" + json[15].file): $("#perceraiananpembaruan").hide();
+        });
+    });
+</script>

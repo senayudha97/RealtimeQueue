@@ -244,3 +244,26 @@
         </div>
     </div>
 </div>
+<!-- Request Data Form -->
+<script>
+    $(document).ready(function() {
+        $.get("admin/KK_handler/formKK", function(data) {
+            let json = JSON.parse(data);
+
+            (json[0].file != '') ? $("#kkhilang").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[0].file): $("#kkhilang").hide();
+
+            (json[1].file != '') ? $("#kkrusak").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[1].file): $("#kkrusak").hide();
+
+            (json[2].file != '') ? $("#kkperubahandata").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[2].file): $("#kkperubahandata").hide();
+
+            (json[3].file != '') ? $("#kkpecah1desaform").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[3].file): $("#kkpecah1desaform").hide();
+
+            (json[4].file != '') ? $("#kkpindahdesaform").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[4].file): $("#kkpindahdesaform").hide();
+
+            (json[5].file != '') ? $("#kkpindahkotaform").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[5].file): $("#kkpindahkotaform").hide();
+
+            (json[6].file != '') ? $("#kkkedatanganform").attr("href", "admin/file_upload/form_pengajuan/kk/" + json[6].file): $("#kkkedatanganform").hide();
+
+        });
+    });
+</script>

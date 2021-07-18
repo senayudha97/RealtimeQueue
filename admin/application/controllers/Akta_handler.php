@@ -953,4 +953,10 @@ class Akta_handler extends Guide
             echo "Upload Gagal!";
         }
     }
+
+    // KK Form File
+    public function formAkta()
+    {
+        echo json_encode($this->db->query("SELECT file FROM form_pengajuan WHERE nama_form LIKE '%akta%'")->result_array());
+    }
 }
