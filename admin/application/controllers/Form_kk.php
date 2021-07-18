@@ -42,7 +42,6 @@ class Form_kk extends Guide
 
         switch ($tipe) {
             case "kkhilang":
-                die("BERHASIL");
                 if ($file_lama != '') {
                     if (unlink(FCPATH . '/file_upload/form_pengajuan/kk/' . $file_lama)) {
                     } else {
