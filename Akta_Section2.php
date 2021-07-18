@@ -1,8 +1,8 @@
 <style>
-    .modal-body {
-        max-height: calc(100vh - 200px);
-        overflow-y: auto;
-    }
+.modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
 </style>
 
 <!-- MODAL AKTA START -->
@@ -512,7 +512,7 @@
                             <label class="col-lg-6" id="">
                                 KTP Orang Tua
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="surat_kelahiran311" name="ijazah">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_kelahiran311" name="ijazah">Keterangan Kehilangan dari Kepolisian
                                     <label class="custom-file-label" for="surat_kelahiran311">Pilih file KTP Orang Tua</label>
                                 </div>
                             </label>
@@ -520,7 +520,16 @@
                                 Surat Keterangan Kehilangan dari Kepolisian
                                 <div class="custom-file">
                                     <input type="file" required class="custom-file-input resetable" id="surat_kelahiran311" name="ijazah">
-                                    <label class="custom-file-label" for="surat_kelahiran311">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
+                                    <label class="custom-file-label" for="surat_kelahiran311">Pilih file </label>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-12" id="">
+                                Surat Fotokopi Akta Kelahiran
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan322" name="file_akta_fotokopi">
+                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file Surat Fotokopi Akta Kelahiran</label>
                                 </div>
                             </label>
                         </div>
@@ -642,17 +651,17 @@
                             </label>
 
                         </div>
-                        </label>
-                    </div>
+                    </label>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kelahiran">Kembali</button>
-                    <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
-                </div>
-            </form>
-        </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kelahiran">Kembali</button>
+                <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
+                <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+            </div>
+        </form>
     </div>
+</div>
 </div>
 <!-- KELAHIRAN PEMBARUAN -->
 <div class="modal fade" id="mod_akta_kelahiran_pembaruan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -761,17 +770,17 @@
                             </label>
 
                         </div>
-                        </label>
-                    </div>
+                    </label>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kelahiran">Kembali</button>
-                    <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
-                    <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
-                </div>
-            </form>
-        </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#mod_akta_kelahiran">Kembali</button>
+                <button type="submit" id="akta_rusak" class="btn btn-common asli">Kirim</button>
+                <button type="button" ondblclick="event.preventDefault()" class="btn btn-default palsu">Kirim</button>
+            </div>
+        </form>
     </div>
+</div>
 </div>
 <!-- KEMATIAN BARU -->
 <div class="modal fade" id="mod_akta_kematian_baru" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -997,11 +1006,18 @@
                             </label>
                         </div>
                         <div class="row">
-                            <label class="col-lg-12" id="">
+                            <label class="col-lg-6" id="">
                                 Surat Keterangan Kehilangan dari Kepolisian
                                 <div class="custom-file">
                                     <input type="file" required class="custom-file-input resetable" id="surat_kehilangan322" name="file_surat_kehilangan">
-                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
+                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-6" id="">
+                                Surat Fotokopi Akta Kematian
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan322" name="file_akta_fotokopi">
+                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file Surat Fotokopi Akta Kematian</label>
                                 </div>
                             </label>
                         </div>
@@ -1780,13 +1796,21 @@
                             </label>
                         </div>
                         <div class="row">
-                            <label class="col-lg-12" id="">
+                            <label class="col-lg-6" id="">
                                 Surat Keterangan Kehilangan dari Kepolisian
                                 <div class="custom-file">
                                     <input type="file" required class="custom-file-input resetable" id="surat_kehilangan332" name="surat_kehilangan332">
-                                    <label class="custom-file-label" for="surat_kehilangan332">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
+                                    <label class="custom-file-label" for="surat_kehilangan332">Pilih file</label>
                                 </div>
                             </label>
+                            <label class="col-lg-6" id="">
+                                Surat Fotokopi Akta Perkawinan
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan322" name="file_akta_fotokopi">
+                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file Surat Fotokopi Akta Perkawinan</label>
+                                </div>
+                            </label>
+
                         </div>
                     </div>
 
@@ -2601,7 +2625,16 @@
                                 Surat Keterangan Kehilangan dari Kepolisian
                                 <div class="custom-file">
                                     <input type="file" required class="custom-file-input resetable" id="surat_kehilangan332" name="file_surat_kehilangan">
-                                    <label class="custom-file-label" for="surat_kehilangan342">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
+                                    <label class="custom-file-label" for="surat_kehilangan342">Pilih file</label>
+                                </div>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="col-lg-12" id="">
+                                Surat Fotokopi Akta Perceraian
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan332" name="file_akta_fotokopi">
+                                    <label class="custom-file-label" for="surat_kehilangan342">Pilih file Fotokopi Akta Perceraian</label>
                                 </div>
                             </label>
                         </div>
@@ -2736,6 +2769,16 @@
                                     <label class="custom-file-label" for="akta_lama343">Pilih file Akta Lama</label>
                                 </div>
                             </label>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-12" id="">
+                                Surat Fotokopi Surat Akta Perkawinan
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan322" name="file_akta_fotokopi">
+                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file Surat Fotokopi Surat Akta Perkawinan</label>
+                                </div>
+                            </label>
+
                         </div>
                     </div>
                 </div>
