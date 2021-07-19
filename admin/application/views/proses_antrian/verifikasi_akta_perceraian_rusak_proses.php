@@ -25,7 +25,7 @@
     <?php else : ?>
         <?= $this->session->flashdata('message'); ?>
         <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
-        <di class="row">
+        <div class="row">
             <div class="col-lg-12">
                 <div class="modal-body">
                     <div class="form-group row">
@@ -54,127 +54,14 @@
                 <h3>File Upload User</h3>
                 <div id="file-upload">
                     <div class="row mb-3 pl-3">
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kutipan_perceraian">Kutipan Perceraian Asli <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kutipan_perceraian" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_surat_kerusakan">Akta Perceraian Lama <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_surat_kerusakan" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Preview Kutipan Perceraian Asli</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_kutipan_perceraian_asli']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#suratcerai">Surat Keputusan Perceraian Pengadilan Agama <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="suratcerai" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Surat Keputusan Perceraian Pengadilan Agama</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_surat_keputusan_perceraian']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ijazahpria">Ijazah Pihak Pria <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ijazahpria" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Ijazah Pihak Pria</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_ijazah_pihak_pria']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ijazahwanita">Ijazah Pihak Wanita <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ijazahwanita" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Ijazah Pihak Wanita</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_ijazah_pihak_wanita']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3 pl-3">
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#fotopria">Pasfoto Pihak Pria <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="fotopria" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Pasfoto Pihak Pria</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_pasfoto_pria']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#fotowanita">Pasfoto Pihak Wanita <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="fotowanita" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Pasfoto Pihak Wanita</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_pasfoto_wanita']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Kartu Keluarga</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_kartu_keluarga']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surhil">Akta Lama <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="surhil" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Akta Lama</h4>
+                                            <h4 class="modal-title">Preview Akta Perceraian Lama</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <center>
@@ -184,16 +71,176 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_surat_cerai">Surat Keputusan Cerai dari Pengadilan Negeri<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_surat_cerai" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">PreviewSurat Keputusan Cerai dari Pengadilan Negeri</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_surat_cerai']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_ijazah_pria">Ijazah Pihak Pria<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_ijazah_pria" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Ijazah Pihak Pria</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_ijazah_pria']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_ijazah_wanita">Ijazah Pihak Wanita<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_ijazah_wanita" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Ijazah Pihak Wanita</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_ijazah_wanita']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_kk_pria">KK Pihak Pria<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_kk_pria" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview KK Pihak Pria</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_kk_pria']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_kk_wanita">KK Pihak Wanita<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_kk_wanita" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview KK Pihak Wanita</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_kk_wanita']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_ktp_pria">KTP Pihak Pria<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_ktp_pria" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview KTP Pihak Pria</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_ktp_pria']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_ktp_wanita">KTP Pihak Wanita<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_ktp_wanita" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview KTP Pihak Wanita</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_ktp_wanita']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_foto_pria">Foto 4x6 Pihak Pria<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_foto_pria" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Foto 4x6 Pihak Pria</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_foto_pria']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_foto_wanita">Foto 4x6 Pihak Wanita<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_foto_wanita" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Foto 4x6 Pihak Wanita</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_foto_wanita']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_form">Form Isian<span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_form" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Form Isian</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_perceraian_rusak/') . $data['file_form']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="modal-footer">
                     <button class="text-light btn btn-danger" onclick="tolak()"><span class="fas fa-fw fa-times"></span> Tolak</button>
                     <button class="text-light btn btn-success" onclick="verif()"><span class="fas fa-fw fa-check"></span> Verifikai</button>
                 </div>
             </div>
-        </di>
+        </div>
 
-</div>
 </div>
 <div class="haiden">
     <form action="<?= base_url($this->controller_dir . '/tolak'); ?>" method="post">

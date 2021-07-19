@@ -2061,75 +2061,81 @@
                     <!-- Doc -->
                     <div id="file-upload">
                         <div class="row">
-                            <label class="col-lg-6" id="">
-                                Kutipan Perceraian Asli
+                            <label class="col-lg-12" id="">
+                                Surat Keterangan kehilangan dari Kepolisian
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kutipan_perceraian_asli">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Kutipan Perceraian Asli</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_surat_kehilangan">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                            <label class="col-lg-6" id="">
-                                Surat Keputusan Perceraian dari Pengadilan Negeri
+                            <label class="col-lg-12" id="">
+                                Surat Keputusan Perceraian dari Pengadilan Negeri Asli
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_surat_keputusan_perceraian">
-                                    <label class="custom-file-label" style="font-size: 10px;" for="Kutipan_kelahiran341">Pilih file Surat Keputusan Perceraian dari Pengadilan Negeri</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_surat_cerai">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
+                            <label class="col-lg-12" id="">
                                 Ijazah Pihak Pria
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pihak_pria">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Ijazah Pihak Pria</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                            <label class="col-lg-6" id="">
+                            <label class="col-lg-12" id="">
                                 Ijazah Pihak Wanita
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pihak_wanita">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Ijazah Pihak Wanita</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
-                                Foto Ukuran 4x6 Pria
-                                <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_pasfoto_pria">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Foto Ukuran 4x6 Pria</label>
-                                </div>
-                            </label>
-                            <label class="col-lg-6" id="">
-                                Foto Ukuran 4x6 Wanita
-                                <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_pasfoto_wanita">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Foto Ukuran 4x6 Wanita</label>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
-                                Kartu Keluarga
-                                <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kartu_keluarga">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Kartu Keluarga</label>
-                                </div>
-                            </label>
-                            <label class="col-lg-6" id="">
-                                Surat Keterangan Kehilangan dari Kepolisian
-                                <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan332" name="file_surat_kehilangan">
-                                    <label class="custom-file-label" for="surat_kehilangan342">Pilih file</label>
-                                </div>
-                            </label>
-                        </div>
-                        <div>
                             <label class="col-lg-12" id="">
-                                Surat Fotokopi Akta Perceraian
+                                KK Pihak Pria
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan332" name="file_akta_fotokopi">
-                                    <label class="custom-file-label" for="surat_kehilangan342">Pilih file Fotokopi Akta Perceraian</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kk_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                KK Pihak Wanita
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kk_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                KTP Pihak Pria
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ktp_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                KTP Pihak Wanita
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ktp_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Foto 4x6 Pihak Pria
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_foto_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Foto 4x6 Pihak Wanita
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_foto_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Form Isian
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_form">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
                         </div>
@@ -2205,78 +2211,83 @@
                     <!-- Doc -->
                     <div id="file-upload">
                         <div class="row">
-                            <label class="col-lg-6" id="">
-                                Kutipan Perceraian Asli
+                            <label class="col-lg-12" id="">
+                                Akta Perceraian Lama
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kutipan_perceraian_asli">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Kutipan Perceraian Asli</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_akta_lama">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                            <label class="col-lg-6" id="">
-                                Surat Keputusan Perceraian dari Pengadilan Negeri
+                            <label class="col-lg-12" id="">
+                                Surat Keputusan Perceraian dari Pengadilan Negeri Asli
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_surat_keputusan_perceraian">
-                                    <label class="custom-file-label" style="font-size: 10px;" for="Kutipan_kelahiran341">Pilih file Surat Keputusan Perceraian dari Pengadilan Negeri</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_surat_cerai">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
+                            <label class="col-lg-12" id="">
                                 Ijazah Pihak Pria
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pihak_pria">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Ijazah Pihak Pria</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                            <label class="col-lg-6" id="">
+                            <label class="col-lg-12" id="">
                                 Ijazah Pihak Wanita
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pihak_wanita">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Ijazah Pihak Wanita</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
-                                Foto Ukuran 4x6 Pria
-                                <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_pasfoto_pria">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Foto Ukuran 4x6 Pria</label>
-                                </div>
-                            </label>
-                            <label class="col-lg-6" id="">
-                                Foto Ukuran 4x6 Wanita
-                                <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_pasfoto_wanita">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Foto Ukuran 4x6 Wanita</label>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
-                                Kartu Keluarga
-                                <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kartu_keluarga">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Kartu Keluarga</label>
-                                </div>
-                            </label>
-                            <label class="col-lg-6" id="">
-                                Akta Lama
-                                <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="akta_lama343" name="file_akta_lama">
-                                    <label class="custom-file-label" for="akta_lama343">Pilih file Akta Lama</label>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="row">
                             <label class="col-lg-12" id="">
-                                Surat Fotokopi Surat Akta Perkawinan
+                                KK Pihak Pria
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="surat_kehilangan322" name="file_akta_fotokopi">
-                                    <label class="custom-file-label" for="surat_kehilangan322">Pilih file Surat Fotokopi Surat Akta Perkawinan</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kk_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-
+                            <label class="col-lg-12" id="">
+                                KK Pihak Wanita
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kk_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                KTP Pihak Pria
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ktp_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                KTP Pihak Wanita
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ktp_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Foto 4x6 Pihak Pria
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_foto_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Foto 4x6 Pihak Wanita
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_foto_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Form Isian
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_form">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -2350,67 +2361,81 @@
                     <!-- Doc -->
                     <div id="file-upload">
                         <div class="row">
-                            <label class="col-lg-6" id="">
-                                Kutipan Perceraian Asli
+                            <label class="col-lg-12" id="">
+                                Akta Perceraian Asli
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kutipan_perceraian_asli">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Kutipan Perceraian Asli</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_akta_lama">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                            <label class="col-lg-6" id="">
-                                Surat Keputusan Perceraian dari Pengadilan Negeri
+                            <label class="col-lg-12" id="">
+                                Surat Keputusan Perceraian dari Pengadilan Negeri Asli
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_surat_keputusan_perceraian">
-                                    <label class="custom-file-label" style="font-size: 10px;" for="Kutipan_kelahiran341">Pilih file Surat Keputusan Perceraian dari Pengadilan Negeri</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_surat_cerai">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
+                            <label class="col-lg-12" id="">
                                 Ijazah Pihak Pria
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pihak_pria">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Ijazah Pihak Pria</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                            <label class="col-lg-6" id="">
+                            <label class="col-lg-12" id="">
                                 Ijazah Pihak Wanita
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_pihak_wanita">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Ijazah Pihak Wanita</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ijazah_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
-                                Foto Ukuran 4x6 Pria
+                            <label class="col-lg-12" id="">
+                                KK Pihak Pria
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_pasfoto_pria">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Foto Ukuran 4x6 Pria</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kk_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                            <label class="col-lg-6" id="">
-                                Foto Ukuran 4x6 Wanita
+                            <label class="col-lg-12" id="">
+                                KK Pihak Wanita
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_pasfoto_wanita">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Foto Ukuran 4x6 Wanita</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kk_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
-                        </div>
-                        <div class="row">
-                            <label class="col-lg-6" id="">
-                                Kartu Keluarga
+                            <label class="col-lg-12" id="">
+                                KTP Pihak Pria
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_kartu_keluarga">
-                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file Kartu Keluarga</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ktp_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
-
                             </label>
-                            <label class="col-lg-6" id="">
-                                Akta Lama
+                            <label class="col-lg-12" id="">
+                                KTP Pihak Wanita
                                 <div class="custom-file">
-                                    <input type="file" required class="custom-file-input resetable" id="akta_lama344" name="file_akta_lama">
-                                    <label class="custom-file-label" for="akta_lama344">Pilih file Akta Lama</label>
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_ktp_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Foto 4x6 Pihak Pria
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_foto_pria">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Foto 4x6 Pihak Wanita
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_foto_wanita">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
+                                </div>
+                            </label>
+                            <label class="col-lg-12" id="">
+                                Form Isian
+                                <div class="custom-file">
+                                    <input type="file" required class="custom-file-input resetable" id="Kutipan_kelahiran341" name="file_form">
+                                    <label class="custom-file-label" for="Kutipan_kelahiran341">Pilih file</label>
                                 </div>
                             </label>
                         </div>
