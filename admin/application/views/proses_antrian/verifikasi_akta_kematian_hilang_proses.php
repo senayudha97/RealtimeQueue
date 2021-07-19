@@ -81,7 +81,7 @@
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_hilang/') . $data['file_form']; ?>" alt="">
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_hilang/') . $data['file_kk_pelapor']; ?>" alt="">
                                         </center>
                                     </div>
                                 </div>

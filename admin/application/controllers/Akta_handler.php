@@ -721,62 +721,29 @@ class Akta_handler extends Guide
             $datapost['tanggal_antrian'] = date('Y-m-d');
         }
 
-
-        // do Upload file_surat_keterangan_kematian
-        $namaSementara = $_FILES['file_surat_keterangan_kematian']['tmp_name'];
-        $temp = explode(".", $_FILES["file_surat_keterangan_kematian"]["name"]);
-        $newfileupload = $datapost['nohp'] . '_file_surat_keterangan_kematian_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['file_surat_keterangan_kematian']['type'];
+        $key = "file_form";
+        $namaSementara = $_FILES[$key]['tmp_name'];
+        $temp = explode(".", $_FILES[$key]["name"]);
+        $newfileupload = $datapost['nohp'] . '_' . $key . '_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES[$key]['type'];
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kematian_pembaruan/');
-        $datapost['file_surat_keterangan_kematian'] = $newfileupload;
+        $datapost[$key] = $newfileupload;
 
-        // do Upload file_kartu_keluarga_asli
-        $namaSementara = $_FILES['file_kartu_keluarga_asli']['tmp_name'];
-        $temp = explode(".", $_FILES["file_kartu_keluarga_asli"]["name"]);
-        $newfileupload = $datapost['nohp'] . '_file_kartu_keluarga_asli_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['file_kartu_keluarga_asli']['type'];
+        $key = "file_kk_pelapor";
+        $namaSementara = $_FILES[$key]['tmp_name'];
+        $temp = explode(".", $_FILES[$key]["name"]);
+        $newfileupload = $datapost['nohp'] . '_' . $key . '_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES[$key]['type'];
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kematian_pembaruan/');
-        $datapost['file_kartu_keluarga_asli'] = $newfileupload;
+        $datapost[$key] = $newfileupload;
 
-        // do Upload file_ktp_asli
-        $namaSementara = $_FILES['file_ktp_asli']['tmp_name'];
-        $temp = explode(".", $_FILES["file_ktp_asli"]["name"]);
-        $newfileupload = $datapost['nohp'] . '_file_ktp_asli_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['file_ktp_asli']['type'];
+        $key = "file_ktp_pelapor";
+        $namaSementara = $_FILES[$key]['tmp_name'];
+        $temp = explode(".", $_FILES[$key]["name"]);
+        $newfileupload = $datapost['nohp'] . '_' . $key . '_' . round(microtime(true)) . '.' . end($temp);
+        $file_type = $_FILES[$key]['type'];
         $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kematian_pembaruan/');
-        $datapost['file_ktp_asli'] = $newfileupload;
-
-        // do Upload file_surat_nikah
-        $namaSementara = $_FILES['file_surat_nikah']['tmp_name'];
-        $temp = explode(".", $_FILES["file_surat_nikah"]["name"]);
-        $newfileupload = $datapost['nohp'] . '_file_surat_nikah_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['file_surat_nikah']['type'];
-        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kematian_pembaruan/');
-        $datapost['file_surat_nikah'] = $newfileupload;
-
-        // do Upload file_ktp_saksi1
-        $namaSementara = $_FILES['file_ktp_saksi1']['tmp_name'];
-        $temp = explode(".", $_FILES["file_ktp_saksi1"]["name"]);
-        $newfileupload = $datapost['nohp'] . '_file_ktp_saksi1_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['file_ktp_saksi1']['type'];
-        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kematian_pembaruan/');
-        $datapost['file_ktp_saksi1'] = $newfileupload;
-
-        // do Upload file_ktp_saksi2
-        $namaSementara = $_FILES['file_ktp_saksi2']['tmp_name'];
-        $temp = explode(".", $_FILES["file_ktp_saksi2"]["name"]);
-        $newfileupload = $datapost['nohp'] . '_file_ktp_saksi2_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['file_ktp_saksi2']['type'];
-        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kematian_pembaruan/');
-        $datapost['file_ktp_saksi2'] = $newfileupload;
-
-        // do Upload file_akta_lama
-        $namaSementara = $_FILES['file_akta_lama']['tmp_name'];
-        $temp = explode(".", $_FILES["file_akta_lama"]["name"]);
-        $newfileupload = $datapost['nohp'] . '_file_akta_lama_' . round(microtime(true)) . '.' . end($temp);
-        $file_type = $_FILES['file_akta_lama']['type'];
-        $this->upload_file($namaSementara, $newfileupload, $file_type, './file_upload/akta/akta_kematian_pembaruan/');
-        $datapost['file_akta_lama'] = $newfileupload;
+        $datapost[$key] = $newfileupload;
 
 
         if ($this->Tbl_akta_handler->insert_akta_kematian_pembaruan($datapost) == 1) {
