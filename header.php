@@ -169,6 +169,6 @@
       margin-top: 22px;
     }
   </style>
-  <a href="#" class="float">
+  <!-- <a href="#" class="float">
     <i class="fas fa-phone my-float"></i>
-  </a>
+  </a> -->

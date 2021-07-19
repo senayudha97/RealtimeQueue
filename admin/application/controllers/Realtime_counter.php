@@ -102,7 +102,18 @@ class Realtime_counter extends Guide
         $data['kia']['nilai'] = $kia_pemula;
 
         // Realtime Counter KK
-        $data['kk'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_kk JOIN antrian_bulanan ON antrian_kk.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND antrian_kk.tanggal_antrian = '$date' ")->row_array();
+        // $data['kk'] = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM antrian_kk JOIN antrian_bulanan ON antrian_kk.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND antrian_kk.tanggal_antrian = '$date' ")->row_array();
+        $kk_perubahan_data = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM kk_perubahan_data JOIN antrian_bulanan ON kk_perubahan_data.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND kk_perubahan_data.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $kk_pecah_1desa = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM kk_pecah_1desa JOIN antrian_bulanan ON kk_pecah_1desa.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND kk_pecah_1desa.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $kk_pindah_kecamatan = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM kk_pindah_kecamatan JOIN antrian_bulanan ON kk_pindah_kecamatan.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND kk_pindah_kecamatan.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $kk_pindah_keluar_kota = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM kk_pindah_keluar_kota JOIN antrian_bulanan ON kk_pindah_keluar_kota.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND kk_pindah_keluar_kota.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $kk_penambahan_kedatangan = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM kk_penambahan_kedatangan JOIN antrian_bulanan ON kk_penambahan_kedatangan.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND kk_penambahan_kedatangan.tanggal_antrian = '$date' ")->row_array()['nilai'];
+        $data['kk']['nilai'] = $kk_perubahan_data
+            + $kk_pecah_1desa
+            + $kk_pindah_kecamatan
+            + $kk_pindah_keluar_kota
+            + $kk_penambahan_kedatangan;
+
 
         // Realtime Counter Akta
         $akta_kelahiran_baru = $this->db->query("SELECT COUNT(*) AS 'nilai' FROM akta_kelahiran_baru JOIN antrian_bulanan ON akta_kelahiran_baru.tanggal_antrian = antrian_bulanan.tanggal_antrian WHERE  antrian_bulanan.islibur = 0 AND akta_kelahiran_baru.tanggal_antrian = '$date' ")->row_array()['nilai'];
