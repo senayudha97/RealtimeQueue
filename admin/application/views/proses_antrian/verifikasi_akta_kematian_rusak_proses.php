@@ -55,114 +55,67 @@
                 <div id="file-upload">
                     <div class="row mb-3 pl-3">
                         <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#surat_kematian">Surat Keterangan Kematian <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="surat_kematian" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_surat_kerusakan">Akta Lama <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_surat_kerusakan" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Preview Surat Keterangan Kematian</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_surat_keterangan_kematian']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#kk">Kartu Keluarga <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="kk" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Kartu Keluarga</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_surat_nikah']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktp">KTP <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktp" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview KTP</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_ktp_asli']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#bukunikah">Buku Nikah <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="bukunikah" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Buku Nikah</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_surat_nikah']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3 pl-3">
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktps1">KTP Saksi 1 <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktps1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview KTP Saksi 1</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_ktp_saksi1']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#ktps2">KTP Saksi 2 <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="ktps2" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview KTP Saksi 2</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-                                        <center>
-                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_ktp_saksi2']; ?>" alt="">
-                                        </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#aktalama">Akta Kematian Lama <span class="fas fa-fw fa-file"></span></button>
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="aktalama" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Preview Akta Kematian Lama</h4>
+                                            <h4 class="modal-title">Preview Akta Lama</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <center>
                                             <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_akta_lama']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_form">KK Pelapor <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_form" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview KK Pelapor</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_form']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_ktp_pelapor">KTP Pelapor <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_ktp_pelapor" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview KTP Pelapor</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_ktp_pelapor']; ?>" alt="">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <button class="btn btn-warning text-dark fixbutton" data-toggle="modal" data-target="#file_form">Form Isian <span class="fas fa-fw fa-file"></span></button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="file_form" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Preview Form Isian</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <center>
+                                            <img class="card-img" src="<?= base_url('file_upload/akta/akta_kematian_rusak/') . $data['file_form']; ?>" alt="">
                                         </center>
                                     </div>
                                 </div>
