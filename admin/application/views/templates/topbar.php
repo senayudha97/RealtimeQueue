@@ -30,10 +30,10 @@
                 <!-- start notification handler -->
                 <li class="nav-item dropdown no-arrow mx-1">
                     <a class="nav-link dropdown-toggle" href="#" id="notifTrigger" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <i class="fas fa-bell fa-fw"></i> -->
                         <!-- Counter - Alerts -->
                         <br><br>
-                        <span class="badge badge-danger badge-counter" id="bell" style="font-size: 12px;">0</span>
+                        <!-- <span class="badge badge-danger badge-counter" id="bell" style="font-size: 12px;">0</span> -->
                         <!-- <span class="badge badge-danger badge-counter" style="font-size: 12px;">0</span> -->
                     </a>
                     <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="notifTrigger">

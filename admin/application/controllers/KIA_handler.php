@@ -64,30 +64,28 @@ class KIA_handler extends Guide
     public function KIA_kehilangan()
     {
         $datapost = $this->input->post('input');
-        if ($datapost['tanggal_antrian'] == null) {
-            $datapost['tanggal_antrian'] = date('Y-m-d');
-        }
+        $datapost['tanggal_antrian'] = date('Y-m-d');
 
         // do Upload KK
         $namaSementara = $_FILES['kartu_keluarga']['tmp_name'];
         $temp = explode(".", $_FILES["kartu_keluarga"]["name"]);
         $newfilenamekk = $datapost['nama'] . '_kk_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['kartu_keluarga']['type'];
-        $this->upload_file($namaSementara, $newfilenamekk, $file_type, './file_upload/kia_hilang/');
+        $this->upload_file($namaSementara, $newfilenamekk, $file_type, './file_upload/kia/kia_hilang/');
 
         // do Upload Akta
         $namaSementara = $_FILES['akta_kelahiran']['tmp_name'];
         $temp = explode(".", $_FILES["akta_kelahiran"]["name"]);
         $newfilenameakta = $datapost['nama'] . '_akta_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['akta_kelahiran']['type'];
-        $this->upload_file($namaSementara, $newfilenameakta, $file_type, './file_upload/kia_hilang/');
+        $this->upload_file($namaSementara, $newfilenameakta, $file_type, './file_upload/kia/kia_hilang/');
 
         // do Upload Surat Hilang
         $namaSementara = $_FILES['surat_kehilangan']['tmp_name'];
         $temp = explode(".", $_FILES["surat_kehilangan"]["name"]);
         $newfilesuratkehilangan = $datapost['nama'] . '_surat_hilang_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['surat_kehilangan']['type'];
-        $this->upload_file($namaSementara, $newfilesuratkehilangan, $file_type, './file_upload/kia_hilang/');
+        $this->upload_file($namaSementara, $newfilesuratkehilangan, $file_type, './file_upload/kia/kia_hilang/');
 
         // Input Nama Baru File ke List $datapost
         $datapost['file_kk'] = $newfilenamekk;
@@ -114,7 +112,7 @@ class KIA_handler extends Guide
         $temp = explode(".", $_FILES["kartu_keluarga"]["name"]);
         $newfilenamekk = $datapost['nama'] . '_kk_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['kartu_keluarga']['type'];
-        $this->upload_file($namaSementara, $newfilenamekk, $file_type, './file_upload/kia_hilang/');
+        $this->upload_file($namaSementara, $newfilenamekk, $file_type, './file_upload/kia/kia_hilang/');
 
 
         // do Upload Akta
@@ -122,14 +120,14 @@ class KIA_handler extends Guide
         $temp = explode(".", $_FILES["akta_kelahiran"]["name"]);
         $newfilenameakta = $datapost['nama'] . '_akta_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['akta_kelahiran']['type'];
-        $this->upload_file($namaSementara, $newfilenameakta, $file_type, './file_upload/kia_hilang/');
+        $this->upload_file($namaSementara, $newfilenameakta, $file_type, './file_upload/kia/kia_hilang/');
 
         // do Upload kia Lama
         $namaSementara = $_FILES['kia_lama']['tmp_name'];
         $temp = explode(".", $_FILES["kia_lama"]["name"]);
         $newfilekialama = $datapost['nama'] . '_kia_lama_' . round(microtime(true)) . '.' . end($temp);
         $file_type = $_FILES['kia_lama']['type'];
-        $this->upload_file($namaSementara, $newfilekialama, $file_type, './file_upload/kia_hilang/');
+        $this->upload_file($namaSementara, $newfilekialama, $file_type, './file_upload/kia/kia_hilang/');
 
         // Input Nama Baru File ke List $datapost
         $datapost['file_kk'] = $newfilenamekk;

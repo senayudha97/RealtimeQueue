@@ -108,21 +108,21 @@
                         <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga4_1" name="kartu_keluarga">
+                                <input type="file" required class="custom-file-input resetable" id="kartu_keluarga4_1" name="kartu_keluarga">
                                 <label class="custom-file-label" for="kartu_keluarga4_1">Pilih file Kartu Keluarga</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Akta Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_1" name="akta_kelahiran">
+                                <input type="file" required class="custom-file-input resetable" id="akta_kelahiran4_1" name="akta_kelahiran">
                                 <label class="custom-file-label" for="akta_kelahiran4_1">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Pasfoto 3x4(Diatas 5 Tahun, Background Merah Tahun Kelahiran Ganjil Jika Genap Background Biru)
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_1" name="pasfoto">
+                                <input type="file" required class="custom-file-input resetable" id="akta_kelahiran4_1" name="pasfoto">
                                 <label class="custom-file-label" for="akta_kelahiran4_1">Pilih file Pasfoto</label>
                             </div>
                         </label>
@@ -131,7 +131,7 @@
                         <label class="col-lg-12" id="">
                             Buku Nikah
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_1" name="surat_nikah">
+                                <input type="file" required class="custom-file-input resetable" id="akta_kelahiran4_1" name="surat_nikah">
                                 <label class="custom-file-label" for="akta_kelahiran4_1">Pilih file Buku Nikah</label>
                             </div>
                         </label>
@@ -140,7 +140,7 @@
                         <label class="col-lg-12" id="">
                             Form Isian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
                                 <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
@@ -184,28 +184,28 @@
                         <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga4_2" name="kartu_keluarga">
+                                <input type="file" required class="custom-file-input resetable" id="kartu_keluarga4_2" name="kartu_keluarga">
                                 <label class="custom-file-label" for="kartu_keluarga4_2">Pilih file Kartu Keluarga</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Akta Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_2" name="akta_kelahiran">
+                                <input type="file" required class="custom-file-input resetable" id="akta_kelahiran4_2" name="akta_kelahiran">
                                 <label class="custom-file-label" for="akta_kelahiran4_2">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Surat Keterangan Kehilangan dari Kepolisian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="surat_kehilangan4_2" name="surat_kehilangan">
+                                <input type="file" required class="custom-file-input resetable" id="surat_kehilangan4_2" name="surat_kehilangan">
                                 <label class="custom-file-label" for="surat_kehilangan4_2">Pilih file Surat Keterangan Kehilangan dari Kepolisian</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Form Isian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
                                 <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
@@ -279,28 +279,28 @@
                         <label class="col-lg-6" id="">
                             Kartu Keluarga
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="kartu_keluarga4_3" name="kartu_keluarga">
+                                <input type="file" required class="custom-file-input resetable" id="kartu_keluarga4_3" name="kartu_keluarga">
                                 <label class="custom-file-label" for="kartu_keluarga4_3">Pilih file Kartu Keluarga</label>
                             </div>
                         </label>
                         <label class="col-lg-6" id="">
                             Akta Kelahiran
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="akta_kelahiran4_3" name="akta_kelahiran">
+                                <input type="file" required class="custom-file-input resetable" id="akta_kelahiran4_3" name="akta_kelahiran">
                                 <label class="custom-file-label" for="akta_kelahiran4_3">Pilih file Akta Kelahiran</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             KIA Lama
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama4_3" name="kia_lama">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama4_3" name="kia_lama">
                                 <label class="custom-file-label" for="dokumen_lama4_3">Pilih file KIA Lama</label>
                             </div>
                         </label>
                         <label class="col-lg-12" id="">
                             Form Isian
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
+                                <input type="file" required class="custom-file-input resetable" id="dokumen_lama1_3" name="file_form">
                                 <label class="custom-file-label" for="ktp_lama">Pilih file Form Isian</label>
                             </div>
                         </label>
