@@ -54,7 +54,7 @@ class verifikasi_KTP_kehilangan extends Guide
             $this->db->where('id', $id);
             $user = $this->db->get('ktp_kehilangan')->row_array();
             $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'ktp' . ',' . $id;
-            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
+            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan KTP Kehilangan anda telah diverifikasi oleh petugas, Berkas akan segera dikirim oleh petugas ke alamat anda.", 'qrval' => $qrval, 'istolak' => true]);
             $this->flash_success("Proses Verifikasi KTP Berhasil");
             redirect('verifikasi_KTP_kehilangan');
         }

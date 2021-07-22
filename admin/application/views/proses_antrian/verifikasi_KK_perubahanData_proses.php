@@ -222,7 +222,7 @@
 </div>
 </div>
 <div class="haiden">
-    <form action="<?= base_url('Verifikasi_antrian_ktp/tolak'); ?>" method="post">
+    <form action="<?= base_url($this->controller_dir . '/tolak'); ?>" method="post">
         <input type="text" value="<?= $data['id']; ?>" name="id">
         <input type="text" id="catatan" name="catatan">
         <button id="tolakform" type="submit">kirim</button>
@@ -256,7 +256,7 @@
             reverseButtons: true
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = "<?= base_url('Verifikasi_antrian_ktp/verif/' . $data['id']); ?>";
+                window.location.href = "<?= base_url($this->controller_dir . '/verif/' . $data['id']); ?>";
             }
         })
     }

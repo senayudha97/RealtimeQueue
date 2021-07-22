@@ -53,9 +53,11 @@ class Verifikasi_KK_perubahanData extends Guide
         if ($this->db->update('kk_perubahan_data')) {
             $this->db->where('id', $id);
             $user = $this->db->get('kk_perubahan_data')->row_array();
-            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'ktp' . ',' . $id;
-            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
-            $this->flash_success("Proses Verifikasi KTP Berhasil");
+            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'KK' . ',' . $id . ',' . 'kk_perubahan_data';
+
+
+            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian Perubahan Data KK anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
+            $this->flash_success("Proses Verifikasi KK Berhasil");
             redirect('verifikasi_KK_perubahanData');
         }
     }
@@ -71,7 +73,7 @@ class Verifikasi_KK_perubahanData extends Guide
         if ($this->db->update('kk_perubahan_data')) {
             $user = $this->db->get('kk_perubahan_data')->row_array();
             $this->sendEmail(['email' => $user['email'], 'message' => $catatan, 'istolak' => true]);
-            $this->flash_success("Proses Tolak KTP Berhasil");
+            $this->flash_success("Proses Tolak KK Berhasil");
             redirect('verifikasi_KK_perubahanData');
         }
     }

@@ -53,9 +53,11 @@ class Verifikasi_KIA_rusak extends Guide
         if ($this->db->update('kia_rusak')) {
             $this->db->where('id', $id);
             $user = $this->db->get('kia_rusak')->row_array();
-            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'ktp' . ',' . $id;
-            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
-            $this->flash_success("Proses Verifikasi KTP Berhasil");
+            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'KIA' . ',' . $id . ',' . 'kia_rusak';
+
+
+            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian KIA Rusak anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
+            $this->flash_success("Proses Verifikasi KIA Berhasil");
             redirect('verifikasi_KIA_rusak');
         }
     }
@@ -71,7 +73,7 @@ class Verifikasi_KIA_rusak extends Guide
         if ($this->db->update('kia_rusak')) {
             $user = $this->db->get('kia_rusak')->row_array();
             $this->sendEmail(['email' => $user['email'], 'message' => $catatan, 'istolak' => true]);
-            $this->flash_success("Proses Tolak KTP Berhasil");
+            $this->flash_success("Proses Tolak KIA Berhasil");
             redirect('verifikasi_KIA_rusak');
         }
     }

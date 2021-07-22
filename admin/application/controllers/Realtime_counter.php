@@ -178,11 +178,13 @@ class Realtime_counter extends Guide
     public function newAntrian()
     {
         $fk_antrian = $_POST['id'];
+        $table_target  = $_POST['table_target'];
         $newAntrian = 1;
-        $jenisAntrian = ($_POST['jenis_antrian'] == 'KTP') ? 1 : 2;
+        $jenisAntrian = $_POST['jenis_antrian'];
         $date = date('Y-m-d');
-        $data = $this->db->query("SELECT nomor_antrian FROM log_antrian WHERE tanggal_antrian = '$date' ORDER BY nomor_antrian DESC")->row_array();
-        $komparasi = $this->db->query("SELECT COUNT(*) 'val' FROM log_antrian WHERE fk_antrian = $fk_antrian")->row_array();
+        $data = $this->db->query("SELECT nomor_antrian FROM log_antrian WHERE jenis_antrian = '$jenisAntrian' AND tanggal_antrian = '$date' ORDER BY nomor_antrian DESC")->row_array();
+
+        $komparasi = $this->db->query("SELECT COUNT(*) AS 'val' FROM log_antrian  WHERE fk_antrian = $fk_antrian  AND table_target = '$table_target'")->row_array();
 
 
         if ($komparasi['val'] > 0) { //Check apakah qr code sudah di masukan ke log sebelumnya 
@@ -190,17 +192,14 @@ class Realtime_counter extends Guide
             exit;
         } else {
             if (empty($data['nomor_antrian'])) {
-                $this->db->insert('log_antrian', ['fk_antrian' => $fk_antrian, 'jenis_antrian' => $jenisAntrian, 'nomor_antrian' => $newAntrian, 'tanggal_antrian' => $date]);
+                $this->db->insert('log_antrian', ['fk_antrian' => $fk_antrian, 'jenis_antrian' => $jenisAntrian, 'nomor_antrian' => $newAntrian, 'tanggal_antrian' => $date, 'table_target' => $table_target]);
 
                 // Send Email
                 $this->db->where('id', $fk_antrian);
-                if ($jenisAntrian == 1) {
-                    $wargaDic = $this->db->get('antrian_ktp')->row_array();
-                } else if ($jenisAntrian == 2) {
-                    $wargaDic = $this->db->get('antrian_kk')->row_array();
-                }
-                $kepengurusan =  [1 => 'KTP', '2' => 'KK'];
-                $this->sendEmailNomorAntrian(['email' => $wargaDic['email'], 'nama' => $wargaDic['nama'], 'kepengurusan' => $kepengurusan[$jenisAntrian], 'nomor_urut' => $newAntrian]);
+                $wargaDic = $this->db->get($table_target)->row_array();
+
+                // $kepengurusan =  [1 => 'KTP', '2' => 'KK'];
+                $this->sendEmailNomorAntrian(['email' => $wargaDic['email'], 'nama' => $wargaDic['nama'], 'kepengurusan' => $jenisAntrian, 'nomor_urut' => $newAntrian]);
 
                 echo 'berhasil';
             } else {
@@ -208,15 +207,12 @@ class Realtime_counter extends Guide
 
                 // Send Email
                 $this->db->where('id', $fk_antrian);
-                if ($jenisAntrian == 1) {
-                    $wargaDic = $this->db->get('antrian_ktp')->row_array();
-                } else if ($jenisAntrian == 2) {
-                    $wargaDic = $this->db->get('antrian_kk')->row_array();
-                }
-                $kepengurusan =  [1 => 'KTP', '2' => 'KK'];
-                $this->sendEmailNomorAntrian(['email' => $wargaDic['email'], 'nama' => $wargaDic['nama'], 'kepengurusan' => $kepengurusan[$jenisAntrian], 'nomor_urut' => $newAntrian]);
+                $wargaDic = $this->db->get($table_target)->row_array();
 
-                $this->db->insert('log_antrian', ['fk_antrian' => $fk_antrian, 'jenis_antrian' => $jenisAntrian, 'nomor_antrian' => $newAntrian, 'tanggal_antrian' => $date]);
+                // $kepengurusan =  [1 => 'KTP', '2' => 'KK'];
+                $this->sendEmailNomorAntrian(['email' => $wargaDic['email'], 'nama' => $wargaDic['nama'], 'kepengurusan' => $jenisAntrian, 'nomor_urut' => $newAntrian]);
+
+                $this->db->insert('log_antrian', ['fk_antrian' => $fk_antrian, 'jenis_antrian' => $jenisAntrian, 'nomor_antrian' => $newAntrian, 'tanggal_antrian' => $date, 'table_target' => $table_target]);
                 echo 'berhasil';
             }
         }

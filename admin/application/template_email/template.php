@@ -22,6 +22,8 @@
             <p>Hi {PENERIMA},</p>
 
             <p>{MESSAGE}</p>
+            <br>
+            <p>Tanggal : {TANGGAL}</p>
 
 
 

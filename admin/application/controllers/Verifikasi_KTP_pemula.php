@@ -53,7 +53,8 @@ class Verifikasi_KTP_pemula extends Guide
         if ($this->db->update('ktp_pemula')) {
             $this->db->where('id', $id);
             $user = $this->db->get('ktp_pemula')->row_array();
-            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'ktp' . ',' . $id;
+            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'KTP' . ',' . $id . ',' . 'ktp_pemula';
+
             $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
             $this->flash_success("Proses Verifikasi KTP Berhasil");
             redirect('verifikasi_KTP_pemula');

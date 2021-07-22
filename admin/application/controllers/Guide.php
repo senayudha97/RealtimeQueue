@@ -91,7 +91,7 @@ class Guide extends CI_Controller
         return $dir;
     }
 
-    function sendEmail($env = array())
+    function sendEmail($param = array())
     {
         $email_sender = "chickchipsgame@gmail.com";
         $pasword_email_sender = "kmzwa88saa";
@@ -112,9 +112,9 @@ class Guide extends CI_Controller
         $mail->SMTPSecure = 'ssl';
         $mail->Port     = 465;
 
-        if ($env['istolak'] == false) {
-            $filename = explode($env['email'], '@');
-            $mail->AddEmbeddedImage($this->generateqr($filename[0] . date('dmy') . 'png', $env['qrval']), 'coba');
+        if ($param['istolak'] == false) {
+            $filename = explode($param['email'], '@');
+            $mail->AddEmbeddedImage($this->generateqr($filename[0] . date('dmy') . 'png', $param['qrval']), 'coba');
         }
 
 
@@ -122,7 +122,7 @@ class Guide extends CI_Controller
         $mail->addReplyTo('info@example.com', 'Siantrian');
 
         // Add a recipient
-        $mail->addAddress($env['email']);
+        $mail->addAddress($param['email']);
 
         // Email subject
         $mail->Subject = 'Siantrian - Pengajuan Online';
@@ -132,8 +132,9 @@ class Guide extends CI_Controller
 
         $swap_arr = array(
             "{JUDUL}" => "SIANTRIAN",
-            "{PENERIMA}" => $env['email'],
-            "{MESSAGE}" => $env['message'],
+            "{PENERIMA}" => $param['email'],
+            "{MESSAGE}" => $param['message'],
+            "{TANGGAL}" => date('d-m-Y'),
         );
 
         // Email body content
@@ -165,7 +166,7 @@ class Guide extends CI_Controller
         }
     }
 
-    function sendEmailNomorAntrian($env = array())
+    function sendEmailNomorAntrian($param = array())
     {
         $email_sender = "chickchipsgame@gmail.com";
         $pasword_email_sender = "kmzwa88saa";
@@ -191,7 +192,7 @@ class Guide extends CI_Controller
         $mail->addReplyTo('info@example.com', 'Siantrian');
 
         // Add a recipient
-        $mail->addAddress($env['email']);
+        $mail->addAddress($param['email']);
 
         // Email subject
         $mail->Subject = 'Siantrian - Antrian Online';
@@ -201,9 +202,9 @@ class Guide extends CI_Controller
 
         $swap_arr = array(
             "{JUDUL}" => "SIANTRIAN",
-            "{NAMA}" => $env['nama'],
-            "{KEPENGURUSAN}" => $env['kepengurusan'],
-            "{NOMOR_URUT}" => $env['nomor_urut'],
+            "{NAMA}" => $param['nama'],
+            "{KEPENGURUSAN}" => $param['kepengurusan'],
+            "{NOMOR_URUT}" => $param['nomor_urut'],
 
         );
 

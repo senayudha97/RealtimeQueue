@@ -4,6 +4,8 @@ include_once APPPATH . "/controllers/Guide.php";
 
 class Verifikasi_KK_penambahanAnggota extends Guide
 {
+    var $controller_dir = 'verifikasi_kk_penambahananggota';
+
     public function __construct()
     {
         parent::__construct();
@@ -52,9 +54,11 @@ class Verifikasi_KK_penambahanAnggota extends Guide
         $this->db->set('status', 2);
         if ($this->db->update('kk_penambahan_kedatangan')) {
             $this->db->where('id', $id);
-            $user = $this->db->get('antrian_kk')->row_array();
-            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'kk' . ',' . $id;
-            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
+            $user = $this->db->get('kk_penambahan_kedatangan')->row_array();
+            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'KK' . ',' . $id . ',' . 'kk_penambahan_kedatangan';
+
+
+            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian KK Kedatangan anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
             $this->flash_success("Proses Verifikasi KK Berhasil");
             redirect('Verifikasi_KK_penambahanAnggota');
         }

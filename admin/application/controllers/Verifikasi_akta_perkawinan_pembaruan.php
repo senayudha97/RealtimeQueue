@@ -53,9 +53,11 @@ class Verifikasi_akta_perkawinan_pembaruan extends Guide
         if ($this->db->update('akta_perkawinan_pembaruan')) {
             $this->db->where('id', $id);
             $user = $this->db->get('akta_perkawinan_pembaruan')->row_array();
-            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'ktp' . ',' . $id;
-            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
-            $this->flash_success("Proses Verifikasi KTP Berhasil");
+            $qrval = $user['nama'] . ',' . $user['email'] . ',' . $user['nohp'] . ',' . 'sa7d4c44a3ajads6ddd445ca0d1b65ca' . ',' . 'Akta' . ',' . $id . ',' . 'akta_perkawinan_pembaruan';
+
+
+            $this->sendEmail(['email' => $user['email'], 'message' => "Pengajuan antrian Akta Perkawinan Pembaruan anda telah diverifikasi oleh petugas, Simpan QR Code lalu datang ke kantor Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mojokerto untuk scan dan mendapat antrian anda.", 'qrval' => $qrval, 'istolak' => false]);
+            $this->flash_success("Proses Verifikasi Akta Berhasil");
             redirect('verifikasi_akta_perkawinan_pembaruan');
         }
     }
@@ -71,7 +73,7 @@ class Verifikasi_akta_perkawinan_pembaruan extends Guide
         if ($this->db->update('akta_perkawinan_pembaruan')) {
             $user = $this->db->get('akta_perkawinan_pembaruan')->row_array();
             $this->sendEmail(['email' => $user['email'], 'message' => $catatan, 'istolak' => true]);
-            $this->flash_success("Proses Tolak KTP Berhasil");
+            $this->flash_success("Proses Tolak Akta Berhasil");
             redirect('verifikasi_akta_perkawinan_pembaruan');
         }
     }

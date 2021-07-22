@@ -71,6 +71,12 @@
                   id="idAntrian"
                 />
                 <input
+                  type="hidden"
+                  class="form-control"
+                  readonly
+                  id="tableTarget"
+                />
+                <input
                   type="text"
                   class="form-control"
                   readonly
@@ -149,6 +155,7 @@
       $("#nohp").val(convertion[2]);
       $("#idAntrian").val(convertion[5]);
       $("#jenisantrian").text(convertion[4].toUpperCase());
+      $("#tableTarget").val(convertion[6]);
 
       const Toast = Swal.mixin({
         toast: true,
@@ -214,6 +221,8 @@
 
   $("#prosesAntrian").click(function () {
     let fk_antrian = $("#idAntrian").val();
+    console.log( $("#jenisantrian").text());
+    console.log( $("#idAntrian").val());
 
     const Toast = Swal.mixin({
       toast: true,
@@ -238,9 +247,11 @@
         data: {
           id: $("#idAntrian").val(),
           jenis_antrian: $("#jenisantrian").text(),
+          table_target: $("#tableTarget").val(),
         },
         datatype: "json",
         success: function (param) {
+          console.log(param);
           if (param == "berhasil") {
             Toast.fire({
               icon: "success",
