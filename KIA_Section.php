@@ -178,6 +178,8 @@
                     <input type="text" class="form-control resetable" id="name4_2" name="input[nama]" placeholder="Nama" required data-error="Isikan Nama anda">
                     <input type="tel" class="form-control resetable" id="phone4_2" name="input[nohp]" placeholder="No. Handphone" required data-error="Isikan No. Handphone anda">
                     <input type="text" class="form-control resetable" id="email4_2" name="input[email]" placeholder="Email" required data-error="Isikan Alamat Email anda">
+                    <input type="text" class="form-control resetable" id="alamat" name="input[alamat]" placeholder="Alamat Lengkap" required data-error="Isikan Alamat anda">
+
 
                     <!-- Doc -->
                     <div class="row">

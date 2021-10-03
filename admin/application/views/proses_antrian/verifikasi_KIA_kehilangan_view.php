@@ -45,7 +45,7 @@
                         <th class="tg-0lax">Nama</th>
                         <th class="tg-0lax">Nomor HP</th>
                         <th class="tg-0lax">Email</th>
-                        <th class="tg-0lax">Jenis Antrian</th>
+                        <th class="tg-0lax">Alamat</th>
                         <th class="tg-0lax" width="10%"><span class="fas fa-fw fa-edit"></span></th>
                     </tr>
                 </thead>
@@ -58,7 +58,7 @@
                             <td><?= $value['nama']; ?></td>
                             <td><a target="_blank" href="https://api.whatsapp.com/send?phone=<?= preg_replace('/0/', '62', $value['nohp'], 1); ?>&text=hallo" class="btn btn-success btn-sm">Whatsapp &nbsp; <img width="20" src="<?= base_url('assets/img/wa.png'); ?>" alt=""></a></td>
                             <td><?= $value['email']; ?></td>
-                            <td><?= $value['jenis'] == 1 ?  'Baru' : 'Perubahan'; ?></td>
+                            <td><?= $value['alamat']; ?></td>
                             <td>
                                 <a href="<?= base_url($this->controller_dir . "/proses/" . $value['id']); ?>" class="btn btn-success rounded-left"><span class="fas fa-fw fa-check"></span>Proses Antrian</a>
                             </td>
